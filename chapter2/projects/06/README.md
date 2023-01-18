@@ -1,4 +1,4 @@
-# Chapter 02, Project 05
+# Chapter 02 - Project 05
 
 Modify the program of Programming Project 5 so that the polynomial is evaluated using the following formula:
 ```

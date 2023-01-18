@@ -1,5 +1,5 @@
 /*
-* C programming: A Modern Approach. Chapter 02, Project 01
+* C programming: A Modern Approach. Chapter 02, project 01
 * Date: January 2023
 * Author: ffstlln
 * Description: Prints a pattern on screen

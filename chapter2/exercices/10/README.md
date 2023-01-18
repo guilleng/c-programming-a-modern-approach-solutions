@@ -1,4 +1,4 @@
-# Chapter 02, Exercise 10
+# Chapter 02 - Exercise 10
 
 In the `dweight.c` program(Section 2.4), which spaces are essential?  
 

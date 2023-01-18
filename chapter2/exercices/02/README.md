@@ -1,4 +1,4 @@
-# Chapter 02, Exercise 02
+# Chapter 02 - Exercise 02
 
 Consider the following program:  
 ```

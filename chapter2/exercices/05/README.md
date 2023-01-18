@@ -1,4 +1,4 @@
-# Chapter 02, Exercise 05
+# Chapter 02 - Exercise 05
 
 Which of the following are not legal C identifiers?  
 (a) `100_bottles`  

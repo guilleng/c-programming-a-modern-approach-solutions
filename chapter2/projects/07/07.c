@@ -1,5 +1,5 @@
 /*
-* C programming: A Modern Approach. Chapter 02, Project 07
+* C programming: A Modern Approach. Chapter 02, project 07
 * Date: January 2023
 * Author: ffstlln
 * Description: Decomposes a dollar ammount into the smallest number of number 

@@ -1,5 +1,5 @@
 /*
-* C programming: A Modern Approach. Chapter 02, Project 03
+* C programming: A Modern Approach. Chapter 02, project 03
 * Date: January 2023
 * Author: ffstlln
 * Description: Computes the volume of a sphere.

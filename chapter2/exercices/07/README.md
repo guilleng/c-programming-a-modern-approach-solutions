@@ -1,4 +1,4 @@
-# Chapter 02, Exercise 07
+# Chapter 02 - Exercise 07
 
 Which of the following are keywords in C?  
 

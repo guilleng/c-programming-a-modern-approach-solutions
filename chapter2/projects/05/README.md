@@ -1,4 +1,4 @@
-# Chapter 02, Project 05
+# Chapter 02 - Project 05
 
 Write a program that ask the user to enter a value for x and then displays the value of the following polynomial:  
 

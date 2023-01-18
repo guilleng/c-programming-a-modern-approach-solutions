@@ -1,4 +1,4 @@
-# Chapter 02, Exercise 04
+# Chapter 02 - Exercise 04
 
 Write a program that declares several `int` and `float` variables--without initializing them--and then prints their values. Is there any pattern to the values?  
 

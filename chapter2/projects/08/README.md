@@ -1,4 +1,4 @@
-# Chapter 02, Project 08
+# Chapter 02 - Project 08
 
 Write a program that calculates the remaining balance on a loan after the first, second, and third monthly payments:  
 ```
