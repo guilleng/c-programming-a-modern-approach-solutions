@@ -2,7 +2,7 @@
 * C programming: A Modern Approach. Chapter 03, Project 02
 * Date: January 2023
 * Author: ffstlln
-* Description: Formats product information enteres by the user
+* Description: Formats product information entered by the user
 */
 
 #include<stdio.h>

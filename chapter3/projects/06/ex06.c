@@ -3,7 +3,7 @@
 * Date: January 2023
 * Author: ffstlln
 * Description: Modification of the Section 3.2 addfrac.c program to allow 
-* entering both fractions at the same time
+* entering two fractions separated by a plus sign
 */
 
 #include <stdio.h>
