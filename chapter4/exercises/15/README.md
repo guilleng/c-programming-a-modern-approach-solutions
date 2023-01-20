@@ -10,6 +10,6 @@ Give the values of `i` and `j` after each of the following expression statements
 ---
 
 (a) `3 2`  
-(b) `0 2`
-(c) `1 2`
-(d) `1 3`
+(b) `0 2`  
+(c) `1 2`  
+(d) `1 3`  

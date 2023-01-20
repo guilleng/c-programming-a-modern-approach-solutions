@@ -7,6 +7,8 @@ What is the value of each of the following expressions in C89? (Give all possibl
 (c) `8 % -5`  
 (d) `-8 % -5`  
 
+---
+
 Q&A Page 66 clarifies the remainder operator. 
 
 > "... the goal is to ensure that the value of `(a /b) * b + a % b` is equal to `a`..."  

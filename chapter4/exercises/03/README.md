@@ -9,7 +9,9 @@ What is the value of the following expressions in C89? (Give all possible values
 
 ---
 
-(a) `1`
-(b) `-1` or `-2`
-(c) `-1` or `-2`
-(d) `1` or `2`
+(a) `1`  
+(b) `-1` or `-2`  
+(c) `-1` or `-2`  
+(d) `1` or `2`  
+
+For a detailed explanation see exercise 2.

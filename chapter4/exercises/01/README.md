@@ -13,7 +13,7 @@ Show the output produced by each of the following program fragments. Assume that
 
 ---
 
-Following a step by step fashion, evaluation of the arguments given to `printf` is:   
+Following a step by step fashion while respecting operator precedence and asociativity, evaluation of the arguments given to `printf` is:   
 
 (a)
 ```
