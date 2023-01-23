@@ -32,6 +32,7 @@ Under the __C99__ standard, the expression `(-i)/j` __is equivalent__ to `-(i/j)
 > > `(-i)` will be evaluated first in due to operator precedence.  
 > > Being `i` a non-negative integer, the result of applying the unary operator `-` to `i` will yield a negative integer `v`.  
 > > Evaluation procedes with the division `v/j`. Being `v` negative and `j` non-negative, the result of evaluating this quotient will be a negative value that may be __rounded up or down__ depending upon __implementation-defined__ details.  
+> > 
 > > For the expression `-(i/j)`:  
 > >
 > > The quotient `(i/j)` will be __down rounded__ to a value `v`.  
