@@ -12,4 +12,4 @@ Item             Unit            Purchase
 583              $  13.50        10/24/2010
 ```
 
-The item number and date sould be left justifies; the unit price should be rigth justified. Allow dollar amounts up to $9999.99. Hint: Use tabs to line up the columns.  
+The item number and date sould be left justifies; the unit price should be rigth justified. Allow dollar amounts up to $9999.99. _Hint_: Use tabs to line up the columns.  

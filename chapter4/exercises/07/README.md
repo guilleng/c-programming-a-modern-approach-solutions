@@ -14,4 +14,5 @@ Why doesn't this techninque work?
 The original algorithm's statement is: `9 - ((total -1) % 10)`  
 The simplified statement has the form: `10 - ((total / 10) % 10)`
 
-Besides allowing a check digit of 10, the statements do not produce the same output given the same input.  
+The simplified statement may output a check digit of 10.  
+The statements do not produce the same output given the same input.  
