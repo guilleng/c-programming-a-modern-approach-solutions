@@ -7,4 +7,5 @@ The file `dweight-no-spaces.c` contains only the essential spaces.
 
 + The end of line at the `include` directive is essential for program compilation.  
 + The space between `int` and `main`.   
-+ The space between `int` and the variables declarations and after the `return` statement.  
++ The space between `int` and the variables declarations.
++ The space between `return` and `0`.

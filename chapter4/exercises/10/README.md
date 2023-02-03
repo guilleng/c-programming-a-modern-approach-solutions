@@ -30,29 +30,29 @@ printf("%d %d", i, j);
 ---
 
 (a) 
-The first operation of the statement to be evaluated is the compound assignment. `6` is fetched from `i` and added to itself, yielding `12`. It is followed by an assignment between `i` and `12`. This operation evaluates to `12` and stores, as a side effect, its result in `i`.  
-The next operation is an assignment between `j` and `i`, which retrieves `12` from `i`, evaluate to `12` and as a side effect stores the value `12` in `j`.  
+In the second line of code, the compound assignment has the highest precedence . `6` is fetched from `i` and added to itself, yielding `12`. Next, `12` is assigned to `i`.  
+It follows an assignment between `j` and `i`, which retrieves `12` from `i`, evaluates to `12` and as a side effect stores this  value in `j`.  
 
 Output: `12 12`
 
 (b) 
-The parenthesized operation will be evaluated first. Being it a compound statement, it will retireve the value `5` from `i` and substract `2` from it yielding `3`. It is followed by an assignment between `i` and `3`. This will evaluate to `3` and as a side effect, store it in `i`.  
-The next operation is a binary addition between the result of the compound assignment evaluation and `1`, yielding `4`.  
-Finally an assignment between `j` and `4`. This expression will evaluate to `4` and as a side effect store `4` in `j`.   
+The parenthesized operation is evaluated first. Being it a compound statement, it will retrieve the value `5` from `i` and subtract `2` from it yielding `3`. It follows an assignment between `i` and `3`. This evaluates to `3` and as a side effect, stores it in `i`.  
+The next operation is an addition between `3` and `1`, yielding `4`.  
+Finally, an assignment between `j` and `4` takes place. This expression will evaluate to `4` and as a side effect store it in `j`.  
 
-Output: `3 4`   
+Output: `3 4`  
 
 (c) 
-The parenthesized operation is evaluated first. It is an assignment between `i` and `2.5`. Because `i` is of type `int` the value `2.5` will be converted to this type, yielding `2`. Next, the assignment will evaluate to `2` and store this value in `i` as a side effect.  
-An addition between `6` and `2` takes place, yielding `8`.  
-Finally an assignment between `j` and `8` evaluates to `8` and stores it in `j` as a side effect.  
+The parenthesized operation is evaluated first. Because `i` is of type `int` the value `2.5` will be converted to this type. The assignment yields the value `2` and stores it  in `i` as a side effect.  
+The binary addition between `6` and `2` takes place, yielding `8`.  
+Finally, an assignment between `j` and `8` evaluates to `8` and stores it in `j` as a side effect.  
 
 Output: `2 8`  
 
 (d) 
-Parenthesized expression are evaluated from left to right. An assignment between `i` and `6` takes place. This evaluates to `6` and stores it in `i` as a side effect.  
-It follows an assignment between `j` and `3`. Which evaluates to `3` and stores it in `j` as a side effect.  
-The addition of the evaluation results of the previous expressions yields `9`. 
+As parenthesized expressions are evaluated from left to right, the assignment between `i` and `6` takes place. This evaluates to `6` and stores it in `i` as a side effect.  
+It follows the assignment between `j` and `3`. Which evaluates to `3` and stores it in `j` as a side effect.  
+The addition of the evaluation results of the previous expressions yields `9`.  
 Finally, an assignment between `j` and `9` evaluates to `9` and stores it in `j`.  
 
 Output: `6 9`  

@@ -25,7 +25,7 @@ printf("%d", i < j || k);
 
 ---
 
-We will focus on the second argument of each printf call, and outline evaluation in a step by step manner:
+While focusing on the second argument of the `printf` call, its evaluation may be outlined as follows:  
 
 (a)
 ```

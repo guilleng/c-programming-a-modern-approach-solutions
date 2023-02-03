@@ -26,17 +26,17 @@ int main(void)
                 case 2:
                     printf("You entered the number twelve"); break;
                 case 3:
-                    printf("You entered the number thirten"); break;
+                    printf("You entered the number thirteen"); break;
                 case 4:
-                    printf("You entered the number fourten"); break;
+                    printf("You entered the number fourteen"); break;
                 case 5:
                     printf("You entered the number fifteen"); break;
                 case 6:
                     printf("You entered the number sixteen"); break;
                 case 7:
-                    printf("You entered the number seventn"); break;
+                    printf("You entered the number seventeen"); break;
                 case 8:
-                    printf("You entered the number eighten"); break;
+                    printf("You entered the number eighteen"); break;
                 case 9:
                     printf("You entered the number nineteen"); break;
                 default: break;

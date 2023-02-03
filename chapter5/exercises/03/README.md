@@ -29,19 +29,25 @@ printf("%d %d %d", i, j, k);
 
 ---
 
-(a) We have to analyze first the result of evaluation of the first `printf` call. But even though the prefix increment operator `++j` has higher precedence than the logical OR operator `||`, the short-circuit behavior forces left-to-right evaluation. The left-hand side of the OR operator, `i < j`, evaluates to `1`. Then the right-hand side `++j < k` is not evaluated and the value of `j` is not incremented. 
+The key to determining the outputs of the program fragments above lies in understanding short-circuit behavior.  
+Even though an expression may contain symbols whose precedence is higher than the operators`||` and `&&`, short-circuit behavior __always__ forces left-to-right evaluation.  
+
+`||` evaluates to `1` whenever a non-zero value forms part of the expression, and `&&` when a `0` is evaluated.  
+
+Focus is placed on the second argument of the first `printf` call.   
+
+(a) The left-hand side of the OR operator, `i < j`, evaluates to `1`, the right-hand side `++j < k` is not evaluated.  
 
 Output: `1 3 4 5`
 
-(b) In the same line as the behavior of (b), because `i - 7` evaluates to `0`, short-circuit behavior takes precedence. The righ-hand side of the expression is not evaluated and `j` is not incremented.
+(b) `i - 7` evaluates to `0` the right-hand side of the expression is not evaluated and `j` is not incremented.
 
 Output: `0 7 8 9`
 
-(c) The left-hand assignment in the `printf` call evaluates to `8`. The righ-hand assignment will not take place because short-circuit behavior determines that the OR evaluation concludes as `1` immediately.  
+(c) The left-hand assignment in the `printf` call evaluates to `8`. Short-circuit behavior determines that the OR evaluation is `1`.  
 
 Output: `1 8 8 9`
 
-(d) The left-hand side of the OR operator must be evaluated first.  
-`++i` evaluates to `2` and updates `i`. Short circuit behavior determines that the rest of the expression will not be evaluated.  
+(d) The left-hand side of the OR operator `++i` evaluates to `2` and updates `i`. The argument of `printf` evaluates to `1`. The rest of the expression is not evaluated.  
 
 Output: `1 2 1 1`

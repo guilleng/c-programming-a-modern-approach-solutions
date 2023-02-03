@@ -17,4 +17,4 @@ else                   else
 
 ---
 
-Yes the statements are equivalent. The `else` clause is key for this equivalence to be true.  
+The statements are equivalent.  
