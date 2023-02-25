@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 02, project 05
-* Date: January 2023
-* Author: ffstlln
-* Description: Evaluates a polynomial.
-*/
+ * C programming: A Modern Approach. Chapter 02, project 05
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Evaluates a polynomial.
+ */
 
 #include <stdio.h>
 

@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 04, Project 03
-* Date: January 2023
-* Author: ffstlln
-* Description: Reverses a three-digit number without using arithmetic
-*/
+ * C programming: A Modern Approach. Chapter 04, Project 03
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Reverses a three-digit number without using arithmetic.
+ */
 
 #include<stdio.h>
 

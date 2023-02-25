@@ -1,9 +1,10 @@
 /*
-* C programming: A Modern Approach. Chapter 06, Project 02
-* Date: February 2023
-* Author: ffstlln
-* Description: Calculates and displays the greatest common divisor of two ints.
-*/
+ * C programming: A Modern Approach. Chapter 06, Project 02
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Calculates and displays the greatest common divisor of two 
+ *              integers.
+ */
 
 #include <stdio.h>
 
@@ -13,7 +14,6 @@ int main(void)
 
     printf("Enter two integers: ");
     scanf("%d %d", &m, &n);
-
 
     while(1)
     {
@@ -29,6 +29,5 @@ int main(void)
     }
 
     printf("Greatest common divisor: %d", gcd);
-
     return 0;
 }

@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 06
-* Date: February 2023
-* Author: ffstlln
-* Description: prints the sizes in bytes (and bits) of different data types
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 06
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Prints the sizes in bytes (and bits) of different data types.
+ */
 
 #include <stdio.h>
 

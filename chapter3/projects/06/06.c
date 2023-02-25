@@ -1,10 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 03, Project 06
-* Date: January 2023
-* Author: ffstlln
-* Description: Modification of the Section 3.2 addfrac.c program to allow 
-* entering two fractions separated by a plus sign
-*/
+ * C programming: A Modern Approach. Chapter 03, Project 06
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Adds two fractions.
+ */
 
 #include <stdio.h>
 
@@ -16,7 +15,8 @@ int main(void)
     scanf("%d / %d + %d / %d", &num1, &denom1, &num2, &denom2);
 
 
-    printf("The sum is %d/%d\n", num1 * denom2 + num2 * denom1, denom1 * denom2);
+    printf("The sum is %d/%d\n", 
+            num1 * denom2 + num2 * denom1, denom1 * denom2);
 
     return 0;
 }

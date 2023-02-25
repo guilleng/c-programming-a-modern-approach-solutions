@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 03, Project 01
-* Date: January 2023
-* Author: ffstlln
-* Description: Prompts user for a date and prints it reformatted.
-*/
+ * C programming: A Modern Approach. Chapter 03, Project 01
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Prompts user for a date and prints it reformatted.
+ */
 
 #include<stdio.h>
 

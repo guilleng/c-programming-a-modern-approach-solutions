@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 03
-* Date: February 2023
-* Author: ffstlln
-* Description: sums a series of user inputted numbers
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 03
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Sums a series of user inputted numbers.
+ */
 
 #include <stdio.h>
 

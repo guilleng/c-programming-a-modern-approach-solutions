@@ -1,10 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 03, exercise 06
-* Date: January 2023
-* Author: ffstlln
-* Description: Modification of addfrac.c (Ch. 3 - Page 46) for different user 
-* input.
-*/
+ * C programming: A Modern Approach. Chapter 03, exercise 06
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Adds two fractions.
+ */
 
 #include <stdio.h>
 

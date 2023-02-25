@@ -1,10 +1,10 @@
 /*
-* C programming: A Modern Approach. Chapter 06, Project 09
-* Date: February 2023
-* Author: ffstlln
-* Description: Modification of Project 08 form Chapter 02 that prompts the user
-*              for number of payments and then displays the balance remaining
-*/
+ * C programming: A Modern Approach. Chapter 06, Project 09
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Given a loan, an interest rate, a monthly payment and the number
+ *              of payments, displays the balance remaining.
+ */
 
 #include <stdio.h>
 

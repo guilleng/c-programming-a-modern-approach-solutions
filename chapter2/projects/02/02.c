@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 02, project 02
-* Date: January 2023
-* Author: ffstlln
-* Description: Computes the volume of a 10-meter radius sphere.
-*/
+ * C programming: A Modern Approach. Chapter 02, project 02
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Computes the volume of a 10-meter radius sphere.
+ */
 
 #include <stdio.h>
 

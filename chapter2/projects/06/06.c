@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 02, project 05
-* Date: January 2023
-* Author: ffstlln
-* Description: Modification of Project 5 using Horner's Rule.
-*/
+ * C programming: A Modern Approach. Chapter 02, project 06
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: evaluates a polynomial using Horner's Rule.
+ */
 
 #include <stdio.h>
 

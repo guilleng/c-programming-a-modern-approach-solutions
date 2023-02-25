@@ -1,17 +1,16 @@
 /*
-* C programming: A Modern Approach. Chapter 02, project 07
-* Date: January 2023
-* Author: ffstlln
-* Description: Decomposes a dollar ammount into the smallest number of number 
-* of $20, $10, $5 and $1 bills.
-*/
+ * C programming: A Modern Approach. Chapter 02, project 07
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Decomposes a dollar amount into the smallest number of number 
+ *              of $20, $10, $5 and $1 bills.
+ */
 
 #include <stdio.h>
 
 int main(void)
 {
     int total;
-
 
     printf("Enter a dollar amount: ");
     scanf("%d", &total);
@@ -26,7 +25,6 @@ int main(void)
     total = total - (total / 5) * 5;
 
     printf("$ 1 bills: %d\n", total);
-    
 
     return 0;
 }

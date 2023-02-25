@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 04, Project 05
-* Date: January 2023
-* Author: ffstlln
-* Description: New version of upc.c (section 4.1) that reads input all at once
-*/ 
+ * C programming: A Modern Approach. Chapter 04, Project 05
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Computes a Universal Product Code check digit.
+ */ 
 
 #include<stdio.h>
 

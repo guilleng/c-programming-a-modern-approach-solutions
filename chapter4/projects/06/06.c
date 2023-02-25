@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 04, Project 06
-* Date: January 2023
-* Author: ffstlln
-* Description: Given an European Article Number, computes the check digit 
-*/
+ * C programming: A Modern Approach. Chapter 04, Project 06
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Given an European Article Number, computes the check digit.
+ */
 
 #include<stdio.h>
 
@@ -21,6 +21,5 @@ int main(void)
     total = 3 * first_sum + second_sum;
 
     printf("Check digit: %d\n", 9 - ((total -1) % 10));
-
     return 0;
 }

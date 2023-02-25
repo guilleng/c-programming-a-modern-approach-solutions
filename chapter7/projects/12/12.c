@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 12
-* Date: February 2023
-* Author: ffstlln
-* Description: evaluates a basic arithmetic expression
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 12
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Evaluates a basic arithmetic expression.
+ */
 
 #include <stdio.h>
 

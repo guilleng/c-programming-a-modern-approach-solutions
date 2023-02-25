@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 06, Project 07
-* Date: February 2023
-* Author: ffstlln
-* Description: Prints a table of squares
-*/
+ * C programming: A Modern Approach. Chapter 06, Project 07
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Prints a table of squares.
+ */
 
 #include <stdio.h>
 

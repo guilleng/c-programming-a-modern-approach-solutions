@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 05, Project 10
-* Date: January 2023
-* Author: ffstlln
-* Description: Converts a numerical grade into a letter grade
-*/
+ * C programming: A Modern Approach. Chapter 05, Project 10
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Converts a numerical grade into a letter grade.
+ */
 
 #include <stdio.h>
 
@@ -15,7 +15,9 @@ int main(void)
     scanf("%d", &grade);
 
     if (grade > 100 || grade < 0)
+    {
         grade = -10;
+    }
 
     switch (grade / 10)
     {
@@ -38,6 +40,5 @@ int main(void)
             printf("out of range (0-100)");
             break;
     }
-
     return 0;
 }

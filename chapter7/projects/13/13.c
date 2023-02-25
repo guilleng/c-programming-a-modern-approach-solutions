@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 13
-* Date: February 2023
-* Author: ffstlln
-* Description: calculates the average word length in a sentence
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 13
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Calculates the average word length in a sentence. 
+ */
 
 #include <stdio.h>
 

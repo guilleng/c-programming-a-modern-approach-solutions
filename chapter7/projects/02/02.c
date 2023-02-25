@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 02
-* Date: February 2023
-* Author: ffstlln
-* Description: square2.c modification that pauses every 24 squares printed
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 02
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Prints a table of squares and pauses every 24 rows printed.
+ */
 
 #include <stdio.h>
 

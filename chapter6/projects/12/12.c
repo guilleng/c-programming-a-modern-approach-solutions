@@ -1,9 +1,10 @@
 /*
-* C programming: A Modern Approach. Chapter 06, Project 12
-* Date: February 2023
-* Author: ffstlln
-* Description: Approximates e using Taylor series using an epsilon cutoff
-*/
+ * C programming: A Modern Approach. Chapter 06, Project 12
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Approximates Euler's number using Taylor series up to an epsilon 
+ *              cutoff.
+ */
 
 #include <stdio.h>
 
@@ -37,7 +38,5 @@ int main(void)
 
     printf("1 + 1/1! + 1/2! + ... + 1/n! = %g\n", e);
     printf("Number of terms : %d\n", n - 1);
-
     return 0;
-
 }

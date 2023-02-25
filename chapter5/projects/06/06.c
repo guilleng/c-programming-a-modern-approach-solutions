@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 05, Project 06
-* Date: January 2023
-* Author: ffstlln
-* Description: Verifies an UPC code
-*/
+ * C programming: A Modern Approach. Chapter 05, Project 06
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Verifies an UPC code.
+ */
 
 #include<stdio.h>
 
@@ -24,9 +24,13 @@ int main(void)
     total = 3 * first_sum + second_sum;
 
     if ((9 - ((total -1) % 10)) == check)
+    {
         printf("VALID");
+    }
     else
+    {
         printf("NOT VALID");
+    }
 
     return 0;
 }

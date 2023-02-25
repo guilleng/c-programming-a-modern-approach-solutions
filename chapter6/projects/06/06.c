@@ -2,7 +2,7 @@
 * C programming: A Modern Approach. Chapter 06, Project 06
 * Date: February 2023
 * Author: ffstlln
-* Description: Prints all even squares between 1 and inputted number
+* Description: Prints all even squares up to an user inputted number.
 */
 
 #include <stdio.h>

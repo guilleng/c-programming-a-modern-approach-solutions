@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 02, exercise 04
-* Date: January 2023
-* Author: ffstlln
-* Description: Declaring variables without initializing and observing behavior
-*/
+ * C programming: A Modern Approach. Chapter 02, exercise 04
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Observing behavior of uninitialized variables.
+ */
 
 #include <stdio.h>
 

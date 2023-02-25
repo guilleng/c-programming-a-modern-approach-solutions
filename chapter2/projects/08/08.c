@@ -1,10 +1,10 @@
 /*
-* C programming: A Modern Approach. Chapter 02, project 08
-* Date: January 2023
-* Author: ffstlln
-* Description: Calculates remaining balance of a loan after the 1st, 2nd and 
-* 3rd monthly payments.
-*/
+ * C programming: A Modern Approach. Chapter 02, project 08
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Calculates remaining balance of a loan after the 1st, 2nd and 
+ *              3rd monthly payments.
+ */
 
 #include <stdio.h>
 

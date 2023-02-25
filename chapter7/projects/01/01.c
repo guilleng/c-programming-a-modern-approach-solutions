@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 01
-* Date: February 2023
-* Author: ffstlln
-* Description: Modifications to square2.c for testing overflow conditions
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 01
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Modifications to square2.c for testing overflow conditions.
+ */
 
 #include <stdio.h>
 

@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 04, Project 01
-* Date: January 2023
-* Author: ffstlln
-* Description: Reverses a two-digit number
-*/
+ * C programming: A Modern Approach. Chapter 04, Project 01
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Reverses a two-digit number.
+ */
 
 #include<stdio.h>
 

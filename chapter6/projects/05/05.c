@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 06, Project 05
-* Date: February 2023
-* Author: ffstlln
-* Description: Reverses an integer number
-*/
+ * C programming: A Modern Approach. Chapter 06, Project 05
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Reverses an integer number.
+ */
 
 #include<stdio.h>
 

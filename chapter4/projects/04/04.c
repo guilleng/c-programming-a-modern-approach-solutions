@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 04, Project 04
-* Date: January 2023
-* Author: ffstlln
-* Description: Changes a base 10 number to base 8
-*/
+ * C programming: A Modern Approach. Chapter 04, Project 04
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Changes a base 10 number to base 8.
+ */
 
 #include <stdio.h>
 

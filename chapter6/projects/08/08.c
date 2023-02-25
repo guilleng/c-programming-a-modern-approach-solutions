@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 06, Project 08
-* Date: February 2023
-* Author: ffstlln
-* Description: Prints a one month calendar 
-*/
+ * C programming: A Modern Approach. Chapter 06, Project 08
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Prints a one month calendar.
+ */
 
 #include <stdio.h>
 
@@ -30,7 +30,9 @@ int main(void)
         {
             printf("%3d", i++);
             if (j % 7 == 0)
+            {
                 printf("\n");
+            }
         }
     }
 

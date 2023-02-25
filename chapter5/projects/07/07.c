@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 05, Project 07
-* Date: January 2023
-* Author: ffstlln
-* Description: Finds the largest and smallest of four integers
-*/
+ * C programming: A Modern Approach. Chapter 05, Project 07
+ * Date: January 2023
+ * Author: ffstlln
+ * Description: Finds the largest and smallest of four integers.
+ */
 
 #include <stdio.h>
 
@@ -39,6 +39,6 @@ int main(void)
     printf("Largest: %d\nSmallest: %d\n", 
             max2 > max1 ? max2 : max1,
             min1 < min2 ? min1 : min2);
-        
+
     return 0;
 }

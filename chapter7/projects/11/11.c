@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 11
-* Date: February 2023
-* Author: ffstlln
-* Description: contracts a first and last name string
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 11
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Contracts a first and last name string.
+ */
 
 #include <stdio.h>
 

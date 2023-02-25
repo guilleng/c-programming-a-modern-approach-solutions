@@ -1,9 +1,9 @@
 /*
-* C programming: A Modern Approach. Chapter 07, Project 07
-* Date: February 2023
-* Author: ffstlln
-* Description: performs basic fraction arithmetic
-*/
+ * C programming: A Modern Approach. Chapter 07, Project 07
+ * Date: February 2023
+ * Author: ffstlln
+ * Description: Performs basic fraction arithmetic.
+ */
 
 #include <stdio.h>
 
