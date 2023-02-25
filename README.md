@@ -6,7 +6,8 @@ Solutions to exercises and programming projects in K. N. King's "C Programming a
 
 ## Purpose
 
-The purpose of this repository is to track and document personal progress while working through the book "C Programming a Modern Approach" by K. N. King. It additionally may serve as a reference for other learners who are using the same material. The author welcomes feedback and suggestions for improvements, including corrections for code, solutions, spelling, and grammar errors.
+The purpose of this repository is mainly to track and document personal progress while working through the book "C Programming a Modern Approach" by K. N. King. It is also used as an opportunity to get familiar with version control basic usage and may serve as a reference for other learners who are using the same study material. 
+The author welcomes feedback and suggestions for improvements, including best practices using GitHub, corrections for code, solutions, spelling, and grammar errors.  
 
 ## Setup
  
