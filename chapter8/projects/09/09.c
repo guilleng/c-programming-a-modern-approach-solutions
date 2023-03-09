@@ -20,7 +20,7 @@ int main(void)
 {
     char grid[SIZE][SIZE] = { 0 },
          ch = 'A';              // current character
-    bool move[3];               // valid movements { right, up, left, down }
+    bool move[4];               // valid movements { right, up, left, down }
     int i = 0,                  // position tracking
         j = 0;
 
@@ -33,8 +33,8 @@ int main(void)
             grid[i][j] = '.';
         }
     }
-//  grid[i][j] = ch;
 
+    grid[i][j] = ch;
     while(ch <'Z') 
     {
         move[RIGHT] = (j + 1 < SIZE && grid[i][j + 1] == '.') ? true : false;
@@ -48,7 +48,7 @@ int main(void)
         }
 
         switch(rand() % 4)
-        {                           // intentional fall through
+        {
             case RIGHT:
                 if(move[RIGHT])
                 {
@@ -56,6 +56,8 @@ int main(void)
                     grid[i][j] = ch;
                     break;
                 }
+                /* marker comments suppress fall-through warnings in GCC */
+                /* fall through */
             case UP:
                 if(move[UP])
                 {
@@ -63,6 +65,7 @@ int main(void)
                     grid[i][j] = ch;
                     break;
                 }
+                /* fall through */
             case LEFT:
                 if(move[LEFT])
                 {
@@ -70,6 +73,7 @@ int main(void)
                     grid[i][j] = ch;
                     break;
                 }
+                /* fall through */
             case DOWN:
                 if(move[DOWN])
                 {
@@ -77,17 +81,11 @@ int main(void)
                     grid[i][j] = ch;
                     break;
                 }
+                /* fall through */
             default:
                 break;
         }
     }
-
-    grid[0][0] = 'A'; 
-/* 
- * The line above was originally placed at line 36. But the output generated is
- * incorrect if this is the case. The 'A' character gets 'lost'. 
- * I've been unable to trace the bug.  
- */
 
     for(int i = 0; i < SIZE; i++)
     {
