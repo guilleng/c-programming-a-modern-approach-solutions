@@ -4,9 +4,6 @@ If `i` and `j` are positive integers, does `(-i)/j` always have the same value a
 
 ---
 
-Page 54 reads: 
-> "The C89 standard states that if either operand is negative, the result of a division can be rounded either up or down... it depends on the implementation... In C99, on the other hand, the result of a division is always truncated toward zero."  
-
 Exploring evaluation under the C99 standard, we observe:
 
 1. For the expression `(-i)/j`: 

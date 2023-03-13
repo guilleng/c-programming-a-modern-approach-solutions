@@ -15,3 +15,5 @@ Repeat Exercise 3 for C99.
 (b) `-1`  
 (c) `-1`  
 (d) `1`  
+
+For a detailed explanation see exercise 2.

@@ -29,10 +29,10 @@ printf("%d %d", i, j);
 
 ---
 
-The key is to focus on the second statement applying the operator precedence rules.  
+The key is to focus on the second statement while applying the operator precedence rules.  
 
 (a) 
-`++i` is a prefix incrementation that will fetch `5` from `i`, increment it and update `i`.  
+`++i` is a prefix incrementation that will fetch `5` from `i`, incrementing and updating `i` immediately.  
 The multiplication between `6` and `3` evaluates to `18`.  
 Subtracting `2` from `18` yields `16`.  
 The assignment `j = 16` takes places. It evaluates to `16` and as a side effect stores it in `j`.  

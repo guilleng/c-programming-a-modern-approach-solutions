@@ -29,7 +29,7 @@ printf("%d %d %d", i, j, k);
 
 ---
 
-Applying the precedence and association rules for evaluation of statements, allows the inference of the outputs of the program fragments:  
+By applying the precedence and association rules for the evaluation of statements and expressions, it is possible to infer the outputs of the program fragments:  
 
 (a) 
 The first line of statements perform assignations.  
@@ -40,8 +40,8 @@ Output: `63 8`.
 
 (b) 
 The first statement results in storing the value `1` in `i`, `j` and `k`. 
-Next, the value `1` is retrieved from `k` and `j`. After the addition an assignment `j = 2` follows.   
-For the compound assignment `i += j` `1` is retrieved from `i` and `2` from `j`. After their addition and assignment `i = 3` will evaluate to `3` storing this value as a side effect in `i`.  
+Next, the value `1` is retrieved from `k` and `j`. After the addition of `1` and `1`, an assignment `j = 2` follows.   
+For the compound assignment `i += j`, `1` is retrieved from `i` and `2` from `j`. After their addition, the assignment `i = 3` will evaluate to `3` storing this value as a side effect in `i`.  
 
 Output: `3 2 1`.
 

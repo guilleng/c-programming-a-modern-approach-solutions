@@ -9,16 +9,20 @@ What is the value of each of the following expressions in C89? (Give all possibl
 
 ---
 
-Q&A Page 66 clarifies the remainder operator. 
+The remainder operator works as follows: 
 
-> "... the goal is to ensure that the value of `(a /b) * b + a % b` is equal to `a`..."  
+> "... the goal is to ensure that the value of `(a / b) * b + a % b` is equal to `a`..."  
 
-Given that integer division for negatives is implementation defined, applying the rules we obtain:
+Taking into account that integer division may be implementation defined, the expressions are valued as:
 
-(a) `3`
+(a) 
+`3`
 
-(b) We have to ensure the equality `(-8 / 5) * 5 + -8 % 5 == -8`  
-But `(-8/5)` can be either `-1` or `-2` depending upon implementation.   
+(b) 
+Ensuring the equality `(-8 / 5) * 5 + -8 % 5 == -8`  
+
+`(-8/5)` can be either `-1` or `-2` depending upon implementation.   
+
 ```
 (-1 || -2) * 5 + -8 % 5 == -8
 
@@ -28,10 +32,14 @@ But `(-8/5)` can be either `-1` or `-2` depending upon implementation.
    -10         + -8 % 5 == -8 
                  -8 % 5 ==  2  
 ```
+
 Possible results: `2` and `-3`.
 
-(c) We have to ensure the equality `(8 / -5) * 5 + -8 % 5 == 8`  
+(c) 
+The goal is to ensure `(8 / -5) * 5 + -8 % 5 == 8`  
+
 But `(8/-5)` can be again either `-1` or `-2`.  
+
 ```
 (-1 || -2) * -5 + 8 % -5 ==  8  
 
@@ -41,10 +49,14 @@ But `(8/-5)` can be again either `-1` or `-2`.
     10          + 8 % -5 ==  8
                   8 % -5 == -2
 ```
+
 Possible results: `3` and `-2`.
 
-(d) We have to ensure the equality `(-8 / -5) * -5 + -8 % -5 == -8`  
-But `(-8/-5)` can be either `1` or `2` depending upon implementation.   
+(d) 
+Ensuring the equality `(-8 / -5) * -5 + -8 % -5 == -8`  
+
+`(-8/-5)` can be either `1` or `2` depending upon implementation.   
+
 ```
 (1  ||  2) * -5 + -8 % -5 == -8
 
@@ -54,4 +66,5 @@ But `(-8/-5)` can be either `1` or `2` depending upon implementation.
    -10          + -8 % -5 == -8
                   -8 % -5 ==  2
 ```
+
 Possible results: `-3` and `2`.

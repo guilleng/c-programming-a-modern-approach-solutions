@@ -10,7 +10,7 @@ Repeat Exercise 5 for C99.
 
 ---
 
-There is no ambiguity for the given expressions if the program containing them is compiled under the C99 standard.    
+If the source code containing the expressions is to be compiled under the C99 standard, there is no ambiguity.
 
 (a) 3  
 (b) -3  

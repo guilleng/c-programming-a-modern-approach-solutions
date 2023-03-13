@@ -56,6 +56,6 @@ The utmost left postfix incrementation has the highest precedence. Its evaluatio
 Then for the postfix incrementation of `j`. `4` is retrieved from it.  
 Now the prefix decrement of `k` evaluates to `4` and immediately updates `k`. 
 The evaluation of `3 - 4 + 4` is the argument for the first `printf` call. 
-After the call returns we can assume that `i = 4` and `j = 5`.  
+After the call returns it is safe to assume that `i = 4` and `j = 5`.  
 
 Output: `3 4 5 4`
