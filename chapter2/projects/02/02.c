@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 02, project 02
  * Date: January 2023
- * Author: ffstlln
  * Description: Computes the volume of a 10-meter radius sphere using both 
  *              floating point and integral division.
  */

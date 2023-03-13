@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 02, project 06
  * Date: January 2023
- * Author: ffstlln
- * Description: evaluates a polynomial using Horner's Rule.
+ * Description: Evaluates a polynomial using Horner's Rule.
  */
 
 #include <stdio.h>

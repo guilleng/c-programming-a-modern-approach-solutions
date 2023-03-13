@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 02, project 04
  * Date: January 2023
- * Author: ffstlln
  * Description: Adds 5% tax to inputted amount.
  */
 

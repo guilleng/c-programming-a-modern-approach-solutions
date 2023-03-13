@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 03, Project 03
  * Date: January 2023
- * Author: ffstlln
  * Description: Breaks down an ISBN entered by the user.
  */
 

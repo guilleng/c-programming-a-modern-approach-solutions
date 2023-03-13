@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 03, Project 06
  * Date: January 2023
- * Author: ffstlln
  * Description: Adds two fractions.
  */
 

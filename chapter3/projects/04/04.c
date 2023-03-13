@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 03, Project 04
  * Date: January 2023
- * Author: ffstlln
  * Description: Prompts user for a telephone number and prints it reformatted.
  */
 

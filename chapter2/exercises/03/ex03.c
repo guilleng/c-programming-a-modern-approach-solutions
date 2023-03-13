@@ -1,7 +1,6 @@
 /*
  * Project: C programming: A Modern Approach. Chapter 02, exercise 03
  * Date: January 2023
- * Author: ffstlln
  * Description: Computes the dimensional weight of a 12" x 10" x 8" box.
  */
 
