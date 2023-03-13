@@ -1,11 +1,10 @@
 /*
  * C programming: A Modern Approach. Chapter 04, Project 06
  * Date: January 2023
- * Author: ffstlln
  * Description: Given an European Article Number, computes the check digit.
  */
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void)
 {

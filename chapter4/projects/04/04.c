@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 04, Project 04
  * Date: January 2023
- * Author: ffstlln
- * Description: Changes a base 10 number to base 8.
+ * Description: Outputs a base 10 number in base 8 using arithmetic.  
  */
 
 #include <stdio.h>

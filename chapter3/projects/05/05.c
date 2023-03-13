@@ -1,11 +1,11 @@
 /*
  * C programming: A Modern Approach. Chapter 03, Project 05
  * Date: January 2023
- * Description: Ask for user input, outputs as a 4x4 matrix and perform row
+ * Description: Asks for user input, outputs it as a 4x4 matrix and computes row
  *              column, and diagonal sums.
  */
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
