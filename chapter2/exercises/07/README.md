@@ -8,4 +8,6 @@ Which of the following are keywords in C?
 (d) `printf`  
 (e) `while`  
 
+---
+
 Both (a) and (e).  

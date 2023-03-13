@@ -1,6 +1,7 @@
 # Chapter 02 - Exercise 02
 
 Consider the following program:  
+
 ```
 #include <stdio.h>
 
@@ -12,11 +13,14 @@ int main(void)
     return 0;
 }
 ```
+
 (a) Identify the directives and statements in this program.  
 (b) What output does the program produces?  
 
-The program has one directive in line 1 and four statements in lines 5-8.  
-The output is:  
+--- 
+
+The program has 1 directive (line 1) and 4 statements (lines 5, 6, 7 and 8).  
+Its output is:  
 
 ```
 Parkinson's Law:

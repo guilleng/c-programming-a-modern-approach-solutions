@@ -2,7 +2,7 @@
  * C programming: A Modern Approach. Chapter 02, project 01
  * Date: January 2023
  * Author: ffstlln
- * Description: Prints a pattern on screen
+ * Description: Prints a pattern on screen.
  */
 
 #include <stdio.h>

@@ -2,9 +2,12 @@
 
 Write a program that declares several `int` and `float` variables--without initializing them--and then prints their values. Is there any pattern to the values?  
 
-Integers are all over the place, but floating point variables are all zero.  
+---
 
-Below is a resulting output of compiling and running `ex04.c`:  
+Integers are all over the place. Floating point variables are all zero.  
+
+Below an output of compiling and running `ex04.c`:  
+
 ```
 non-initialized integers:
 -1839202208
