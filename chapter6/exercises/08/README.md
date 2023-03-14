@@ -17,12 +17,12 @@ The update expression `i /= 2` is evaluated after the loop body, it divides the 
 
 The loop body contains a single call to `printf` that outputs the current value of `i` and increments it afterwards.  
 
-Once `i` is assigned `1` the loop's condition will always evaluate to `1`. The second argument of the `printf` call is the cause of the behavior.  
+Once `i` is assigned `1` the loop's condition will always evaluate to `1`. The second argument of the `printf` call is the cause of the behavior.   
 
-> Condition: `1 >= 1` evaluates to `1.   
-> Body loop: Output the string `1 ` and afterwards assign `2` to `i`.  
-> Update: `2 /= 2` evaluates to `1`.  
-> Condition: `1 >= 1` evaluates to `1.   
-> ....
+> Condition: `1 >= 1` evaluates to `1`.   
+> Body loop: Output the string `1` and afterwards assign `2` to `i`.   
+> Update: `2 /= 2` evaluates to `1`.    
+> Condition: `1 >= 1` evaluates to `1.     
+> ....   
 
 Output: `10 5 3 2 1 1 ...`

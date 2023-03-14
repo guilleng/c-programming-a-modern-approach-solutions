@@ -20,11 +20,11 @@ do {
 } while ( condition );
 ```
 
-For this piece of code the semantics for evaluation are:  
+For the given piece of code the semantics for evaluation are:  
 
 The first statement assigns the value `9384` to `i`.
 
-The __loop body__ has two statements. The `printf` call outputs the current value of `i`, and the compound division makes the value of `i` an order of magnitude less each time it is evaluated.  
+The __loop body__ has two statements. The `printf` call outputs the current value of `i`. The compound division makes the value of `i` an order of magnitude smaller.  
 
 The __condition__ is `i > 0` and as long as this evaluates to a non-zero value, the loop body will reiterate evaluation.  
 

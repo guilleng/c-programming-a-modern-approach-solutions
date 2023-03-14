@@ -9,7 +9,7 @@ if (n % 2 == 0);
 
 ---
 
-If this program's purpose is to evaluate the `printf` statement for even values of `n`, the `Null` statement following the `if` selection statement should not be present.   
+If this program's purpose is to evaluate the `printf` statement for even values of `n`, the `Null` statement following the selection statement should be removed.  
 
 ```
 if (n % 2 == 0)

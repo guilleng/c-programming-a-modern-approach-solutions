@@ -19,7 +19,7 @@ while ( condition )
 	loop body;
 ```
 
-For this piece of code the semantics for evaluation are:  
+For the given piece of code the semantics for evaluation are:  
 
 The first statement assigns the value `1` to `i`.
 
