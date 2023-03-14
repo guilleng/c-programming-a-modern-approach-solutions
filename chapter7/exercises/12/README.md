@@ -8,5 +8,5 @@ d = i + f;
 
 ---
 
-During addition on the right hand of the assignment, the integer is converted to a `float` type per the usual arithmetic conversion rules.  
-When the assignment takes place, the `float` value resulting of the addition is converted to the type of `d`, `double`.  
+For the addition on the right hand of the assignment, the integer is converted to a `float` type per the usual arithmetic conversion rules.  
+During assignment, the value on the right-hand side of the operator is converted to the type of the variable on the left-hand side of the operator. The `float` value yielded in the addition is converted to the type of `d`, `double`.

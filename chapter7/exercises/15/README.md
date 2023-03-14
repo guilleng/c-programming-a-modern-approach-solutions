@@ -4,11 +4,11 @@ Use `typedef` to create types names `Int8`, `Int16`, and `Int32`. Define the typ
 
 ---
 
-`sizeof(char)` is `1 byte = 8 bits`
+`sizeof(char)` is `1 byte = 8 bits`  
 Therefore: `typedef char Int8;`  
 
-`sizeof(short)` is `2 byte = 16 bits`
-Therefore: `typedef short Int16;`
+`sizeof(short)` is `2 bytes = 16 bits`  
+Therefore: `typedef short Int16;`  
 
-`sizeof(int)` is `4 byte = 32 bits`.   
+`sizeof(int)` is `4 bytes = 32 bits`  
 Therefore: `typedef int Int32;`  

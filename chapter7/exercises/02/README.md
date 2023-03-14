@@ -2,11 +2,11 @@
 
 Which of the following are not legal constants in C? Classify each legal constant as either integer or floating-point.
 
-(a) `010E2`
-(b) `32.1E+5`
-(c) `0790`
-(d) `100_000`
-(e) `3.987e-2`
+(a) `010E2`  
+(b) `32.1E+5`  
+(c) `0790`  
+(d) `100_000`  
+(e) `3.987e-2`  
 
 ---
 
@@ -18,7 +18,7 @@ The decimal number it represents has `1 * 10^1 + 0 * 10^0 = 10` as coefficient a
 Floating point(`double`) decimal constant, representing the number `32.1 * 10^5 = 3,210,000.0`.  
 
 (c)
-Illegal, `9` is an invalid digit in octal constants.  
+Illegal. Octal constants begin with a `0` and contain only digits between `0` and `7`. `9` is an invalid digit in octal constants.  
 
 (d)
 Illegal, `_` is not a valid character for a numeric constant.   
