@@ -11,7 +11,7 @@ int main(void)
 {
     float epsilon, 
           current_term,
-          e = 0.0f;
+          e = 1.0f;
 
     int factorial = 1, 
         n = 1;
@@ -19,8 +19,8 @@ int main(void)
     printf("Enter epsilon: ");
     scanf("%f", &epsilon);
 
-	while(1)
-	{
+    while(1)
+    {
         factorial *= n;
         current_term = 1.0f / factorial;
 
@@ -33,7 +33,7 @@ int main(void)
             n++;
             e += current_term;
         }
-	}
+    }
 
     printf("1 + 1/1! + 1/2! + ... + 1/n! = %g\n", e);
     printf("Number of terms : %d\n", n - 1);
