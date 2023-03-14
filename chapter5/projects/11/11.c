@@ -1,7 +1,6 @@
 /*
 * C programming: A Modern Approach. Chapter 05, Project 11
 * Date: January 2023
-* Author: ffstlln
 * Description: Displays as text a two-digit number.
 */
 
@@ -20,46 +19,47 @@ int main(void)
             switch (n % 10)
             {
                 case 0:
-                    printf("You entered the number ten"); break;
+                    printf("You entered the number ten.\n");       break;
                 case 1:
-                    printf("You entered the number eleven"); break;
+                    printf("You entered the number eleven.\n");    break;
                 case 2:
-                    printf("You entered the number twelve"); break;
+                    printf("You entered the number twelve.\n");    break;
                 case 3:
-                    printf("You entered the number thirteen"); break;
+                    printf("You entered the number thirteen.\n");  break;
                 case 4:
-                    printf("You entered the number fourteen"); break;
+                    printf("You entered the number fourteen.\n");  break;
                 case 5:
-                    printf("You entered the number fifteen"); break;
+                    printf("You entered the number fifteen.\n");   break;
                 case 6:
-                    printf("You entered the number sixteen"); break;
+                    printf("You entered the number sixteen.\n");   break;
                 case 7:
-                    printf("You entered the number seventeen"); break;
+                    printf("You entered the number seventeen.\n"); break;
                 case 8:
-                    printf("You entered the number eighteen"); break;
+                    printf("You entered the number eighteen.\n");  break;
                 case 9:
-                    printf("You entered the number nineteen"); break;
-                default: break;
+                    printf("You entered the number nineteen.\n");  break;
+                default: 
+                                                                  break;
             }
-            break;
+                                                            break;
         case 2:;
-            printf("You entered the number twenty"); break;
+            printf("You entered the number twenty");        break;
         case 3:
-            printf("You entered the number thirty"); break;
+            printf("You entered the number thirty");        break;
         case 4:
-            printf("You entered the number forty"); break;
+            printf("You entered the number forty");         break;
         case 5:
-            printf("You entered the number fifty"); break;
+            printf("You entered the number fifty");         break;
         case 6:
-            printf("You entered the number sixty"); break;
+            printf("You entered the number sixty");         break;
         case 7:
-            printf("You entered the number seventy"); break;
+            printf("You entered the number seventy");       break;
         case 8:
-            printf("You entered the number eighty"); break;
+            printf("You entered the number eighty");        break;
         case 9:
-            printf("You entered the number ninety"); break;
+            printf("You entered the number ninety");        break;
         default:
-            printf("out of range (10-99)");
+            printf("out of range (10-99)\n");
             return 1;
 
     }
@@ -68,24 +68,25 @@ int main(void)
         switch (n % 10)
         {
             case 1:
-                printf("-one"); break;
+                printf("-one.\n");       break;
             case 2:
-                printf("-two"); break;
+                printf("-two.\n");       break;
             case 3:
-                printf("-three"); break;
+                printf("-three.\n");     break;
             case 4:
-                printf("-four"); break;
+                printf("-four.\n");      break;
             case 5:
-                printf("-five"); break;
+                printf("-five.\n");      break;
             case 6:
-                printf("-six"); break;
+                printf("-six.\n");       break;
             case 7:
-                printf("-seven"); break;
+                printf("-seven.\n");     break;
             case 8:
-                printf("-eight"); break;
+                printf("-eight.\n");     break;
             case 9:
-                printf("-nine"); break;
-            default: break;
+                printf("-nine.\n");      break;
+            default: 
+                printf(".\n");      break;
         }
     }
     return 0;

@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 05, Project 10
  * Date: January 2023
- * Author: ffstlln
  * Description: Converts a numerical grade into a letter grade.
  */
 
@@ -22,22 +21,22 @@ int main(void)
     switch (grade / 10)
     {
         case 10: case 9:
-            printf("Letter grade: A");
+            printf("Letter grade: A\n");
             break;
         case 8: 
-            printf("Letter grade: B");
+            printf("Letter grade: B\n");
             break;
         case 7: 
-            printf("Letter grade: C");
+            printf("Letter grade: C\n");
             break;
         case 6: 
-            printf("Letter grade: D");
+            printf("Letter grade: D\n");
             break;
         case 5: case 4: case 3: case 2: case 1: case 0:
-            printf("Letter grade: F");
+            printf("Letter grade: F\n");
             break;
         default:
-            printf("out of range (0-100)");
+            printf("out of range (0-100)\n");
             break;
     }
     return 0;

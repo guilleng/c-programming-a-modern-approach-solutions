@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 05, Project 07
  * Date: January 2023
- * Author: ffstlln
  * Description: Finds the largest and smallest of four integers.
  */
 

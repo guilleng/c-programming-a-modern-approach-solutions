@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 05, Project 05
  * Date: January 2023
- * Author: ffstlln
  * Description: Calculates and displays income tax due.
  */
 
@@ -39,6 +38,6 @@ int main(void)
         tax = 230.0f + .06f * (income - 7000.0f);
     }
 
-    printf("Tax due $%.2f", tax);
+    printf("Tax due $%.2f\n", tax);
     return 0;
 }

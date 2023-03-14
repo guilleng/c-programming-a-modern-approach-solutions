@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 05, Project 08
  * Date: January 2023
- * Author: ffstlln
- * Description: Displays possible flight time based on inputted time.
+ * Description: Displays possible flight time based on user inputted time.
  */
 
 #include <stdio.h>

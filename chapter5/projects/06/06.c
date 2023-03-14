@@ -1,11 +1,10 @@
 /*
  * C programming: A Modern Approach. Chapter 05, Project 06
  * Date: January 2023
- * Author: ffstlln
  * Description: Verifies an UPC code.
  */
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -25,11 +24,11 @@ int main(void)
 
     if ((9 - ((total -1) % 10)) == check)
     {
-        printf("VALID");
+        printf("VALID\n");
     }
     else
     {
-        printf("NOT VALID");
+        printf("NOT VALID\n");
     }
 
     return 0;

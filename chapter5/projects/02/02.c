@@ -1,7 +1,6 @@
 /*
 * C programming: A Modern Approach. Chapter 05, Project 02
 * Date: January 2023
-* Author: ffstlln
 * Description: reformats a 24-hour input to its equivalent 12-hour format.
 */
 
@@ -16,11 +15,11 @@ int main(void)
 
     if (hh < 12)
     {
-        printf("Equivalent 12-hour time: %.2d:%.2d AM", hh, mm);
+        printf("Equivalent 12-hour time: %.2d:%.2d AM\n", hh, mm);
     }
     else
     {
-        printf("Equivalent 12-hour time: %.2d:%.2d PM", 
+        printf("Equivalent 12-hour time: %.2d:%.2d PM\n", 
                 hh == 12 ? hh : hh - 12, mm);
     }
 

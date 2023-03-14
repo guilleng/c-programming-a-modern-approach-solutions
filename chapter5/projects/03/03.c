@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 05, Project 03
  * Date: January 2023
- * Author: ffstlln
  * Description: Calculates a broker's commission.
  */
 
