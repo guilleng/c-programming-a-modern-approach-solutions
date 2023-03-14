@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 06, Project 09
  * Date: February 2023
- * Author: ffstlln
  * Description: Given a loan, an interest rate, a monthly payment and the number
  *              of payments, displays the balance remaining.
  */
@@ -11,7 +10,7 @@
 int main(void)
 {
     float total, rate, payment;
-    int payment_n;
+    int payment_number;
 
     printf("Enter amount of loan: ");
     scanf("%f", &total);
@@ -20,11 +19,11 @@ int main(void)
     printf("Enter monthly payment: ");
     scanf("%f", &payment);
     printf("Enter number of payments: ");
-    scanf("%d", &payment_n);
+    scanf("%d", &payment_number);
 
     rate = (rate / 12.0f) / 100.0f;
 
-    for(int i = 1; i <= payment_n; i++)
+    for(int i = 1; i <= payment_number; i++)
     {
         total = total - payment + (total * rate);
         printf("Balance remaining after payment number %d: $%.2f\n", i, total); 

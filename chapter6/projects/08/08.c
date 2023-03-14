@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 06, Project 08
  * Date: February 2023
- * Author: ffstlln
  * Description: Prints a one month calendar.
  */
 
@@ -14,10 +13,10 @@ int main(void)
     printf("Enter number of days in month: ");
     scanf("%d", &days_in_month);
     
-    printf("Enter starting day of the week (1=Mon, 2=Tue): ");
+    printf("Enter starting day of the week (1=Sun, 7=Sat): ");
     scanf("%d", &starting_day);
 
-    printf(" Mo Tu We Th Fr Sa Su\n");
+    printf(" Su Mo Tu We Th Fr Sa\n");
 
     for(int i = 1, j = 1; i <= days_in_month; j++)
     {

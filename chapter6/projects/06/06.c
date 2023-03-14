@@ -1,7 +1,6 @@
 /*
 * C programming: A Modern Approach. Chapter 06, Project 06
 * Date: February 2023
-* Author: ffstlln
 * Description: Prints all even squares up to an user inputted number.
 */
 
@@ -14,10 +13,12 @@ int main(void)
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    for(int i = 1; (i * i) < n; i++)
+    for(int i = 1; (i * i) <= n; i++)
     {
-        if((i * i) % 2 == 0)
+        if( (i * i) % 2 == 0 )
+        {
             printf("\n%d", i * i);
+        }
     }
 
     return 0;

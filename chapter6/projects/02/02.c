@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 06, Project 02
  * Date: February 2023
- * Author: ffstlln
  * Description: Calculates and displays the greatest common divisor of two 
  *              integers.
  */

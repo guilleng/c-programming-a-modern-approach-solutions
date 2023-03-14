@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 06, Project 12
  * Date: February 2023
- * Author: ffstlln
  * Description: Approximates Euler's number using Taylor series up to an epsilon 
  *              cutoff.
  */
@@ -10,21 +9,21 @@
 
 int main(void)
 {
-    float epsilon, current_term;
-    float e = 0.0f;
-    int n = 1;
+    float epsilon, 
+          current_term,
+          e = 0.0f;
+
+    int factorial = 1, 
+        n = 1;
 
     printf("Enter epsilon: ");
     scanf("%f", &epsilon);
 
 	while(1)
 	{
-        int factorial = 1;
-		for(int i = 1; i < n; i++)
-        {
-			factorial *= i;
-        }
+        factorial *= n;
         current_term = 1.0f / factorial;
+
         if (current_term < epsilon)
         {
             break;

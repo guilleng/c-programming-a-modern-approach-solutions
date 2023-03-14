@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 06, Project 04
  * Date: February 2023
- * Author: ffstlln
  * Description: Calculates a broker's commission. 
  */
 
@@ -16,7 +15,7 @@ int main(void)
         printf("Enter value of trade: ");
         scanf("%f", &value);
 
-        if (value == 0) 
+        if (value == 0.0f) 
         {
             break;
         }

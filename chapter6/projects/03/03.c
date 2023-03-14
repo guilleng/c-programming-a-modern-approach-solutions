@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 06, Project 03
  * Date: February 2023
- * Author: ffstlln
  * Description: Reduces a fraction to its lowest terms.
  */
 
@@ -30,9 +29,6 @@ int main(void)
         n = remainder;
     }
 
-    numerator /= gcd;
-    denominator /= gcd;
-
-    printf("In the lowest terms: %d/%d", numerator, denominator);
+    printf("In the lowest terms: %d/%d\n", numerator / gcd, denominator /gcd);
     return 0;
 }
