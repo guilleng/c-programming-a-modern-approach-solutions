@@ -19,3 +19,5 @@ The expression `i >= 0` is evaluated, as `-17` is not greater than `0` it yields
 The expression `-i` is evaluated and is the result of the conditional expression.  
 
 Output: `17`. 
+
+> The ternary operator evaluates to the absolute value of the integer stored in `i`.  

@@ -1,6 +1,6 @@
 # Chapter 05 - Exercise 08
 
-The following `if` statement is unnecessarily complicated. Simplify it as much as possible. (Hint: The entire statement can be replaced by a single assignment.)
+The following `if` statement is unnecessarily complicated. Simplify it as much as possible. (__Hint__: The entire statement can be replaced by a single assignment.)
 
 ```
 if (age >= 13)
@@ -14,4 +14,10 @@ else if (age < 13)
 
 ---
 
+Solution:  
+
 `teenager = ( age >= 13 && age <=19 );`
+
+Another possible solution using the ternary operator:  
+
+`teenager =  age >= 13 ? age <= 19 : 0;`

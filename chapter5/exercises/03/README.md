@@ -32,22 +32,24 @@ printf("%d %d %d", i, j, k);
 The key to determining the outputs of the program fragments above lies in understanding short-circuit behavior.  
 Even though an expression may contain symbols whose precedence is higher than the operators`||` and `&&`, short-circuit behavior __always__ forces left-to-right evaluation.  
 
-`||` evaluates to `1` whenever a non-zero value forms part of the expression, and `&&` when a `0` is evaluated.  
+Focusing on the second argument of the first `printf` call.   
 
-Focus is placed on the second argument of the first `printf` call.   
-
-(a) The left-hand side of the OR operator, `i < j`, evaluates to `1`, the right-hand side `++j < k` is not evaluated.  
+(a) 
+The left-hand side of the OR operator, `i < j`, evaluates to `1`, the right-hand side `++j < k` is not evaluated.  
 
 Output: `1 3 4 5`
 
-(b) `i - 7` evaluates to `0` the right-hand side of the expression is not evaluated and `j` is not incremented.
+(b) 
+`i - 7` evaluates to `0` the right-hand side of the expression is not evaluated. Therefore `j` is not incremented.
 
 Output: `0 7 8 9`
 
-(c) The left-hand assignment in the `printf` call evaluates to `8`. Short-circuit behavior determines that the OR evaluation is `1`.  
+(c) 
+The left-hand assignment in the `printf` call evaluates to `8` and stores this value in `i` as a side effect. Short-circuit behavior determines that the OR evaluation is `1`.  
 
 Output: `1 8 8 9`
 
-(d) The left-hand side of the OR operator `++i` evaluates to `2` and updates `i`. The argument of `printf` evaluates to `1`. The rest of the expression is not evaluated.  
+(d)
+The left-hand side of the OR operator `++i` evaluates to `2` and updates `i` immediately. Short-circuit behavior dictates that the rest of the expression is not evaluated.  
 
 Output: `1 2 1 1`
