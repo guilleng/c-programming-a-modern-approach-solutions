@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 09, Project 05
  * Date: March 2023
- * Author: ffstlln
  * Description: Prints a magic square of specified size
  */
 
@@ -38,6 +37,10 @@ int main(void)
     return 0;
 }
 
+/*
+ * Populates in-place the 2D array `magic_square` with numbers such that the 
+ * sums of the rows, columns and diagonals are all the same.
+ */
 void create_magic_square(int n, char magic_square[n][n])
 {
     for(int i = 0; i < n; i++)
@@ -82,6 +85,9 @@ void create_magic_square(int n, char magic_square[n][n])
     }
 }
 
+/*
+ * Prints the `n` size 2D array `magic_square`
+ */
 void print_magic_square(int n, char magic_square[n][n])
 {
     for(int i = 0; i < n; i++)

@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 09, Project 01
  * Date: March 2023
- * Author: ffstlln
  * Description: Sorts an integer list using selection sort.
  */
 
@@ -36,6 +35,10 @@ int main(void)
     return 0;
 } 
 
+/*
+ * Recursive implementation of the selection sort algorithm.
+ * Sorts in-place the elements of the array `integer_list`, of size `size`.
+ */
 void selection_sort(int integer_list[], int size)
 {
     if(size == 0)

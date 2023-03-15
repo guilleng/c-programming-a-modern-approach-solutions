@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 09, Project 07
  * Date: March 2023
- * Author: ffstlln
- * Description: Computes the then nth power of an integer
+ * Description: Computes the then nth power of an integer recursively.  
  */
 
 #include <stdio.h>

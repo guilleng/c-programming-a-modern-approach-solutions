@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 09, Project 06
  * Date: March 2023
- * Author: ffstlln
  * Description: Computes the value of the polynomial:
  *              3x^5 + 2x^4 - 5x^3 - x^2 + 7x -6
  */
@@ -25,6 +24,6 @@ int main(void)
 
 double evaluate_polynomial(double x)
 {
-    // Horner's Method (Seen in Chapter 01 - Project 05)
+    // Horner's Method (See Chapter 02 - Project 06)
     return (-6 + x * (7 + x * (-1 + x * (-5 + x * (2 + 3 * x)))));
 }

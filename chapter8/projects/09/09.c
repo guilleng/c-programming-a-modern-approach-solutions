@@ -41,7 +41,7 @@ int main(void)
     }
 
     grid[i][j] = ch;                // generate random walk
-    while(ch < ENDING_CHAR) 
+    while(ch <= ENDING_CHAR) 
     {
         move[RIGHT] = (j + 1 < SIZE && grid[i][j + 1] == EMPTY) ? true : false;
         move[UP]    = (i - 1 >= 0   && grid[i - 1][j] == EMPTY) ? true : false;

@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 09, Project 04
  * Date: March 2023
- * Author: ffstlln
  * Description: Tests whether two words are anagrams.
  */
 
@@ -34,6 +33,7 @@ int main(void)
 
     return 0;
 }
+
 
 void read_word(int counts[26])
 {

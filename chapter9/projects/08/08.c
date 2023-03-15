@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 09, Project 08
  * Date: March 2023
- * Author: ffstlln
  * Description: Simulates the game of craps.  
  */
 
@@ -43,11 +42,22 @@ int main(void)
     return 0;
 }
 
+/*
+ * Returns a random integer between 2 and 12 that represents the value of 
+ * rolling two dice.
+ */
 int roll_dice(void)
 {
     return ((rand() % 6 + 1) + (rand() % 6 + 1));
 }
 
+/*
+ * Returns `true` when the first `roll` of two dices is 7 or 11.
+ * Returns `false` when the first `roll` is 2 or 3 or 12.
+ * Otherwise each subsequent roll, is compared with the first one, called 
+ * `point`. `false` is returned if 7 is rolled. `true` if the `point` is 
+ * repeated.
+ */
 bool play_game(void)
 {
     int roll = roll_dice();

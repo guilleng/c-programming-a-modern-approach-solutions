@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 09, Project 02
  * Date: March 2023
- * Author: ffstlln
  * Description: Calculates and displays income tax due.
  */
 
