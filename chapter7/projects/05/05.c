@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 05
  * Date: February 2023
- * Author: ffstlln
  * Description: Computes the score of a Scrabble word.
  */
 

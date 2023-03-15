@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 15
  * Date: February 2023
- * Author: ffstlln
  * Description: Computes the factorial of an integer.
  */
 
@@ -10,7 +9,7 @@
 int main(void)
 {
     unsigned short n;
-    long double factorial = 1.0f;
+    long double factorial = 1.0;
 
     printf("Enter a positive integer: ");
     scanf("%hu", &n);
@@ -25,6 +24,6 @@ int main(void)
         n--;
     }
 
-    printf("Factorial: %Lg\n", factorial);
+    printf("Factorial: %Lf\n", factorial);
     return 0;
 }

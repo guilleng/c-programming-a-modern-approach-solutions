@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 03
  * Date: February 2023
- * Author: ffstlln
  * Description: Sums a series of user inputted numbers.
  */
 
@@ -9,13 +8,13 @@
 
 int main(void)
 {
-    double n, sum = 0;
+    double n, sum = 0.0;
 
     printf("This program sums a series of integers.\n");
     printf("Enter a number (0 to terminate):\n");
 
     scanf("%lf", &n);
-    while(n != 0)
+    while(n != 0.0)
     {
         sum += n;
         scanf("%lf", &n);

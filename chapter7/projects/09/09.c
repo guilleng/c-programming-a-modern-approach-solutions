@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 09
  * Date: February 2023
- * Author: ffstlln
  * Description: Displays user inputted 12-hour time in 24-hour format.
  */
 

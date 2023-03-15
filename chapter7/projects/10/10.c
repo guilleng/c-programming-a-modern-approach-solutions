@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 10
  * Date: February 2023
- * Author: ffstlln
  * Description: Counts the number of vowels in a sentence.
  */
 

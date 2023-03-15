@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 08
  * Date: February 2023
- * Author: ffstlln
  * Description: Displays possible flight time based on inputted time.
  */
 
@@ -10,17 +9,16 @@
 
 int main(void)
 {
-    int hh, mm, user_input;
     char ch;
-
-    int departure1 =  8 * 60 +  0;
-    int departure2 =  9 * 60 + 43;
-    int departure3 = 11 * 60 + 19;
-    int departure4 = 12 * 60 + 47;
-    int departure5 = 14 * 60 +  0;
-    int departure6 = 15 * 60 + 45;
-    int departure7 = 19 * 60 +  0;
-    int departure8 = 21 * 60 + 45;
+    int hh, mm, user_input,
+        departure1 =  8 * 60 +  0,
+        departure2 =  9 * 60 + 43,
+        departure3 = 11 * 60 + 19,
+        departure4 = 12 * 60 + 47,
+        departure5 = 14 * 60 +  0,
+        departure6 = 15 * 60 + 45,
+        departure7 = 19 * 60 +  0,
+        departure8 = 21 * 60 + 45;
 
     printf("Enter a time in the HH:MM AM/PM: ");
     scanf("%d :%d %c", &hh, &mm, &ch);

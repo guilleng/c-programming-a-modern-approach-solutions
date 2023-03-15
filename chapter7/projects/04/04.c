@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 04
  * Date: February 2023
- * Author: ffstlln
  * Description: Translates an alphabetic phone number to its numeric form.
  */
 

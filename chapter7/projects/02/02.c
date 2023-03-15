@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 07, Project 02
  * Date: February 2023
- * Author: ffstlln
- * Description: Prints a table of squares and pauses every 24 rows printed.
+ * Description: Prints a table of squares pausing every 24 rows printed.
  */
 
 #include <stdio.h>
