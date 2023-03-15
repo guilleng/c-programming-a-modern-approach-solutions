@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 06
  * Date: February 2023
- * Author: ffstlln
- * Description: Translates a message to B1FF-speak
+ * Description: Translates a message to B1FF-speak.
  */
 
 #include <stdio.h>

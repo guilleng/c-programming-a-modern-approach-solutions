@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 15
  * Date: March 2023
- * Author: ffstlln
- * Description: Caesar cypher
+ * Description: Caesar cypher implementation.
  */
 
 #include <stdio.h>

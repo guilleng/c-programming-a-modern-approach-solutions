@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 09
  * Date: February 2023
- * Author: ffstlln
  * Description: Random walk generator
  */
 
@@ -10,7 +9,14 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 10
+#define SIZE  10
+#define EMPTY '.'
+
+#define STARTING_CHAR 'A'
+#define ENDING_CHAR   'Z'
+#define STARTING_ROW   0
+#define STARTING_COL   0
+
 #define RIGHT 0
 #define UP    1
 #define LEFT  2
@@ -18,11 +24,11 @@
 
 int main(void)
 {
-    char grid[SIZE][SIZE] = { 0 },
-         ch = 'A';              // current character
-    bool move[4];               // valid movements { right, up, left, down }
-    int i = 0,                  // position tracking
-        j = 0;
+    char grid[SIZE][SIZE];
+    bool move[4];                   // valid movements { right, up, left, down }
+    int i = STARTING_ROW,
+        j = STARTING_COL;           // position tracking
+    char ch = STARTING_CHAR;        // character tracking
 
     srand((unsigned) time(NULL));
 
@@ -30,65 +36,65 @@ int main(void)
     {
         for(int j = 0; j < SIZE; j++)
         {
-            grid[i][j] = '.';
+            grid[i][j] = EMPTY;
         }
     }
 
-    grid[i][j] = ch;
-    while(ch <'Z') 
+    grid[i][j] = ch;                // generate random walk
+    while(ch < ENDING_CHAR) 
     {
-        move[RIGHT] = (j + 1 < SIZE && grid[i][j + 1] == '.') ? true : false;
-        move[UP]    = (i - 1 >= 0   && grid[i - 1][j] == '.') ? true : false;
-        move[LEFT]  = (j - 1 >= 0   && grid[i][j - 1] == '.') ? true : false;
-        move[DOWN]  = (i + 1 < SIZE && grid[i + 1][j] == '.') ? true : false;
+        move[RIGHT] = (j + 1 < SIZE && grid[i][j + 1] == EMPTY) ? true : false;
+        move[UP]    = (i - 1 >= 0   && grid[i - 1][j] == EMPTY) ? true : false;
+        move[LEFT]  = (j - 1 >= 0   && grid[i][j - 1] == EMPTY) ? true : false;
+        move[DOWN]  = (i + 1 < SIZE && grid[i + 1][j] == EMPTY) ? true : false;
 
         if (!move[RIGHT] && !move[UP] && !move[LEFT] && !move[DOWN])
         {
             break;
         }
 
-        switch(rand() % 4)
+        while(true)
         {
-            case RIGHT:
-                if(move[RIGHT])
+            switch(rand() % 4)
                 {
-                    ch++, j++;
-                    grid[i][j] = ch;
-                    break;
+                    case RIGHT:
+                        if(move[RIGHT])
+                        {
+                            grid[i][j++] = ch++;
+                            break;
+                        }
+                        continue;
+                        
+                    case UP:
+                        if(move[UP])
+                        {
+                            grid[i--][j] = ch++;
+                            break;
+                        }
+                        continue;
+                        
+                    case LEFT:
+                        if(move[LEFT])
+                        {
+                            grid[i][j--] = ch++;
+                            break;
+                        }
+                        continue;
+
+                    case DOWN:
+                        if(move[DOWN])
+                        {
+                            grid[i++][j] = ch++;
+                            break;
+                        }
+                        continue;
                 }
-                /* marker comments suppress fall-through warnings in GCC */
-                /* fall through */
-            case UP:
-                if(move[UP])
-                {
-                    ch++, i--;
-                    grid[i][j] = ch;
-                    break;
-                }
-                /* fall through */
-            case LEFT:
-                if(move[LEFT])
-                {
-                    ch++, j--;
-                    grid[i][j] = ch;
-                    break;
-                }
-                /* fall through */
-            case DOWN:
-                if(move[DOWN])
-                {
-                    ch++, i++;
-                    grid[i][j] = ch;
-                    break;
-                }
-                /* fall through */
-            default:
-                break;
+            break;
         }
     }
 
-    for(int i = 0; i < SIZE; i++)
-    {
+    for(int i = 0; i < SIZE; i++)   // print grid
+    {                               
         for(int j = 0; j < SIZE; j++)
         {
             printf(" %c ", grid[i][j]);

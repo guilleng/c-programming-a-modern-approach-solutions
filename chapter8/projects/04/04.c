@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 04
  * Date: February 2023
- * Author: ffstlln
- * Description: Reverses a series of numbers
+ * Description: Reverses a series of numbers.
  */
 
 #include <stdio.h>

@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 08
  * Date: February 2023
- * Author: ffstlln
- * Description: Perform computations over 5 quizzes of 5 students.
+ * Description: Performs computations over 5 quizzes of 5 students.
  */
 
 #include <stdio.h>

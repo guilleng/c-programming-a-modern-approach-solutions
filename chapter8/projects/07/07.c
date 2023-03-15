@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 07
  * Date: February 2023
- * Author: ffstlln
- * Description: Reads a 5x5 array of ints and prints the row and column sums
+ * Description: Reads a 5x5 array of ints and prints the row and column sums.  
  */
 
 #include <stdio.h>

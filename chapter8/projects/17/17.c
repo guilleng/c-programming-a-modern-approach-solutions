@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 17
  * Date: March 2023
- * Author: ffstlln
  * Description: Prints a magic square of specified size
  */
 
@@ -18,7 +17,8 @@ int main(void)
 
     if ( (n % 2) == 0 || (n > 100) )
     {
-        return 1;
+        printf("Not a valid size.\n");
+        return 0;
     }
 
     int square[n][n];
@@ -34,7 +34,7 @@ int main(void)
     int j = (n - 1) / 2,    // starting position
         i = 0;
 
-    square[0][j] = 1;
+    square[i][j] = 1;
     for(int curent_number = 2; curent_number <= (n * n); curent_number++)
     {
         int x = (i + 1),    // temporarily store position below

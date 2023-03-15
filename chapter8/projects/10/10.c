@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 10
  * Date: February 2023
- * Author: ffstlln
  * Description: Displays possible flight time based on inputted time.
  */
 
@@ -24,7 +23,7 @@ int main(void)
     scanf("%d:%d", &hh, &mm);
     user_input = hh * 60 + mm;
 
-    // searching closest departure time by index position
+    /* searches closest departure time by index position */
 	for (int i = 0; i < (int) (sizeof(departures) / sizeof(departures[0])); i++)     
 	{
         int diff = abs(departures[i] - user_input);
@@ -35,7 +34,7 @@ int main(void)
         }
     }
 
-    // formatting for printing output
+    /* sets hours and minutes in required format for printing output */
     if (departures[closest_index] / 60 > 12)
     {
         departure_hour = departures[closest_index] / 60 - 12;

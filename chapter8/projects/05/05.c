@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 05
  * Date: February 2023
- * Author: ffstlln
- * Description: Prints a table of compound interest
+ * Description: Prints a table of compound interest.  
  */
 
 #include <stdio.h>

@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 11
  * Date: February 2023
- * Author: ffstlln
  * Description: Translates an alphabetic phone number to its numeric form.
  */
 
@@ -9,7 +8,7 @@
 
 int main(void)
 {
-    char phone[15];
+    char phone[15] = { 0 };
 
     printf("Enter phone number: ");
     for(int i = 0; (phone[i] = getchar()) != '\n' && i < 15; i++);

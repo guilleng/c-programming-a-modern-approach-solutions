@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 02
  * Date: February 2023
- * Author: ffstlln
- * Description: Count the occurrences of each digit in a decimal number
+ * Description: Counts the occurrences of each digit positive integer. 
  */
 
 #include <stdio.h>
@@ -16,7 +15,7 @@ int main(void)
 
     printf("Enter a number: ");
     scanf("%ld", &n);
-
+    
     while (n > 0)
     {
         digit = n % 10;

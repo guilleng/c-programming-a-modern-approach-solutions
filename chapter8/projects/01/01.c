@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 01
  * Date: February 2023
- * Author: ffstlln
- * Description: Checks numbers for repeated digits, shows which are repeated
+ * Description: Checks a positive number for repeated digits and displays them.  
  */
 
 #include <stdio.h>

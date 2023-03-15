@@ -1,7 +1,6 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 13
  * Date: February 2023
- * Author: ffstlln
  * Description: Contracts a first and last name string.
  */
 
@@ -16,10 +15,11 @@ int main(void)
 
     while ( (ch = getchar()) == ' ')
     {
-        /* discard any leading spaces in input */;
+        /* discard all leading spaces in input */;
     }
 
     initial = ch;
+
     while ( (ch = getchar()) != ' ')
     {
         /* discard rest of name */;

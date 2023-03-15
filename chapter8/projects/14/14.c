@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 14
  * Date: March 2023
- * Author: ffstlln
- * Description: Reverses the words in a sentence
+ * Description: Reverses the words in a sentence. 
  */
 
 #include <stdio.h>

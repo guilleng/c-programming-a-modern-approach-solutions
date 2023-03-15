@@ -1,8 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 03
  * Date: February 2023
- * Author: ffstlln
- * Description: Test numbers for repeated digits
+ * Description: Tests for the presence of repeated digits in positive numbers.
  */
 
 #include <stdbool.h>
@@ -17,7 +16,7 @@ int main(void)
     do {
         printf("Enter a number: ");
         scanf("%ld", &n);
-        if(n == 0)
+        if(n <= 0)
         {
             return n;                               //program termination
         }

@@ -1,12 +1,13 @@
 /*
  * C programming: A Modern Approach. Chapter 08, Project 16
  * Date: March 2023
- * Author: ffstlln
  * Description: Tests whether two words are anagrams.
  */
 
 #include <stdio.h>
 #include <ctype.h>
+
+#define TRUE 'T'
 
 int main(void)
 {
@@ -31,7 +32,7 @@ int main(void)
         }
     }
 
-    ch = 'T';                               //using char variable as flag
+    ch = TRUE;                               //using char variable as flag
     for(int i = 0; i < 26; i++)
     {
         if (letter_counts[i] != 0)
@@ -41,7 +42,7 @@ int main(void)
         }
     }
 
-    if (ch == 'T')
+    if (ch == TRUE)
     {
         printf("The words are anagrams\n");
     }
