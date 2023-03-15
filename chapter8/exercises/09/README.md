@@ -4,8 +4,9 @@ Using the array of Exercise 8, write a program fragment that computes the averag
 
 ---
 
+The program fragment assumes `double temperature_readings[30][24];` is declared and initialized in previous statements.  
+
 ```
-double temperature_readings[30][24] = { 0 };
 double average = 0.0;
 
 for(int day = 0; day < 30; day++)

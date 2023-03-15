@@ -5,5 +5,5 @@ Write a declaration for a two-dimensional array named `temperature_readings` tha
 ---
 
 ```
-double temperature_readings[30][24] = { 0 };
+double temperature_readings[30][24] = { 0.0 };
 ```

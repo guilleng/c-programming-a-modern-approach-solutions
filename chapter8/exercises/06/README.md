@@ -10,9 +10,13 @@ Calculators, watches and other electronic devices often rely on seven-segment di
 
 Suppose that we want to set up an array that remembers which segments should be "on" for each digit. Let's number the segments as follows:
 
- 0
-561
-432
+```
+  0
+5   1
+  6
+4   2
+  3
+```
 
 Here's what the array might look like, with each row representing one digit:
 
