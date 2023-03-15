@@ -37,25 +37,25 @@ double average(int a[], int n);
 
 double average(int a[], int n)
 {
-    int accumulator = a[0];
+    double accumulator = a[0];
     for(int i = 1; i < n; i++)
     {
         accumulator += a[i];
     }
     
-    return (double) accumulator / n;
+    return accumulator / n;
 }
 ```
 
 (c)
 ```
-int positive_count(int a[], int n);
+unsigned int positive_count(int a[], int n);
 
 ...
 
-int positive_count(int a[], int n)
+unsigned int positive_count(int a[], int n)
 {
-    int count = 0;
+    unsigned int count = 0;
     for(int i = 0; i < n; i++)
     {
         if(a[i] > 0)

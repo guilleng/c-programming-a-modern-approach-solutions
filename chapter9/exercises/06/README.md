@@ -5,9 +5,9 @@ Write a function `digit(n, k)` that returns the k^th digit (from the right) in `
 ---
 
 ```
-int digit(unsigned long n, int k)                                               
+unsigned char digit(unsigned long n, int k)                                               
 {                                                                               
-    int kth_digit;                                                              
+    unsigned char kth_digit;                                                              
     while(k > 0)                                                                
     {                                                                           
         kth_digit = n % 10;                                                     

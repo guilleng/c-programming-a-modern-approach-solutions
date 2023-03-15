@@ -1,6 +1,6 @@
 # Chapter 09 - Exercise 01
 
-The following function, which computes the area of a triangle, contains two errors. Locate the errors and show how to fix them. (Hint: There are no errors in the formula.)
+The following function, which computes the area of a triangle, contains two errors. Locate the errors and show how to fix them. (_Hint_: There are no errors in the formula.)
 
 ```
 double triangle_area(double base, height)
@@ -26,4 +26,3 @@ double triangle_area(double base, double height)
     return product / 2;
 }
 ```
-

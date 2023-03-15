@@ -19,7 +19,7 @@ bool has_zero(int a[], int n)
 
 Tracking the procedure of this code, is noted:  
 
-1. The selection statement of the `for` loop body is set to be evaluated at most `n` times. (The number of items the integer array `a` contains).  
+1. The selection statement of the `for` loop body is set to be evaluated at __most__ `n` times. (The number of items the integer array `a` contains).  
 2. The semantics of an `if` expression followed by an `else` clause dictates that the expression `a[i] == 0` is evaluated. If its value is non-zero, the function returns `true`. If it value is zero, it returns `false`. 
 
 The function returns `true` if any element of the array has the zero value, and `false` (prematurely) if any element of the array has a nonzero value.  
