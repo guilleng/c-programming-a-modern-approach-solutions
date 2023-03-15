@@ -20,6 +20,6 @@ int main(void)
         y = (y + (x / y)) / 2.0;
     }
 
-    printf("Square root: %g", y);
+    printf("Square root: %f", y);
     return 0;
 }

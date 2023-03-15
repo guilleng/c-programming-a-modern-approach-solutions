@@ -20,6 +20,6 @@ int main(void)
         scanf("%lf", &n);
     }
 
-    printf("The sum is: %g\n", sum);
+    printf("The sum is: %lf\n", sum);
     return 0;
 }
