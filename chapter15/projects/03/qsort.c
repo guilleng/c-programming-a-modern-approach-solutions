@@ -1,12 +1,6 @@
  /* Sorts an array of integers using Quicksort algorithm.  */
 
-#ifndef STDIO_H
-#define STDIO_H
-
 #include <stdio.h>
-
-#endif
-
 #include "quicksort.h"
 
 #define N 10

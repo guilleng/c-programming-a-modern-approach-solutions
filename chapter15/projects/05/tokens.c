@@ -1,23 +1,6 @@
-#ifndef STDIO_H
-#define STDIO_H
-
 #include <stdio.h>
-
-#endif
-
-#ifndef STDLIB_H
-#define STDLIB_H
-
 #include <stdlib.h>
-
-#endif
-
-#ifndef CTYPE_H
-#define CTYPE_H
-
 #include <ctype.h>
-
-#endif
 
 #include "tokens.h"
 
