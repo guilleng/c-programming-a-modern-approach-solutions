@@ -23,7 +23,7 @@ Returns -1 if `d1` is an earlier date than `d2`, +1 if `d1` is a later date than
 ```
 int day_of_year(struct date d)
 {
-	int i, day_of_year = 0;
+    int i, day_of_year = 0;
     const int days_in_month[12] = { 31, 28, 31, 30,                                   
                                 /* Jan Feb Mar Apr */
                                     31, 30, 31, 31,                                   
