@@ -24,12 +24,12 @@ Returns -1 if `d1` is an earlier date than `d2`, +1 if `d1` is a later date than
 int day_of_year(struct date d)
 {
     int i, day_of_year = 0;
-    const int days_in_month[12] = { 31, 28, 31, 30,                                   
-                                /* Jan Feb Mar Apr */
-                                    31, 30, 31, 31,                                   
-                                /* May Jun Jul Aug */
-                                    30, 31, 30, 31 };
-                                /* Set Oct Nov Dec */
+    int days_in_month[12] = { 31, 28, 31, 30,                                   
+                          /* Jan Feb Mar Apr */
+                              31, 30, 31, 31,                                   
+                          /* May Jun Jul Aug */
+                              30, 31, 30, 31 };
+                          /* Set Oct Nov Dec */
                                                 
     if ( (d.year % 4 == 0 && d.year % 100 != 0) || d. year % 400 == 0 )
     {
@@ -51,11 +51,11 @@ int day_of_year(struct date d)
 
 int compare_dates(struct date d1, struct date d2)
 {
-	if (d1.y < d2.y)
+	if (d1.year < d2.year)
 	{   
 		return -1;
 	}
-	else if (y2 < y1)
+	else if (d2.year < d1.year)
 	{   
 		return 1;
 	}
