@@ -99,7 +99,6 @@ int pop(void)
     if (is_empty())
     {
         stack_underflow();
-        return 1;
     }
     else
     {

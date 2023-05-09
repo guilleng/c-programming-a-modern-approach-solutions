@@ -10,13 +10,9 @@ When passed an array a of length `n`, the function will search a for its largest
 
 ---
 
-This function assumes that the array `a` has a minimum size of 2. If the element in the array with the largest absolute value is repeated, both `largest` and `second_largest` will store the same value.
+The function assumes that the array `a` has a minimum size of 2. If the element in the array with the largest absolute value is repeated, both `largest` and `second_largest` will store the same value.  
 
 ```
-void find_two_largest(int a[], int n, int *largest, int *second_largest);
-
-...
-
 void find_two_largest(int a[], int n, int *largest, int *second_largest)
 {
     *largest        = a[0] > a[1] ? a[0] : a[1];

@@ -22,9 +22,9 @@ The first four lines contain declarations for a `10` element array, a temporary 
 The `while` loop condition states that the body loop is executed as long as the address of pointer `p` is less than the address of pointer `q`.  
 The body loop performs the following computations:  
 
-1. Stores in `temp` the value referred by `p`.  
-2. Assigns the value `q` points to to the element `p` points in the array `a`. Then the unary `++` operator increments by 1 the element `p` points to.  
-2. Assigns the value `p` was pointing to to the element `q` points in the array `a`. Then the unary `--` operator decrements by 1 the element `q` points to.  
+1. Stores in `temp` the value `p` refers to.  
+2. Assigns the value `q` points to, to the element `p` points in `a`. Then the unary `++` indexes `p` to the next element.  
+3. Assigns the value `p` was pointing to, to the location `q` points in `a`. Then the unary `--` moves `q` to a lower indexed element.  
 
 In short, the loop 'swaps' the elements of the array `a`.  
 

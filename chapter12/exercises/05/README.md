@@ -13,10 +13,10 @@ Suppose that a is `a` one-dimensional array and `p` is a pointer variable. Assum
 Compares an address to the value stored at position 0 of `a`. Illegal.  
 
 (b)  
-Compares an address to an address. Because `p` has just been assigned `a`, this expression yields `true`.  
+Compares an address to an address. `p` has just been assigned `a`, this expression yields `true`.  
 
 (c)
-Compares the dereferencing of the pointer address to the first element of the arrays. Because `p` has just been assigned the address of the first element of `a`, this expression yields `true`.  
+Compares the value pointed to by `p` to the value stored at position 0 of the array `a`. Because `p` has been assigned the address of the first element of `a`, this expression yields `true`.  
 
 (d)
-Because `p[0]` is treated as `*(p + 0)`, this comparison is the same as (c). The expression yields `true`.  
+`p[0]` is the same as `*(p + 0)` and `*p`. The comparison is the same as (c). The expression yields `true`.  

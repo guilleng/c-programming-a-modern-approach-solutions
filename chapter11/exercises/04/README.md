@@ -15,10 +15,6 @@ swap(&i, &j);    /* exchanges values of i and j */
 ---
 
 ```
-void swap(int *p, int *q);
-
-...
-
 void swap(int *p, int *q)
 {
     int temporary = *p;

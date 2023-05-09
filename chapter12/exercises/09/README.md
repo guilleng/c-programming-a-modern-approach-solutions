@@ -11,10 +11,6 @@ double inner_product(const double *a, const double *b, int n);
 ---
 
 ```
-double inner_product(const double *a, const double *b, int n);
-
-...
-
 double inner_product(const double *a, const double *b, int n)
 {
     double accum;

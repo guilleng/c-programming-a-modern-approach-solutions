@@ -26,7 +26,7 @@ int main(void)
 }
 
 /*
- * Returns the greatest common denominator between `m` and `n`.
+ * Returns the greatest common divisor between `m` and `n`.
  */
 int gcd(int m, int n)
 {
@@ -34,17 +34,16 @@ int gcd(int m, int n)
 }
 
 /*
- * Uses the `gcd` function to determine and assign to the references 
- * `reduced_numerator` and `reduced_denominator` values such that they represent 
- * the reduced version of the fraction `numerator/denominator`.
+ * Assigns to the references `reduced_numerator` and `reduced_denominator` 
+ * values such that the fraction they represent is reduced. 
  */
 void reduce(int numerator, int denominator,
             int *reduced_numerator, int *reduced_denominator)
 {
-    int greatests_common_divisor = gcd(numerator, denominator);
+    int greatest_common_divisor = gcd(numerator, denominator);
 
-    *reduced_numerator   = numerator   / greatests_common_divisor;
-    *reduced_denominator = denominator / greatests_common_divisor;
+    *reduced_numerator   = numerator   / greatest_common_divisor;
+    *reduced_denominator = denominator / greatest_common_divisor;
 
     return;
 }

@@ -16,10 +16,6 @@ void store_zeros(int a[], int n)
 
 ```
 void store_zeros(int a[], int n)
-
-...
-
-void store_zeros(int a[], int n)
 {   
     int *p = a;
     while (p < a + n)

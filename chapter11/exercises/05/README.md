@@ -11,10 +11,6 @@ void split_time(long total_sec, int *hr, int *min, int *sec);
 ---
 
 ```
-void split_time(long total_sec, int *hr, int *min, int *sec);
-
-...
-
 void split_time(long total_sec, int *hr, int *min, int *sec)
 {
     *hr = total_sec / 3600;

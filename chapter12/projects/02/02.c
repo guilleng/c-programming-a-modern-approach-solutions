@@ -16,7 +16,7 @@ int main(void)
     int i = 0, j = 0;
 
     printf("Enter a message: ");
-    while ((ch = getchar()) != '\n' && i < MAX_SIZE)
+    while ((ch = getchar()) != '\n' && ch != EOF && i < MAX_SIZE)
     {
         if (isalpha(ch))
         {
@@ -30,10 +30,10 @@ int main(void)
         if (message[i--] != message[j++])
         {
             printf("Not a palindrome\n");
-            return EXIT_SUCCESS;
+            exit(EXIT_SUCCESS);
         }
     }
 
     printf("Palindrome\n");
-    return EXIT_SUCCESS;
+    exit(EXIT_SUCCESS);
 }

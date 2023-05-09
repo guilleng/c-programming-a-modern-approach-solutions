@@ -11,10 +11,6 @@ bool search(const int a[], int n, int key);
 ---
 
 ```
-bool search(const  int a[], int n, int key);
-
-...
-
 bool search(const int a[], int n, int key)
 {
     const int *p = a;

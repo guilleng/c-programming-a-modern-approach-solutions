@@ -10,13 +10,9 @@ void split_date(int day_of_year, int year, int *month, int *day);
 
 ---
 
-This function assumes that `day_of_year` may be assigned a value of 366 when and only when `year` is a leap year.  
+The function assumes that `day_of_year` will be assigned a value of 366 when and only when `year` is a leap year.  
 
 ```
-void split_date(int day_of_year, int year, int *month, int *day);
-
-...
-
 void split_date(int day_of_year, int year, int *month, int *day)
 {
     int days_in_month[12] = { 31, 28, 31, 30,                                   

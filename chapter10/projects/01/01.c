@@ -37,7 +37,7 @@ int main(void)
 
         if (input == ')' || input == ']' || input == '}')
         {
-        // pop() only gets called AFTER is_empty() returns false avoiding a 
+        // pop() only gets called after is_empty() returns false avoiding a 
         // valid input such as ")" or "()]" causing a stack underflow
             if (is_empty() || !match(pop(), input))
             {

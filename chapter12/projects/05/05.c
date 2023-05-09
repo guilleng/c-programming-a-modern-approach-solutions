@@ -5,26 +5,24 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #define SIZE 256
 
 int main(void)
 {
-    char sentence[SIZE] = { 0 },
-         *p = sentence,
-         end_ch;
+    char sentence[SIZE] = { 0 }, *p = sentence, end_ch;
+    int len = 0;
 
     printf("Enter a sentence: ");
-
-    while (p < sentence + SIZE)
+    while ((end_ch = getchar()) != '\n' && end_ch != EOF && len < SIZE)
     {
-        end_ch = getchar();
         if (end_ch == '.' || end_ch == '?' || end_ch == '!')
         {
-            p--;
             break;
         }
-        *p++ = end_ch;
+        *p = end_ch;
+        p++, len++;
     }
 
     printf("Reversal of sentence: ");
@@ -56,5 +54,5 @@ int main(void)
     }
     putchar(end_ch);
 
-    return 0;
+    exit(EXIT_SUCCESS);
 }

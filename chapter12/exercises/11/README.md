@@ -6,10 +6,6 @@ Modify the `find_largest` function so that it uses pointer arithmetic -- not sub
 
 ```
 int *find_largest(int *a, int n)
-
-...
-
-int *find_largest(int *a, int n)
 {
     int *p, *largest;
 

@@ -4,6 +4,7 @@
  * Description: Reads a message and prints its reversal.
  */
 
+#include <stdlib.h>
 #include <stdio.h>
 
 #define MAX_SIZE 64
@@ -12,11 +13,13 @@ int main(void)
 {
     char message[MAX_SIZE];
     char *p = message, ch;
+    int len = 0;
 
     printf("Enter a message: ");
-    while ((ch = getchar()) != '\n' && p < message + MAX_SIZE)
+    while ((ch = getchar()) != '\n' && ch != EOF && len < MAX_SIZE)
     {
         *p++ = ch;
+        len++;
     }
 
     p -= 1;
@@ -27,5 +30,5 @@ int main(void)
     }
     putchar('\n');
 
-    return 0;
+    exit(EXIT_SUCCESS);
 }
