@@ -9,7 +9,7 @@ Modify the `read_line` function in each of the following ways:
 
 ---
 
-Transcription of the original function (page 287):  
+Original definition of the function (page 287):  
 
 ```
 int read_line(char str[], int n)
@@ -49,20 +49,16 @@ int read_line(char *str, int n)
 
 (b)
 ```
-#include <ctype.h> 
-...
 int read_line(char str[], int n)
 {
     int ch, i = 0;
     
-    while (i < n)
+    while (!isspace(ch = getchar()))
     {
-        ch = getchar();
-        if (isspace(ch))
+        if (i < n)
         {
-            break;
+            str[i++] = ch;
         }
-        str[i++] = ch;
     }
 
     str[i] = '\0';
@@ -74,17 +70,17 @@ int read_line(char str[], int n)
 ```
 int read_line(char str[], int n)
 {
-    int ch, i = 0;
+    int ch, i = 1;
     
-    while ((ch = getchar()) != '\n')
-    {
+    do {
+        ch = getchar();
         if (i < n)
         {
             str[i++] = ch;
         }
-    }
+    } while (ch != '\n')
 
-    str[i] = ch;
+    str[i] = '\0';
     return i;
 }
 ```

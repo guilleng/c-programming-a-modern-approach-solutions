@@ -14,10 +14,10 @@ s1[strlen(s1)-6] = '\0';
 
 ---
 
-Assume for simplicity that `s1` is at least of size 16 and `s2` is of size 8. Both null initialized.  
+Assuming that `s1` is at least of size 16 and `s2` is of size 8 and that both are zero initialized.  
 
-The first statement stores the literal "computer" including its trailing null byte.  
-The second statement does the same for "science".  
+The first statement stores the literal "computer" including its trailing null byte into `s1`.  
+The second statement stores the literal "science" into `s2`.  
 
 `strcmp` returns an integer less than than zero because `computer` is lexicographically less than `science`. The statement that follows the conditional has to be evaluated.  
 

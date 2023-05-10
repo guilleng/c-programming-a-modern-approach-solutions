@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     {
         accum += atoi(argv[argc]);
     }
-
     printf("Total: %d", accum);
+
     exit(EXIT_SUCCESS);
 }

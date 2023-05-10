@@ -1,7 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 13, Project 16
  * Date: April 2023
- * Description: Reads a message and prints its reversal.
+ * Description: Reads a message, reverses it in-place and prints its.
  */
 
 #include <stdio.h>
@@ -50,32 +50,25 @@ void reverse(char *message)
 /*
  * Reads up to `n` characters or until a newline. Skips leading withe spaces. 
  * The characters are stored in `str`, with a null terminator at the end. 
- * Returns the number of characters stored when successful. 
- * Returns -1 if `n` is exceeded leaving `str` empty.
+ * Returns the number of characters stored. 
  */
 int read_line(char str[], int n)
 {
     int ch, i = 0;
-    while ((ch = getchar()) != '\n')
+    
+    while ((ch = getchar()) == ' ' || ch == '\t')
     {
-        if (i == 0 && isspace(ch))
-        {
-            /* skip withe spaces */;
-        }
-        else if (i < n)
+        ;
+    }
+    while (ch != '\n' && ch != EOF)
+    {
+        if (i < n)
         {
             str[i++] = ch;
         }
-        else
-        {
-            while ((ch = getchar()) != '\n')
-            {
-                /* discard rest of input */;
-            }
-            str[0] = '\0';
-            return -1;
-        }
+        ch = getchar();
     }
     str[i] = '\0';
+    
     return i;
 }

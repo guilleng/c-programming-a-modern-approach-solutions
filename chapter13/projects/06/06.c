@@ -1,8 +1,4 @@
-/*
- * C programming: A Modern Approach. Chapter 13, Project 06
- * Date: April 2023
- * Description: Checks planet names from command line arguments. 
- */
+/* Checks planet names */
 
 #include <stdio.h>
 #include <string.h>

@@ -17,20 +17,25 @@ int read_line(char str[], int n);
 int main(void)
 {
    char message[SIZE+1] = { 0 },
-        shift_amount[3] = { 0 };
+        shift_amount[4] = { 0 };
    int shift;
    
    printf("Enter message to be encrypted: ");
    read_line(message, SIZE);
 
-   do {
-       printf("Enter shift amount (1-25): ");
-       read_line(shift_amount, 2);
-       shift = atoi(shift_amount);
-   } while (shift < 1 || shift > 25);
+   printf("Enter shift amount (1-25): ");
+   read_line(shift_amount, 3);
+   shift = atoi(shift_amount);
 
-   encrypt(message, shift);
-   puts(message);
+   if (shift > 0 && shift < 26)
+   {
+       encrypt(message, shift);
+       puts(message);
+   }
+   else
+   {
+       puts("Invalid shift value");
+   }
 
    exit(EXIT_SUCCESS);
 }
@@ -56,32 +61,25 @@ void encrypt(char *message, int shift)
 /*
  * Reads up to `n` characters or until a newline. Skips leading withe spaces. 
  * The characters are stored in `str`, with a null terminator at the end. 
- * Returns the number of characters stored when successful. 
- * Returns -1 if `n` is exceeded leaving `str` empty.
+ * Returns the number of characters stored. 
  */
 int read_line(char str[], int n)
 {
     int ch, i = 0;
-    while ((ch = getchar()) != '\n')
+    
+    while ((ch = getchar()) == ' ' || ch == '\t')
     {
-        if (i == 0 && isspace(ch))
-        {
-            /* skip withe spaces */;
-        }
-        else if (i < n)
+        ;
+    }
+    while (ch != '\n' && ch != EOF)
+    {
+        if (i < n)
         {
             str[i++] = ch;
         }
-        else
-        {
-            while ((ch = getchar()) != '\n')
-            {
-                /* discard rest of input */;
-            }
-            str[0] = '\0';
-            return -1;
-        }
+        ch = getchar();
     }
     str[i] = '\0';
+    
     return i;
 }

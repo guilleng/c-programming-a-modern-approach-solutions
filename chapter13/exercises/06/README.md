@@ -4,8 +4,6 @@ Write a function named `censor` that modifies a string by replacing every occurr
 
 ---
 
-The order of the comparisons in the `if` tests is key. The conditional takes advantage of short-circuit evaluation to avoid undefined behavior.  
-
 ```
 void censor(char *s)
 {

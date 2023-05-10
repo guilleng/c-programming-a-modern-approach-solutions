@@ -16,13 +16,13 @@ int f(char *s, char *t)
 }
 ```
 
-(a)   
+(a)
 What is the value of `f("abcd", "babc")`?  
 
-(b) 
+(b)
 What is the value of `f("abcd", "bcd")`?  
 
-(c) 
+(c)
 In general, what value does `f` return when passed two strings `s` and `t`?  
 
 ---

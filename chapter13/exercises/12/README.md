@@ -10,7 +10,7 @@ void get_extension(const char *file_name, char *extension);
 
 ---
 
-The function assumes that `file_name` has only one dot character followed by its extension.  
+The function assumes that `file_name` contains only one dot character and that it is followed by its extension.  
 
 ```
 void get_extension(const char *file_name, char *extension)

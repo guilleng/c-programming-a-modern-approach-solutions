@@ -1,8 +1,4 @@
-/*
- * C programming: A Modern Approach. Chapter 13, Project 02-a
- * Date: April 2023
- * Description: Prints a one-month reminder list.  
- */
+/* Prints a one-month reminder list */
 
 #include <stdio.h>
 #include <string.h>
@@ -84,5 +80,6 @@ int read_line(char str[], int n)
         }
     }
     str[i] = '\0';
+
     return i;
 }

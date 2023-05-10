@@ -14,4 +14,4 @@ char *duplicate(const char *p)
 
 ---
 
-The fact that `q` is a pointer to `char` that is not properly initialized (pointing to a memory location with enough space to store the string `p` points to). The call to `strcpy` is undefined behavior. 
+The fact that `q` is a pointer to `char` that is not properly initialized (pointing to a memory location with enough space to store the string `p` points to). The call to `strcpy` may cause undefined behavior. 

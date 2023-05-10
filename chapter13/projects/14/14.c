@@ -13,23 +13,24 @@
 
 bool are_anagrams(const char *word1, const char *word2);
 int read_line(char *str, int n);
-bool valid_input(char *str);
+bool is_word(char *str);
 
 int main(void)
 {
     char word1[SIZE+1],
          word2[SIZE+1];
 
-    do {
-        printf("Enter first word: ");
-        read_line(word1, SIZE);
-    } while (!valid_input(word1));
+    printf("Enter first word: ");
+    read_line(word1, SIZE);
 
-    do {
-        printf("Enter first word: ");
-        read_line(word2, SIZE+1);
-    } while (!valid_input(word2));
+    printf("Enter first word: ");
+    read_line(word2, SIZE+1);
 
+    if (!is_word(word1) || !is_word(word2))
+    {
+        exit(EXIT_FAILURE);
+    }
+    
     if (are_anagrams(word1, word2))
     {
         printf("The words are anagrams\n");
@@ -68,50 +69,42 @@ bool are_anagrams(const char *word1, const char *word2)
 /*
  * Reads up to `n` characters or until a newline. Skips leading withe spaces. 
  * The characters are stored in `str`, with a null terminator at the end. 
- * Returns the number of characters stored when successful. 
- * Returns -1 if `n` is exceeded leaving `str` empty.
+ * Returns the number of characters stored. 
  */
 int read_line(char str[], int n)
 {
     int ch, i = 0;
-    while ((ch = getchar()) != '\n')
+    
+    while ((ch = getchar()) == ' ' || ch == '\t')
     {
-        if (i == 0 && isspace(ch))
-        {
-            /* skip withe spaces */;
-        }
-        else if (i < n)
+        ;
+    }
+    while (ch != '\n' && ch != EOF)
+    {
+        if (i < n)
         {
             str[i++] = ch;
         }
-        else
-        {
-            while ((ch = getchar()) != '\n')
-            {
-                /* discard rest of input */;
-            }
-            str[0] = '\0';
-            return -1;
-        }
+        ch = getchar();
     }
     str[i] = '\0';
+    
     return i;
 }
 
-/* 
- * Returns true if the string `str` contains only alphabetic ASCII characters.
- * The string is converted to uppercase.
+/*
+ * Tests whether `s` contains only alphabetic characters and converts it to 
+ * uppercase. 
  */
-bool valid_input(char *str)
+bool is_word(char *s)
 {
-    while (*str)
+    while (*s)
     {
-        *str = toupper(*str);
-        if (!isalpha(*str++))
+        *s = toupper(*s);
+        if (!isalpha(*s++))
         {
             return false;
         }
     }
-
     return true;
 }

@@ -13,14 +13,14 @@
 #define SIZE 1024
 
 bool is_palindrome(const char *message);
-int read_line_ignore_nonaplha(char str[], int n);
+int read_ignore_nonaplha(char str[], int n);
 
 int main(void)
 {
     char message[SIZE+1];
 
     printf("Enter a message: ");
-    read_line_ignore_nonaplha(message, SIZE);
+    read_ignore_nonaplha(message, SIZE);
 
     if (is_palindrome(message))
     {
@@ -55,36 +55,28 @@ bool is_palindrome(const char *message)
 }
 
 /*
- * Reads a line ignoring non-alpha characters converting all to uppercase.
+ * Reads up to `n` characters or until a newline. Skips leading withe spaces. 
+ * The characters are stored in `str`, with a null terminator at the end. 
+ * Returns the number of characters stored. Ignores non-alphabetic characters. 
+ * Makes all characters uppercase. 
  */
-int read_line_ignore_nonaplha(char *str, int n)
+int read_ignore_nonaplha(char str[], int n)
 {
     int ch, i = 0;
-
-    while ((ch = getchar()) != '\n') 
-	{
-		if (i == 0 && isspace(ch))
-        {
-            /* skip withe spaces */;
-        }
-        else if (i < n)
-        { 
-            if (isalpha(ch))
-            {
-                str[i++] = toupper(ch);
-            }
-        }
-        else
-        {
-            while ((ch = getchar()) != '\n')
-            {
-                /* discard rest of input */;
-            }
-            str[0] = '\0';
-            return -1;
-        }
+    
+    while ((ch = getchar()) == ' ' || ch == '\t')
+    {
+        ;
     }
-
+    while (ch != '\n' && ch != EOF)
+    {
+        if (i < n && isalpha(ch))
+        {
+            str[i++] = toupper(ch);
+        }
+        ch = getchar();
+    }
     str[i] = '\0';
+    
     return i;
 }

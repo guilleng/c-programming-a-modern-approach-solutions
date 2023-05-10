@@ -23,10 +23,14 @@ int main(void)
     char date[10+1] = "";
     int month, day, year;
 
-    do {
-        printf("Enter a date (mm/dd/yyyy): ");
-        read_line(date, 10);
-    } while (!valid_date(date, &month, &day, &year));
+    printf("Enter a date (mm/dd/yyyy): ");
+    read_line(date, 10);
+
+    if (!valid_string(date) || !valid_date(date, &month, &day, &year))
+    {
+        puts("Invalid input");
+        exit(EXIT_FAILURE);
+    }
 
     printf("You entered the date "
            "%s %02d, %04d\n", month_names[month-1], day, year);
@@ -35,25 +39,28 @@ int main(void)
 }
 
 /*
- * Reads a line discarding any leading withe spaces.
+ * Reads up to `n` characters or until a newline. Skips leading withe spaces. 
+ * The characters are stored in `str`, with a null terminator at the end. 
+ * Returns the number of characters stored. 
  */
-int read_line(char *str, int n)
+int read_line(char str[], int n)
 {
     int ch, i = 0;
-
-    while ((ch = getchar()) != '\n') 
-	{
-        if (i == 0 && isspace(ch))
-        {
-            /* skip withe spaces */;
-        }
-        else if (i < n)
+    
+    while ((ch = getchar()) == ' ' || ch == '\t')
+    {
+        ;
+    }
+    while (ch != '\n' && ch != EOF)
+    {
+        if (i < n)
         {
             str[i++] = ch;
         }
+        ch = getchar();
     }
-
     str[i] = '\0';
+    
     return i;
 }
 
@@ -64,11 +71,6 @@ int read_line(char *str, int n)
 bool valid_date(char *date, int *month, int *day, int *year)
 {
     char *p = date;
-
-    if (!valid_string(date))
-    {
-        return false;
-    }
 
     while(*date != '/') date++;
     *date = '\0';

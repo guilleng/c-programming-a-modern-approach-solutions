@@ -16,9 +16,7 @@ char *read_word(char str[], int n);
 
 int main(void)
 {
-    char sentence[SENT_LENGTH][WORD_LENGTH+1], 
-         final_ch = '\0',
-         *ch;
+    char sentence[SENT_LENGTH][WORD_LENGTH+1], final_ch = '\0', *ch;
 
     int word_count = 0;
 
@@ -56,29 +54,26 @@ int main(void)
 }
 
 /*
- * Stores at most `n` but not less than 1 characters discarding leading withe 
- * spaces into `str` and null-terminates it. 
+ * Reads a word from `stdin` discarding leading withe spaces and tabs.
  * Returns a pointer to the string read.
  */
 char *read_word(char str[], int n)
 {
     int ch, i = 0;
-    while (isspace((ch = getchar())));
-    while (!isspace(ch)) 
+    
+    while ((ch = getchar()) == ' ' && ch != '\t')
+    {
+        ;
+    }
+    while (ch != ' ' && ch != '\t' && ch != '\n' && ch != EOF)
     {
         if (i < n)
         {
             str[i++] = ch;
-            ch = getchar();
         }
-        else
-        {
-			while (!isspace((ch = getchar())))
-            {
-                /* discard rest of word */;
-            }
-        }
+        ch = getchar();
     }
     str[i] = '\0';
+    
     return str;
 }
