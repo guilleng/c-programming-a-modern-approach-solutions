@@ -23,5 +23,5 @@ Function that takes an `int` parameter and returns a pointer to an array of 5 `i
 Function that takes no arguments and returns a pointer to a function that takes an `int` argument and returns a pointer to `float`.  
 
 (d)
-Function that takes an `int` plus a function pointer as arguments. Its function argument that takes an `int` argument returning nothing. `x` returns a pointer to a function that takes an `int` parameter and returns nothing.  
+Function that takes an `int` plus a function pointer as arguments. Its function argument takes an `int` argument and returns nothing. `x` returns a pointer to a function that takes an `int` parameter and returns nothing.  
 
