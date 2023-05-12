@@ -1,7 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 14.
  * Date: April 2023
- * Description: Contains code and tests related to chapter exercises.
+ * Description: Code and tests related to chapter exercises.
  */
 
 #include <stdio.h>
@@ -136,7 +136,6 @@ GENERIC_MAX(ulong_nospaces)
 /* 
  * Output formatting macros
  */
-
 #define EXERCISE(n) puts("\tExercise "#n":\n")
 #define SEPARATOR(c) puts("\n\t"#c#c#c#c#c#c#c#c#c#c#c"\n")
 

@@ -18,10 +18,10 @@ Fix the definition of `DOUBLE`.
 ---
 
 (a)
-The preprocessor expansion of `DOUBLE(1+2)` is `2*1+2`, this expression evaluates to `4`.  
+The preprocessor expansion of `DOUBLE(1+2)` is `2*1+2`. The expression evaluates to `4`.  
 
 (b)
-The preprocessor expansion of `4/DOUBLE(2)` is `4/2*2`, this expression evaluates to `4`.  
+The preprocessor expansion of `4/DOUBLE(2)` is `4/2*2`. The expression evaluates to `4`.  
 
 (c)
 ```

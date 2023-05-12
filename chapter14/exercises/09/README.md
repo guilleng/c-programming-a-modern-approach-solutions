@@ -28,6 +28,8 @@ Write the following parameterized macros.
 ```
                                                                                 
 (c)
+Uses Horner's method.  
+
 ```
 #define POLYNOMIAL(x)                                                          \
         (-6 + (x) * (7 + (x) * (-1 + (x) * (-5 + (x) *(2 + 3 * (x))))))

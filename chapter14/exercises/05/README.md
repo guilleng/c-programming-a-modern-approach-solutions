@@ -49,8 +49,6 @@ s[5] = { 'a', 'b', 'c', 'd', '\0' };
                                                'D'
 ```
 
-In short: the condition of the ternary has to be evaluated. If its value is non-zero the left hand side of the colon is evaluated and its value is the value of the conditional expression.  
-
 Output: `D`.  
 
 ---
@@ -75,6 +73,6 @@ s[5] = { '0', '1', '2', '3', '\0' };
                                                               '2'
 ```
 
-In short: the condition of the ternary has to be evaluated, because the left hand side of the `&&` operator evaluates to `false`, short-circuit behavior comes into play. The right hand side of the colon is evaluated and its value is the value of the conditional expression.  
+Because the left hand side of the `&&` operator evaluates to `false`, short-circuit behavior comes into play. The right hand side of the colon is evaluated and its value is the value of the conditional expression.  
 
 Output: `2`.  

@@ -15,8 +15,14 @@ IDENT(foo)
 ---
 
 `IDENT(foo)` is replaced with the macro's definition: `PRAGMA(ident "foo")`.  
-`PRAGMA(ident "foo")`'s expansion is the resulting code:  
+`PRAGMA(ident "foo")`'s expansion is:  
 
 ```
-`_Pragma("ident \"foo\"")`
+_Pragma("ident \"foo\"")
+```
+
+Which finally expands by the `_Pragma` directive to:  
+
+```
+#pragma ident "foo"
 ```

@@ -11,14 +11,14 @@ For each of the following macros, give an example that illustrates a problem wit
 ---
 
 (a)
-`AVG(3 + 1, 4 * 2)`  to `(3 + 1 - 4 * 2) / 2`. This expression evaluates to `-2` instead of the expected value `6`.  
+`AVG(3 + 1, 4 * 2)` expands to `(3 + 1 - 4 * 2) / 2`. The expression evaluates to `-2` instead of `6`.  
 
 ```
 #define AVG(x,y)        (((x) + (y)) / 2.0)                             
 ```
 
 (b)
-`12 / AREA(3, 2)` expands to `12 / (2) * (3)`. This expression evaluates to `18` instead of the expected value `2`.  
+`12 / AREA(3, 2)` expands to `12 / (2) * (3)`. The expression evaluates to `18` instead of `2`.  
 
 ```
 #define AREA(x,y)       ((x) * (y)) 

@@ -69,7 +69,7 @@ int main(void)
 ```
 
 The first line of the main function contains a syntax error in the array declaration `a[= 10]`.  
-All assignments in this source code may produce undefined behavior. Neither `j`, `k` nor `m` are initialized. They are used as rvalue nonetheless.  
+All assignments in this source code may produce undefined behavior. Neither `j`, `k` nor `m` are initialized.  
 The line `i = 10 * j+1;` seems intended to be `i = 10 * ((j)+1)`. If this is the case, the macro is missing parentheses.  
 `i = (x,y) x-y(j, k);` should be `i = (j) - (k), the macro definition is missing parentheses around the x and y arguments.  
 `i = jk;` The name `jk` is not in scope.  
