@@ -29,4 +29,4 @@ The function call is legal, `puts` expects a pointer to `char`. The string print
 Output: `abc\n`.
 
 (d)
-The function call is not legal, the type of the argument (`char`) doesn't match the type that the argument (`const char *`).  
+The function call is not legal, the type of the argument (`char`) is not compatible with the parameter the function expects (`const char *`).  

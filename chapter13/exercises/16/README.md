@@ -4,7 +4,7 @@ Use the techniques of Section 13.6 to condense the `count_spaces` function of Se
 
 ---
 
-Original function from Section 13.4  
+Original definition of the function:  
 
 ```
 int count_spaces(const char s[])

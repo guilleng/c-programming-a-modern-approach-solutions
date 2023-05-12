@@ -9,7 +9,7 @@ Modify the `read_line` function in each of the following ways:
 
 ---
 
-Original definition of the function (page 287):  
+Original definition of the function:  
 
 ```
 int read_line(char str[], int n)

@@ -18,7 +18,7 @@ int main(void)
 
 ---
 
-The `for` loop 'traverses' the array `s` executing its statement sequentially for all its elements as long as `*p` is not the `null` byte.
-The statement `--*p` is shorthand for `--(*p)`. This dereferences 'p' and then decrements the value it points to, yielding the previous character as in the ASCII table.
+As the for loop goes through the array `s`, it executes its statement sequentially for each of its elements, as long as `*p` is not the null byte.  
+The statement `--*p` is a shorthand for `--(*p)`, where `p` is dereferenced and the value it points to is decremented, yielding the previous character based on the ASCII table.  
 
 Output: `"Grinch\n"`

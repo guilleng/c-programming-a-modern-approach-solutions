@@ -10,7 +10,7 @@ bool test_extension(const char *file_name, const char *extension);
 
 ---
 
-Assumes that `file_name` contains only one dot character and that it delimits its extension.  
+Assumes that `file_name` contains only one dot character and it delimits its extension.  
 
 ```
 bool test_extension(const char *file_name, const char *extension)

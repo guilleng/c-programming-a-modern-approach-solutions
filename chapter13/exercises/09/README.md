@@ -14,16 +14,12 @@ s1[strlen(s1)-6] = '\0';
 
 ---
 
-Assuming that `s1` is at least of size 16 and `s2` is of size 8 and that both are zero initialized.  
-
 The first statement stores the literal "computer" including its trailing null byte into `s1`.  
-The second statement stores the literal "science" into `s2`.  
+The second statement stores the string "science" including its trailing null byte into `s2`.  
 
-`strcmp` returns an integer less than than zero because `computer` is lexicographically less than `science`. The statement that follows the conditional has to be evaluated.  
+The `strcmp` call returns an integer less than zero because "computer" is lexicographically less than "science". Therefore, the code executes the `strcat(s1, s2)` statement, which appends the string "science" to the end of `s1`, overwriting its terminating null byte. `s1` now stores the string "computerscience".  
 
-The `strcat` call appends the literal "science" to the array containing "computer", overwriting its terminating null byte. `s1` stores the literal "computerscience". 
-
-Finally, the arithmetic `strlen(s1) - 6`, indexes `s1` six places before but not including its null byte. `s1[9] = '\0'`
+Finally, the expression `strlen(s1) - 6` evaluates to 9, the assignment `s1[10] = '\0'` sets the character at that position to null. After executing the given code, the value of `s1` is "computers".  
 
 ```
 { 'c', 'o', 'm', 'p', 'u', 't', 'e', 'r', 's', '\0', 'i', 'e', 'n', 'c', 'e', '\0' } 

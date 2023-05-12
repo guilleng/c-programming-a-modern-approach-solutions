@@ -10,8 +10,6 @@ strcat(str, "red?");
 
 ---
 
-For simplicity, lets assume that `srt` is at least of size `16` and it has been null initialized.  
-
 The first statement copies into the string `str`, the buffer `"tire-bouchon"`.  
 
 ```

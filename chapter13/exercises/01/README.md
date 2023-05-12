@@ -22,15 +22,15 @@ Valid. The format specifier expects a character argument and the newline charact
 
 (b)
 `printf("%c", "\n");`  
-Not a valid `printf` call, the format specifier expects a character argument but it receives a pointer to a string array that contains the newline character plus the null character.  
+Not a valid `printf` call. The format specifier expects a character argument, but it receives a pointer to a string array that contains the newline character plus the null character.  
 
 (c)
 `printf("%s", '\n');`  
-Not a valid `printf` call. The format specifier `%s` expects a pointer to string that should be null-terminated. Instead it receives the newline character escape sequence, this statement reads from forbidden memory, causing undefined behavior.  
+Not a valid `printf` call. The format specifier %s expects a pointer to a null-terminated string, but it receives the newline character escape sequence. This can cause undefined behavior.  
 
 (d) 
 `printf("%s", "\n");`  
-Valid. The format specifier expects a pointer to a null-terminated string. The string literal passed contains the newline character plus the null character. 
+Valid. The format specifier expects a pointer to a null-terminated string, and the string literal passed contains the newline character plus the null character. 
 
 (e) 
 `printf('\n');`  

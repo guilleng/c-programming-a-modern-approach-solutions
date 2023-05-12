@@ -4,7 +4,7 @@ The Q&A section at the end of this chapter shows how the `strcmp` function might
 
 ---
 
-The `strcmp` function as it is displayed in the Q&A section:
+The `strcmp` function as defined in the Q&A section:
 
 ```
 int strcmp(char *s, char *t)

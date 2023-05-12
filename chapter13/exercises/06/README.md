@@ -19,5 +19,7 @@ void censor(char *s)
             s++;
         }
     }
+    
+    return;
 }
 ```
