@@ -53,7 +53,7 @@ Is it necessary for the DEBUG macro to be defined _before_ `debug.h` is included
 ---
 
 (a)
-To determine the output of the program, see an outlining of the preprocessed file:  
+To determine the output of the program, let's first observe an outline of the preprocessed file:  
 
 ```
 /* stdio.h lines are placed here */
@@ -126,10 +126,13 @@ int main(void)
 }
 ```
 
-Output: `Output if DEBUG is not defined:`
+Output:  
+```
+Output if DEBUG is not defined:
+```
 
-(c)
-Defining the macro `DEBUG` triggers the code to expand differently (conditional compilation), the details are clearly seen in answers (a) and (b).  
+(c) 
+Defining the macro `DEBUG` causes the code to expand differently through conditional compilation. The specific details can be found in answers (a) and (b).  
 
-(d)
-Yes, because the preprocessor expands its directives from top to bottom. The only way to trigger the expansion of `PRINT_DEBUG` into a `printf` call is to define `DEBUG` before the `#ifdef` check present in `"debug.h".
+(d) 
+Yes, because the preprocessor processes directives in a top-to-bottom manner. To trigger the expansion of `PRINT_DEBUG` into a `printf` call, `DEBUG` needs to be defined before the `#ifdef` check present in `"debug.h"`.  

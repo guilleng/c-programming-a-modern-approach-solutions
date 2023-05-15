@@ -88,7 +88,7 @@ void dequeue(Queue q)
     {
         struct node *temp = q->head;
 
-        if (q->head == q->tail)
+        if (q->nelems == 1)
         {
             q->head = q->tail = NULL;
         }
@@ -136,7 +136,7 @@ int notempty_queue(Queue q)
  * Private implementations
  */
 
-static void *x_malloc(size_t size, const char* str);
+static void *x_malloc(size_t size, const char* str)
 {
     void *new = malloc(size);
     if (new == NULL)

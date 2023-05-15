@@ -16,9 +16,8 @@ Type definitions.
 
 ---
 
-(b)
-Function definitions. The procedure that a function performs should be on a source file because it may rely on some other procedure that the program interface has no business in being aware of.
+(b) 
+Function definitions should not be put in a header file. The implementation details of a function, including the procedure it performs, should be placed in a source file. The header file should only contain the function prototype, which describes the function's signature and return type. This separation ensures that the program interface does not need to be aware of the internal procedures the function relies on.  
 
-(c)
-This may be a nontrivial question. Some preprocessor computations/macros may be simple enough to be defined on the interface, but others are best hidden away. 
-As a rule of thumb preprocessor symbol definitions of things that need to be shared and that can only be accomplished via the preprocessor should be put in a header file.
+(c) 
+This is a nuanced question. While some preprocessor computations/macros may be simple enough to be defined in the interface, others are better hidden away. As a general rule, preprocessor symbol definitions that need to be shared and can only be achieved through the preprocessor should be placed in a header file. This allows other source files to access and utilize those shared definitions.  

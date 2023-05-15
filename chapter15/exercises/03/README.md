@@ -4,4 +4,4 @@ We saw that writing `#include <file>` instead of `#include "file"` may not work 
 
 ---
 
-Generally, no. It only affects the way the preprocessor searches for the file to be included. Using angle brackets to include system headers may be preferred, as it clearly distinguishes them from user-written headers and may avoid collisions of header filenames.
+Generally, no. The distinction between using angle brackets (`< >`) and double quotes (`" "`) affects the way the preprocessor searches for the included file. When including system headers, using angle brackets is typically preferred. It clearly differentiates them from user-written headers and helps prevent filename collisions.  
