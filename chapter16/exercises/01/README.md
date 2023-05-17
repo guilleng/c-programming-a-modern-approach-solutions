@@ -11,8 +11,8 @@ Are these declarations legal on an individual basis? Could both declarations app
 
 ---
 
-The declarations are entirely legal on an individual basis and can both appear as shown in a program because each structure has a separate name space for its members. (A new scope).
+The declarations are entirely legal on an individual basis, and they can both appear as shown in a program because each structure has a separate namespace for its members, creating a new scope.
 
-In layman terms, it can be said that `struct x` has an `x` and a `y` and that `struct y` has its own `x` and `y`.
+In simpler terms, it can be said that `struct x` has its own `x` and a `y` and that `struct y` also has its own `x` and `y`.
 
-It is also worth noting that a assigning `struct x` to `struct  y` or vice versa would result in a type error.  
+It is worth noting that a assigning `struct x` to `struct  y` or vice versa would result in a type error.  

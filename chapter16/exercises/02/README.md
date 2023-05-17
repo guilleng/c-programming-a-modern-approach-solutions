@@ -10,7 +10,7 @@ Modify the declaration in part (a) so that `c1`'s members initially have the val
 Write statements that copy the members of `c2` into `c1`. Can this be done in one statement, or does it require two?  
 
 (d) 
-Write statements that add the corresponding members of `c1` and `c2, storing the result in `c3`.
+Write statements that add the corresponding members of `c1` and `c2`, storing the result in `c3`.
 
 ---
 
@@ -38,7 +38,8 @@ struct {
 c1.real = c2.real;
 c1.imaginary = c2.imaginary;
 
-/* Copying the members of c2 into c1 in one statement */
+/* Copying the members of c2 into c1 in one statement is allowed because they 
+have compatible types */
 c1 = c2;
 ```
 

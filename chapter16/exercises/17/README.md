@@ -30,10 +30,10 @@ Which of the following statements are legal? Which ones are "safe" (always yield
 The statement is entirely safe and legal.  
 
 (b)
-The statement is legal, but not safe due to the fact that `i` can be any integer value. As such, it may differ from `0` or `1` which are the enumeration constants defaults.  
+The statement is legal but not necessarily safe. Since `i` can be any integer value, it may differ from `0` or `1`, which are the enumeration constants' defaults.
 
 (c)
-The statement is legal, but not safe due to the fact that `b` can go 'out of bounds' of the defined enumeration constants.  
+The statement is legal but not necessarily safe. Since `b` can go "out of bounds" of the defined enumeration constants, it may have a value that is not explicitly defined in the enumeration.
 
 (d)
 The value of `b` can be safely assigned to `i`, because `b` is an enumeration type, which can be implicitly converted to an integer type.

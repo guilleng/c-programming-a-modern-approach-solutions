@@ -18,10 +18,10 @@ If `char` values occupy one byte, `int` values occupy four bytes, and `double` v
 
 ---
 
-To compute the total amount of memory needed for the structure `s`, the sizes of its individual members should be added up. The structure has three members:
+To compute the total amount of memory needed for the structure `s`, the sizes of its individual members should be added up. The structure consists of three members:
 
-1. The `double` variable `a`, which occupies 8 bytes.  
-2. The union `e` also needs 8 bytes, because the largest member it may hold is a `double` datatype.  
-3. The char array `f`, which occupies 4 bytes.
++ The `double` variable `a`, which occupies 8 bytes.  
++ The union `e` also requires 8 bytes because the largest member it may hold is a `double` datatype.  
++ The char array `f`, which occupies 4 bytes.
 
-A C compiler would typically allocate 20 bytes of memory for the structure `s`.
+Therefore, a C compiler would typically allocate 20 bytes of memory for the structure `s`.

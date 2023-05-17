@@ -51,14 +51,14 @@ int day_of_year(struct date d)
 
 int compare_dates(struct date d1, struct date d2)
 {
-	if (d1.year < d2.year)
-	{   
-		return -1;
-	}
-	else if (d2.year < d1.year)
-	{   
-		return 1;
-	}
+    if (d1.year < d2.year)
+    {   
+        return -1;
+    }
+    else if (d2.year < d1.year)
+    {   
+        return 1;
+    }
     else if (day_of_year(d1) < day_of_year(d2))
     {
         return -1;

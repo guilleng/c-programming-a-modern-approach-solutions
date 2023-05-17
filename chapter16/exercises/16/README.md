@@ -20,16 +20,24 @@ Enumeration constants may be used as integers in expressions.
 ---
 
 (a)
-The statement is true. An enumeration constant can be set to any valid `int`, including negative values. i.e.: `enum Comparison { LESSTHAN = -1, EQUAL, GREATHERTHAN };`  
+The statement is true. An enumeration constant can indeed be set to any valid `int`, including negative values. For example:  
+
+```
+enum Comparison { LESSTHAN = -1, EQUAL, GREATHERTHAN };
+```
 
 (b)
-No. Enumeration constants are subject to scope rules and type safety, while manifest constants are preprocessor directives that replace tokens before the compilation process.  
+No. Enumeration constants and manifest constants are different. Enumeration constants are subject to scope rules and type safety, whereas manifest constants are preprocessor directives that are replaced by their respective values during the compilation process.
 
 (c)
 True.
 
 (d)
-False, it is completely legal for two or more constants to have the same value. i.e.: `enum State { WORKING = 0, FAIL = 1, FREEZE = 1, HALT = 1, DONE = 2, TERMINATED = 2 };`
+False. It is indeed legal for two or more constants to have the same value. For instance:  
+
+```
+enum State { WORKING = 0, FAIL = 1, FREEZE = 1, HALT = 1, DONE = 2, TERMINATED = 2 };
+```
 
 (e)
 True.

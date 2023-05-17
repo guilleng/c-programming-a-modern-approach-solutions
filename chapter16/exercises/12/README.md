@@ -18,10 +18,10 @@ If `char` values occupy one byte, `int` values occupy four bytes, and `double` v
 
 ---
 
-The total amount of memory needed for the union `u` is the size of its largest member.  
+The total amount of memory needed for the union `u` is determined by the size of its largest member.  
 
-+ The `double` variable `a`, occupies 8 bytes.  
-+ To determine the size of the structure `e`, the sizes of its individual members should be added up. 4 bytes for the `char` array, 8 bytes for the `double` variable and 4 bytes for the `int` for a total of 16 bytes.  
++ The `double` variable `a` occupies 8 bytes.  
++ To determine the size of the structure `e`, the sizes of its individual members should be added up. 4 bytes for the `char` array, 8 bytes for the `double` variable and 4 bytes for the `int` resulting in a total of 16 bytes.  
 + The char array `f`, occupies 4 bytes.  
 
-Therefore a C compiler would typically allocate 16 bytes of memory for it.  
+Therefore a C compiler would typically allocate 16 bytes of memory for the union `u`.  

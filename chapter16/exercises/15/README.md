@@ -16,5 +16,5 @@ enum Day { MONDAY = 0, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY };
 (b)
 ```
 typedef enum { MONDAY = 0, TUESDAY, WEDNESDAY, THURSDAY, 
-                  FRIDAY, SATURDAY, SUNDAY } Days;
+               FRIDAY, SATURDAY, SUNDAY } Days;
 ```

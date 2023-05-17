@@ -14,7 +14,7 @@ Scale `s` by a factor of `c` (a `double` value), returning the modified version 
 
 ---
 
-Assume the following declarations are in place:  
+Assuming the following declarations are in place:  
 
 ```
 #define PI        (355.0 / 113.0)

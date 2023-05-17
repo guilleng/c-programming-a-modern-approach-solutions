@@ -37,10 +37,10 @@ If the value of `shape_kind` is `RECTANGLE`, the `height` and `width` members st
 The statement is legal. It assigns the value `RECTANGLE` to the member `shape_kind` of `s`.  
 
 (b)
-The statement is legal. It assign to the `x` member of the `point` structure member of `s` the integer value 10.  
+The statement is legal. It assigns the integer value 10 to the `x` member of the `point` structure, which is a member of `s`.  
 
 (c)
-Not legal, there is no `height` member for `s`. To amend this statement and assign 25 to the `rectangle`'s height it should be:  
+Not legal, there is no `height` member for `s`. To correct this statement and assign 25 to the `rectangle`'s height it should be:  
 
 ```
 s.u.rectangle.height = 25;
@@ -50,7 +50,7 @@ s.u.rectangle.height = 25;
 The statement is legal.  
 
 (e)
-Not legal, it attempts to assign an `int` to the `circle` structure member of the union `u` from `s`, missing a reference to the `radius` member.  
+Not legal. It attempts to assign an `int` to the `circle` structure member of the union `u` from `s` but misses a reference to the `radius` member. To fix it it should be:  
 
 ```
 s.u.circle.radius = 5;
