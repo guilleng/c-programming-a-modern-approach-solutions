@@ -11,7 +11,7 @@
 #include "user_input.h"
 #include "dialing_codes.h"
 
-#define BUF_LEN CODEDIGITS
+#define BUF_LEN 10
 
 int main(void)
 {

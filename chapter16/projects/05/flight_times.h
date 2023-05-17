@@ -2,9 +2,10 @@
 #define FLIGHT_TIMES_H
 
 /*
- * Looks up the closest time of departure and arrivals to `user_time` in the 
- * database. Formats the results to the strings `departure` and `arrival`.
- * Returns 1 on success, 0 on failure.
+ * Searches the database for the closest departure and arrival times to 
+ * `user_time`. Formats the results as strings and stores them in `departure` 
+ * and `arrival` respectively.
+ * Returns 1 if successful, 0 otherwise.
  */
 int closest_flight(const char *user_time, char *departure, char *arrival);
 

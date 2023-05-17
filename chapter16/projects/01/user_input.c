@@ -4,9 +4,9 @@
 
 #include "user_input.h"
 
-/*
- * Private prototypes
- * *****************/
+/***
+ * Private declarations
+ */
 
 /*
  * Advances the pointer `ch` until it finds a character that is not a space nor 
@@ -15,11 +15,9 @@
 void discard_tabs_spaces(int *ch);
 
 
-/*
- * Public functions
- * *****************/
-
-/* Reads from standard input */
+/***
+ * Interface implementations
+ */
 int read_stdin(char *str, int n)
 {
     int ch, i = 0;
@@ -39,10 +37,9 @@ int read_stdin(char *str, int n)
     return (i == 0) ? -1 : i;
 }
 
-/*
- * Private functions
- * *****************/
-
+/***
+ * Private implementations
+ */
 void discard_tabs_spaces(int *ch)
 {
     while ((*ch = getchar()) == ' ' || *ch == '\t')

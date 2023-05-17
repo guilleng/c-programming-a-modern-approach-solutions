@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 #include "user_input.h"
-#define BUF_LEN 10
+#define BUF_LEN 11
 
 typedef struct {
     int month;
@@ -17,20 +17,20 @@ typedef struct {
 } Dates;
 
 /*
- * Allocates a buffer for an user inputted date, validates it and stores it in 
- * the pointer arguments.
+ * Allocates a buffer for a user-inputted date, validates it, and stores it in 
+ * the provided pointer arguments.
  */
 void get_user_date(int *mm, int *dd, int *yy);
 
 /*
  * Returns the day of the year (an integer between 1 and 366) that corresponds 
- * to the date d.
+ * to the given date `d`.
  */
 int day_of_year(Dates d);
 
 /*
- * Returns -1 if d1 is an earlier date than d2, +1 if d1 is a later date than
- * d2, and 0 if d1 and d2 are the same.
+ * Returns -1 if `d1` is an earlier date than `d2`, +1 if `d1` is a later date 
+ * than `d2`, and 0 if `d1` and `d2` are the same.
  */
 int compare_dates(Dates d1, Dates d2);
 

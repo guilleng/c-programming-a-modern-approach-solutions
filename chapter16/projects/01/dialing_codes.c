@@ -4,12 +4,11 @@
 
 #include "dialing_codes.h"
 
-/* Local Macros
- * ************/
-#define ARRAY_SIZE(array) (sizeof(array) / sizeof(array[0]))
+/***
+ * Private declarations
+ */
 
-/* Data Definitions
- * ****************/
+#define ARRAY_SIZE(array) (sizeof(array) / sizeof(array[0]))
 
 struct dialing_code {
     char *country;
@@ -34,11 +33,9 @@ const struct dialing_code country_codes[] =
      {"Ukraine",             380}, {"United Kingdom",  44},
      {"United States",         1}, {"Vietnam",         84}};
 
-/* Public functions                                                            
- *******************/
-
-/* Returns a pointer to a null terminated string containing the name of the
- * country whose international dialing code is `code`. */
+/***
+ * Interface implementations
+ */
 char *country_name(int code)
 {
     int i;
@@ -54,7 +51,6 @@ char *country_name(int code)
     exit(EXIT_FAILURE);
 }
 
-/* Validates and returns an international dialing country code */
 int valid_country_code(char *str) 
 {
     int number = 0;

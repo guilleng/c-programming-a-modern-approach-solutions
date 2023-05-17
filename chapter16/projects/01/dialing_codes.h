@@ -8,15 +8,15 @@
 
 /*
  * Returns a pointer to a string containing the name of the country whose 
- * dialing code is the integer `code` represents, prints an error if the code
- * does not correspond to any country in the database.  
+ * dialing code is represented by the integer `code`, and prints an error if 
+ * the code does not correspond to any country in the database.  
  */
 char *country_name(int code);
 
 /*
- * If the non-empty string `str` represents a valid decimal integer representing
- * a country dialing code, returns said integer, prints an error to stderr 
- * otherwise.
+ * If the non-empty string `str` represents a valid decimal integer that 
+ * corresponds to a country dialing code, returns the integer value.
+ * Otherwise, it prints an error message to stderr.
  */
 int valid_country_code(char *str);
 

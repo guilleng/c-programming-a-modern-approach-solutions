@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 #include "flight_times.h"
 #include "user_input.h"
 
-/*
- * Private Macros
- * **************/
+/***
+ * Private declarations
+ */
 
 /*
  * Evaluates to the length of `array`
@@ -33,10 +34,6 @@
 #define HHMM_TO_MIN(hh,mm)  ((hh) * 60 + (mm))
 
 
-/*
- * Data definitions
- * ****************/
-
 struct daily_flights {
     long departure;
     long arrival;
@@ -53,22 +50,15 @@ const struct daily_flights time_of[] =
       { 21 * 60 + 45,  11 * 60 + 58 } };
 
 /*
- * Private functions
- * ****************/
-
-/*
  * If `srt` is a valid time in the 24 hour clock formatted as HH:MM, returns a 
  * long that is the time in minutes since midnight. Otherwise, returns -1. 
  */
 long valid_time(const char *str);
 
 
-/*
- * Public functions
- * ****************/
-
-/* Determines the closest time to `user_time` and formats the results in the
- * strings departure and arrival */
+/***
+ * Interface implementations
+ */
 int closest_flight(const char *user_time, char *departure, char *arrival)
 {
     int i;
@@ -97,15 +87,14 @@ int closest_flight(const char *user_time, char *departure, char *arrival)
 }
 
 
-/*                                                                              
+/***                                                                              
  * Private implementations                                                      
- *************************/ 
-
+ */
 long valid_time(const char *str)
 {                                                                               
     int hh, mm;                                                                 
     if (isdigit(  *str  ) && isdigit(*(str + 1)) && *(str + 2) == ':' &&        
-        isdigit(*str + 3) && isdigit(*(str + 4)))                               
+        isdigit(*str + 3) && isdigit(*(str + 4)) && strlen(str) == 5)
     {                                                                           
         hh = (( *str ) - '0') * 10 + (*(str+1) - '0');                          
         mm = (*(str+3) - '0') * 10 + (*(str+4) - '0');                          

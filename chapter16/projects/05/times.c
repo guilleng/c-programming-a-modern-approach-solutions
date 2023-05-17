@@ -9,7 +9,7 @@
 #include "flight_times.h"
 #include "user_input.h"
 
-#define BUF_LENGHT 5
+#define BUF_LENGHT 10
 
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 
     printf("Enter a time in the HH:MM (24-hour clock): ");
 
-    if (read_stdin(buffer, BUF_LENGHT) == BUF_LENGHT && 
+    if (read_stdin(buffer, BUF_LENGHT) && 
             (closest_flight(buffer, departure, arrival)))
     {
         printf("Closest departure: %s, arrival %s", departure, arrival);
