@@ -41,20 +41,21 @@ int count_ones(unsigned char ch)
 
 (b)
 ```
-int count_ones(unsigned char ch)                                                
-{                                                                               
-    static short count = 0;                                                     
-
-    if (!ch)                                                                    
+int count_ones_helper(unsigned char ch, int acc)
+{
+    if (ch == 0)                                                                    
     {                                                                           
-        return count;                                                           
+        return acc;                                                           
     }                                                                           
     else                                                                        
     {                                                                           
-        count += (0x01 & ch );                                                  
-        count_ones(ch >> 1);                                                    
+        return count_ones_helper(ch >> 1, acc += (0x01 & ch ));
     }                                                                           
-}                                                                               
+}
+int count_ones(unsigned char ch)                                                
+{                                                                               
+    return count_ones_helper(ch, 0);
+}
 ```
 
 ```
