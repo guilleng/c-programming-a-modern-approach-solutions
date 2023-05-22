@@ -20,15 +20,16 @@ struct node *new_node)
 ---
 
 If the list is empty, the expression `cur->value` in the loop condition dereferences a `NULL` pointer which causes undefined behavior.  
-If the value to insert goes last in a non empty list, the same behavior as above is exhibited. i.e.: List is `1 2 3` and `new_node->value = 10`.  
-If the value to insert goes first in a non empty list list, the expression `prev->next` dereferences a `NULL` pointer. i.e.: List is `1 2 3` and `new_node->value = 0`  
+If the value to insert is greater than all values in a non-empty list, the same behavior as mentioned above is exhibited. For example, if the list is `1 2 3` and `new_node->value = 10`, the loop will continue until it reaches the end of the list, resulting in `cur` being a `NULL` pointer.
+If the value to insert is smaller than all values in a non-empty list, the expression `prev->next` dereferences a `NULL` pointer. For instance, if the list is `1 2 3` and `new_node->value = 0`, the loop will not execute, and `prev` will be `NULL`. Therefore, attempting to assign `prev->next` will result in dereferencing a `NULL` pointer.
+
 
 ```
 struct node *insert_into_ordered_list(struct node *list, struct node *new_node)
 {
     struct node *cur = list, *prev = NULL;
 
-    if (!cur)
+    if (cur == NULL)
     {
         /* empty list */
         list = new_node;

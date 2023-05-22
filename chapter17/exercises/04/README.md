@@ -15,8 +15,15 @@ Assume that we want `p` to point to a `rectangle` structure whose upper left cor
 ```
 p = malloc(sizeof(struct rectangle));
 
-p->upper_left.x  = 10;
-p->upper_left.y  = 25;
-p->lower_right.x = 25;
-p->lower_right.y = 15;
+if (p == NULL)
+{
+    /* handle allocation failure */;
+}
+else 
+{ 
+    p->upper_left.x  = 10;
+    p->upper_left.y  = 25;
+    p->lower_right.x = 25;
+    p->lower_right.y = 15;
+}
 ```

@@ -1,7 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 17, exercise 08
  * Date: May 2023
- * Description: Implementation of a stack in heap. 
+ * Description: Implementation of a stack in the heap. 
  */
 
 #include <stdlib.h>

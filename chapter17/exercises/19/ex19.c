@@ -6,6 +6,7 @@
  */
 
 #include <stdio.h>
+#include <string.h>
 
 void new_cmd(void);
 void open_cmd(void);
@@ -21,19 +22,20 @@ struct {
     char *cmd_name;
     void (*cmd_pointer)(void);
 } file_cmd[] =
- {{"new",       new_cmd},
- {"open",       open_cmd},
- {"close",      close_cmd},
- {"close all",  close_all_cmd},
- {"save",       save_cmd},
- {"save as",    save_as_cmd},
- {"save all",   save_all_cmd},
- {"print",      print_cmd},
- {"exit",       exit_cmd}
+{ {"new",        new_cmd},
+  {"open",       open_cmd},
+  {"close",      close_cmd},
+  {"close all",  close_all_cmd},
+  {"save",       save_cmd},
+  {"save as",    save_as_cmd},
+  {"save all",   save_all_cmd},
+  {"print",      print_cmd},
+  {"exit",       exit_cmd}
 };
 
 #define COMMANDS    (sizeof(file_cmd) / sizeof(*file_cmd))
 
+/* array indexing */
 void run_cmd(char *command)
 {
     size_t i;
@@ -47,6 +49,7 @@ void run_cmd(char *command)
     }
 }
 
+/* pointer arithmetic */
 void run_cmd_ptr(char *command)
 {
     struct {

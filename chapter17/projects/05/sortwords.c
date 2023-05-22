@@ -16,9 +16,10 @@ void print(char *arr[], size_t nelems);
 int compare(const void *p, const void *q);
 
 /*
- * main declares and initializes a dynamically allocated NULL-terminated ragged
- * array of strings `words`. Uses an infinite loop to repeatedly read a word 
- * from stdin, allocates space on the heap for it and appends it to `words`. 
+ * `main` declares and initializes a dynamically allocated NULL-terminated 
+ * ragged-array of strings `words`. 
+ * Uses an infinite loop to repeatedly read a word from stdin, allocating space 
+ * on the heap for it and appending it to `words`. 
  */ 
 int main(void)
 {
@@ -31,7 +32,7 @@ int main(void)
     while (1)
     {
         char buffer[BUFFER_SIZE+1];
-        int len_word = 0;
+        size_t len_word = 0;
 
         printf("Enter a word: ");
         len_word = read_line(buffer, BUFFER_SIZE);
@@ -42,6 +43,7 @@ int main(void)
         }
         else
         {
+            /* allocate buffer string */
             char **new_words = realloc(words, sizeof(char *) * (num_words + 2));
 
             if (new_words == NULL)
@@ -51,7 +53,7 @@ int main(void)
             }
             words = new_words;
 
-            /* allocate buffer string, point array to it, then append NULL */
+            /* set ragged array pointer, then re-append NULL */
             words[num_words++] = allocate_string(buffer, len_word);
             words[num_words] = NULL;
         }
@@ -65,7 +67,7 @@ int main(void)
     }
     else
     {
-        puts("No words to sort\n");
+        puts("No words to sort");
     }
 
     exit(EXIT_SUCCESS);
@@ -123,7 +125,7 @@ void print(char *arr[], size_t nelems)
 }
 
 /*
- * comparison function
+ * Comparison function
  */
 int compare(const void *s1, const void *s2)
 {
