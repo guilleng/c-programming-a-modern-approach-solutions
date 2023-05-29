@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
     if (fp_plain == NULL || fp_cypher == NULL)
     {
-        perror("Error: ");
+        perror("Error");
         exit(EXIT_FAILURE);
     }
 
@@ -42,18 +42,18 @@ int main(int argc, char *argv[])
         int cypher = ch ^ KEY;
         if (fwrite(&cypher, sizeof(char), 1, fp_cypher) != 1)
         {
-            perror("Error: ");
+            perror("Error");
             break;
         }
     }
 
     if (fclose(fp_plain) == EOF)
     {
-        perror("Error: ");
+        perror("Error");
     }
     if (fclose(fp_cypher) == EOF)
     {
-        perror("Error: ");
+        perror("Error");
     }
     exit(EXIT_SUCCESS);
 }

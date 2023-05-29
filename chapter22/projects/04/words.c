@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
     if ((fp = fopen(argv[1], "r")) == NULL)
     {
-        perror("Error: ");
+        perror("Error");
         exit(EXIT_FAILURE);
     }
 
@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
 
     if (ferror(fp))
     {
-        perror("Error: ");
+        perror("Error");
     }
 
     if (fclose(fp) == EOF)
     {
-        perror("Error: ");
+        perror("Error");
     }
 
     printf("%ld %s\n", words, argv[1]);

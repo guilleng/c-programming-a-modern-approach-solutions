@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
         if (fp == NULL)
         {
-            perror("Error: ");
+            perror("Error");
             continue;
         }
 
@@ -36,11 +36,11 @@ int main(int argc, char *argv[])
 
         if (ferror(fp))
         {
-            perror("Error: ");
+            perror("Error");
         }
         if (fclose(fp) == EOF)
         {
-            perror("Error: ");
+            perror("Error");
         }
     }
 

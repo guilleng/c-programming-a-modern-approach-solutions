@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
     if (fp == NULL)
     {
-        perror("Error: ");      /* prints an error message related */
+        perror("Error");        /* prints an error message related */
         exit(EXIT_FAILURE);     /* to the last system call         */
     }
 
@@ -35,11 +35,11 @@ int main(int argc, char *argv[])
     
     if (ferror(fp))
     {
-        perror("Error: ");
+        perror("Error");
     }
     if (fclose(fp) == EOF)
     {
-        perror("Error: ");
+        perror("Error");
     }
 
     exit(EXIT_SUCCESS);

@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     fp = fopen(argv[1], "rb");
     if (fp == NULL)
     {
-        perror("Error :");
+        perror("Error");
         exit(EXIT_FAILURE);
     }
 
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
         int i;
         if (ferror(fp))
         {
-            perror("Error: ");
+            perror("Error");
             break;
         }
 
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
     if (fclose(fp) == EOF)
     {
-        perror("Error: ");
+        perror("Error");
     }
 
     exit(EXIT_SUCCESS);
