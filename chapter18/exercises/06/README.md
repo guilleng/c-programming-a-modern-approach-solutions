@@ -5,8 +5,8 @@ The following function is supposed to print an error message. Each message is pr
 ```
 void print_error(const char *message)
 {
-int n = 1;
-printf("Error %d: %s\n", n++, message);
+    int n = 1;
+    printf("Error %d: %s\n", n++, message);
 }
 ```
 ---
@@ -14,7 +14,7 @@ printf("Error %d: %s\n", n++, message);
 ```
 void print_error(const char *message)
 {
-static int n = 1;                       /* n has static storage duration */
-printf("Error %d: %s\n", n++, message);
+    static int n = 1;                       /* n has static storage duration */
+    printf("Error %d: %s\n", n++, message);
 }
 ```

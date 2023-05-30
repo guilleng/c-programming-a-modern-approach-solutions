@@ -17,7 +17,7 @@ The compiler will check that no assignment is made to `x`.
 ---
 
 (a)
-False. Case labels on switch statements can only be compile-time constants, `x` is a constant variable which is resolved at runtime.  
+False. Case labels on switch statements can only be compile-time constants, `x` is a constant variable resolved at runtime.  
 
 (b)
 True. A `const` object cannot be modified after its initialization.  

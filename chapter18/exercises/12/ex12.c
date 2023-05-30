@@ -19,24 +19,30 @@
 /*** (b) Calling `f`:
  */
 
-/* function that takes a long and returns a float */
+/* 
+ * Function that takes a long and returns a float 
+ */
 float g(long n)
 {
     return n + 2.0;
 }
 
-/* function to return from f */
+/* 
+ * Function to return from f
+ */
 int h(double d)
 {
     return (int)(d * 2);
 }
 
-/* f assigns the result of calling the function pointed to by fp with the value 
- * 118 to the character pointed to by ch, and returns a pointer to h */
+/* 
+ * `f` assigns the result of calling the function pointed to by `fp` with the 
+ * value 118 to the character pointed to by `ch`, and returns a pointer to `h`
+ */
 int (*f(float (*fp)(long), char *ch))(double)
 {
     *ch = (int) (*fp)(118);
-	return h;
+    return h;
 }
 
 int main(void)
@@ -58,7 +64,7 @@ int main(void)
     printf("Ch: %c\n", ch);                   /* prints "Ch: x" */
 
 
-/* calling f directly */
+    /* calling f directly */
     ch = '0', d = 2.7182;
 
     printf("Result: %d\n", (f(&g, &ch))(d));  /* prints "Result: 5" */

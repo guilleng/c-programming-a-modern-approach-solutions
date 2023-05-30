@@ -19,23 +19,23 @@ Type specifiers: `char`.
 Declarators:  `**`, `lookup` and `(int level)`.  
 Initializers: None.  
 
-(b)
+(b)  
 Storage class: `auto` by default.  
 Type qualifiers: `volatile`.  
 Type specifiers: `unsigned long`.  
 Declarators:  `io_flags`.  
 Initializers: None.  
 
-(c)
+(c)  
 Storage class: `extern`.  
 Type qualifiers: None.  
 Type specifiers: `char`.  
 Declarators:  `*`, `file_name` and `[MAX_FILES]` conform the first declarator while `path` and `[]` form part of the second.  
 Initializers: None.  
 
-(d)
+(d)  
 Storage class: `static`.    
 Type qualifiers: `const`.  
 Type specifiers: `char`.  
-Declarators:  `token buf` and `[]`.  
+Declarators:  `token_buf` and `[]`.  
 Initializers: `""`.  

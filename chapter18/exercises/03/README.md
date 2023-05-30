@@ -13,11 +13,9 @@ void f(register double b)
 
 ---
 
-|----------------|------------------|--------|----------|
 | Name reference | Storage Duration | Scope  | Linkage  |
 |----------------|------------------|--------|----------|
 |        a       | Static           | File   | External |
 |        b       | Automatic        | Block  | None     |
 |        c       | Automatic        | Block  | None     |
 |        d       | Automatic        | Block  | None     |
-|----------------|------------------|--------|----------|
