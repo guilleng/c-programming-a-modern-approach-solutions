@@ -9,7 +9,7 @@
 
 /*
  * Reads at most `len` characters from stdin and stores they into the `token`
- * buffer if and only if it is a string representing on of:
+ * buffer if and only if it is a string representing one of the following: 
  * + positive integer
  * + zero
  * + equal sign '='

@@ -8,7 +8,7 @@
 #define QUEUE_H
 
 typedef int Item;
-typedef struct queue_Obj* Queue;
+typedef struct queue_struct* Queue;
 
 /*
  * Spawns an object of type `Queue`
@@ -33,12 +33,12 @@ void dequeue(Queue q);
 /*
  * Returns the first item in a `Queue` (without changing the queue)  
  */
-Item peek(Queue q);
+Item peek_first(Queue q);
 
 /*
  * Returns the last item in a `Queue` (without changing the queue)  
  */
-Item rear(Queue q);
+Item peek_last(Queue q);
 
 /*
  * Returns the number of elements in a `Queue`

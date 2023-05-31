@@ -7,8 +7,6 @@
  * provided that this copyright notice is retained.      *
  *********************************************************/
 
-/* stackADT3.c (Chapter 19, page 500) */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "stackADT.h"

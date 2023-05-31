@@ -8,7 +8,7 @@
 #define QUEUE_H
 
 /* This macro definition specifies the size of the queue and is only applicable
- * when the implementation uses an array-based approach */
+ * when the implementation uses a fixed-size array-based approach */
 #define QUEUE_SIZE 32
 
 typedef int Item;
@@ -37,16 +37,16 @@ void dequeue(Queue q);
 /*
  * Returns the first item in a `Queue` (without changing the queue)  
  */
-Item peek(Queue q);
+Item peek_first(Queue q);
 
 /*
  * Returns the last item in a `Queue` (without changing the queue)  
  */
-Item rear(Queue q);
+Item peek_rear(Queue q);
 
 /*
  * Returns the number of elements in a `Queue`
  */
-int notempty_queue(Queue q);
+int isempty_queue(Queue q);
 
 #endif
