@@ -17,10 +17,12 @@ struct part {
     int on_hand;
 }; 
 
+FILE *fp1, *fp2, *fp_dest;
+
+void cleanup(void);
 
 int main(int argc, char *argv[])
 {
-    FILE *fp1, *fp2, *fp_dest;
     char new_file[FILENAME_MAX];
 
     if (argc != 3)
@@ -59,7 +61,6 @@ int main(int argc, char *argv[])
     }
 
     /* merge files */
-    while (1)
     {
         struct part from_fp1;
         struct part from_fp2;
@@ -71,12 +72,27 @@ int main(int argc, char *argv[])
         if (ferror(fp1) || ferror(fp2))
         {
             perror("Error");
-			break;
+            cleanup();
         }
 
-        if (read_fp1 == 1 && read_fp2 == 1)
+        if (read_fp1 == 0 && read_fp1 == 0)
         {
-            if (from_fp1.number == from_fp2.number)
+            cleanup();
+        }
+
+        while (read_fp1 == 1 && read_fp2 == 1)
+        {
+            if (from_fp1.number < from_fp2.number)
+            {
+                ret = fwrite(&from_fp1, sizeof(struct part), 1, fp_dest);
+                read_fp1 = fread(&from_fp1, sizeof(struct part), 1, fp1);
+            }
+            else if (from_fp1.number > from_fp2.number)
+            {
+                ret = fwrite(&from_fp2, sizeof(struct part), 1, fp_dest);
+                read_fp2 = fread(&from_fp2, sizeof(struct part), 1, fp2);
+            }
+            else if (from_fp1.number == from_fp2.number)
             {
                 if (strcmp(from_fp1.name, from_fp2.name) != 0)
                 {
@@ -89,39 +105,42 @@ int main(int argc, char *argv[])
                 }
                 from_fp1.on_hand += from_fp2.on_hand;
                 ret = fwrite(&from_fp1, sizeof(struct part), 1, fp_dest);
+                read_fp1 = fread(&from_fp1, sizeof(struct part), 1, fp1);
+                read_fp2 = fread(&from_fp2, sizeof(struct part), 1, fp2);
             }
-            else if (from_fp1.number < from_fp2.number)
+            
+            if (ret != 1 || ferror(fp_dest))
             {
-                ret = fwrite(&from_fp1, sizeof(struct part), 1, fp_dest);
-                ret = fwrite(&from_fp2, sizeof(struct part), 1, fp_dest);
+                perror("Error");
+                cleanup();
             }
-            else
-            {
-                ret = fwrite(&from_fp2, sizeof(struct part), 1, fp_dest);
-                ret = fwrite(&from_fp1, sizeof(struct part), 1, fp_dest);
-            }
-
         }
-        else if (read_fp1 == 1 && read_fp2 == 0)
+        while (read_fp1 == 1)
         {
             ret = fwrite(&from_fp1, sizeof(struct part), 1, fp_dest);
+            read_fp1 = fread(&from_fp1, sizeof(struct part), 1, fp1);
+            if (ret != 1 || ferror(fp_dest))
+            {
+                perror("Error");
+                cleanup();
+            }
         }
-        else if (read_fp2 == 1 && read_fp1 == 0)
+        while (read_fp2 == 1)
         {
-            ret = fwrite(&from_fp2, sizeof(struct part), 1, fp_dest);
-        }
-        else if (read_fp1 == 0 && read_fp1 == 0)
-        {
-            break;
-        }
-
-        if (ret != 1 || ferror(fp_dest))
-        {
-            perror("Error");
-            break;
+            ret = fwrite(&from_fp1, sizeof(struct part), 1, fp_dest);
+            read_fp2 = fread(&from_fp2, sizeof(struct part), 1, fp2);
+            if (ret != 1 || ferror(fp_dest))
+            {
+                perror("Error");
+                cleanup();
+            }
         }
     }
+    cleanup();
+}
 
+void cleanup(void)
+{
     if (fclose(fp1) == EOF)
     {
         perror("Error");
@@ -136,7 +155,8 @@ int main(int argc, char *argv[])
     {
         perror("Error");
     }
-
-
     exit(EXIT_SUCCESS);
 }
+
+
+
