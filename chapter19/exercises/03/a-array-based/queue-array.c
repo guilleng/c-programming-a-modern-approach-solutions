@@ -88,7 +88,7 @@ void dequeue(Queue q)
     return;
 }
 
-Item peek(Queue q)
+Item peek_first(Queue q)
 {
     if (q->nelems)
     {
@@ -99,7 +99,7 @@ Item peek(Queue q)
 }
 
 
-Item rear(Queue q)
+Item peek_rear(Queue q)
 {
     if (q->nelems)
     {
@@ -109,7 +109,7 @@ Item rear(Queue q)
     return -1;
 }
 
-int notempty_queue(Queue q)
+int isempty_queue(Queue q)
 {
     return q->nelems;
 }

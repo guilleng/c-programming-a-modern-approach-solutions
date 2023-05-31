@@ -102,27 +102,27 @@ void dequeue(Queue q)
     return;
 }
 
-void *peek(Queue q)
+void *peek_first(Queue q)
 {
     if (q->nelems)
     {
         return q->queue[(q->head)];
     }
-    fprintf(stderr, "peek() on empty queue\n");
+    fprintf(stderr, "peek_first() on empty queue\n");
     return NULL;
 }
 
-void *rear(Queue q)
+void *peek_rear(Queue q)
 {
     if (q->nelems)
     {
         return q->queue[q->tail];
     }
-    fprintf(stderr, "rear() on empty queue\n");
+    fprintf(stderr, "peek_rear() on empty queue\n");
     return NULL;
 }
 
-int notempty_queue(Queue q)
+int isempty_queue(Queue q)
 {
     return q->nelems;
 }

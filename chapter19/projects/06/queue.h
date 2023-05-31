@@ -35,16 +35,16 @@ void dequeue(Queue q);
 /*
  * Returns the first item in a `Queue` (without changing the queue)  
  */
-void *peek(Queue q);
+void *peek_first(Queue q);
 
 /*
  * Returns the last item in a `Queue` (without changing the queue)  
  */
-void *rear(Queue q);
+void *peek_rear(Queue q);
 
 /*
  * Returns the number of elements in a `Queue`
  */
-int notempty_queue(Queue q);
+int isempty_queue(Queue q);
 
 #endif

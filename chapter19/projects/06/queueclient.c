@@ -25,40 +25,40 @@ int main()
     }
 
     enqueue("first", q);
-    printf("First in q: %s\n", (char *) peek(q));
-    printf("Last in q: %s\n", (char *) rear(q));
+    printf("First in q: %s\n", (char *) peek_first(q));
+    printf("Last in q: %s\n", (char *) peek_rear(q));
     puts("");
 
     enqueue("second", q);
-    printf("First in q: %s\n", (char *) peek(q));
-    printf("Last in q: %s\n", (char *) rear(q));
+    printf("First in q: %s\n", (char *) peek_first(q));
+    printf("Last in q: %s\n", (char *) peek_rear(q));
     puts("");
 
     puts("third element, fills the queue");
     enqueue("third", q);
-    printf("First in q: %s\n", (char *) peek(q));
-    printf("Last in q: %s\n", (char *) rear(q));
+    printf("First in q: %s\n", (char *) peek_first(q));
+    printf("Last in q: %s\n", (char *) peek_rear(q));
     puts("");
 
     enqueue("fourth does not fit, should output error", q);
 
-    printf("Number of elements in q: %d\n\n", notempty_queue(q));
+    printf("Number of elements in q: %d\n\n", isempty_queue(q));
 
     dequeue(q);
     puts("first dequeued");
-    printf("First in q: %s\n", (char *) peek(q));
-    printf("Last in q: %s\n", (char *) rear(q));
+    printf("First in q: %s\n", (char *) peek_first(q));
+    printf("Last in q: %s\n", (char *) peek_rear(q));
     puts("");
 
     puts("fourth now fits");
     enqueue("fourth", q);
-    printf("First in q: %s\n", (char *) peek(q));
-    printf("Last in q: %s\n", (char *) rear(q));
+    printf("First in q: %s\n", (char *) peek_first(q));
+    printf("Last in q: %s\n", (char *) peek_rear(q));
     puts("");
 
-    printf("Number of elements in q: %d\n\n", notempty_queue(q));
+    printf("Number of elements in q: %d\n\n", isempty_queue(q));
 
-    if (notempty_queue(w))
+    if (isempty_queue(w))
     {
         puts("w not empty");
     }
@@ -68,16 +68,16 @@ int main()
     }
 
     puts("moving all elements from q to w");
-    while(notempty_queue(q))
+    while(isempty_queue(q))
     {
-        i = peek(q);
+        i = peek_first(q);
         dequeue(q);
         enqueue(i, w);
     }
-    printf("First in w: %s\n", (char *) peek(w));
-    printf("Last in w: %s\n", (char *) rear(w));
+    printf("First in w: %s\n", (char *) peek_first(w));
+    printf("Last in w: %s\n", (char *) peek_rear(w));
 
-    if (notempty_queue(q))
+    if (isempty_queue(q))
     {
         puts("q not empty");
     }

@@ -12,7 +12,7 @@
  * a valid RPN token. */
 void validate(const char *token);
 
-/* Returns a character that reads from stdin. Replaces newlines and tabs for 
+/* Returns a character that reads from stdin. Replaces newlines and tabs with 
  * spaces */
 int read_char(void);
 
@@ -67,7 +67,7 @@ void validate(const char *token)
         }
     }
     
-    /* if p moved forward, look for the null terminator */
+    /* if p has moved forward, look for the null terminator */
     if (p > token && !*(p - 1))
     {
         return;

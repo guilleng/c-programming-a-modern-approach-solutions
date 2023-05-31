@@ -10,4 +10,4 @@ typedef struct queue_type *Queue;
 
 ---
 
-My solution to Exercise 1 proposes the queue module as an abstract data type named `queue_struct`. An implementation of a circular queue using a fixed length is presented as part (a) of Exercise 3, and a client test file is also included.  
+My solution to Exercise 1 of this chapter proposes the queue module as an abstract data type named `queue_struct`. An implementation of a circular queue using a fixed-length array is presented as part (a) of Exercise 3, and a client test file is also included.  

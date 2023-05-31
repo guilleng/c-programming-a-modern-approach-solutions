@@ -7,12 +7,6 @@
  * provided that this copyright notice is retained.      *
  *********************************************************/
 
-/*
- * C programming: A Modern Approach. Chapter 19, Project 03
- * Date: May 2023
- * Description: Test client for stack abstract data structure
- */
-
 #include <stdio.h>
 #include "stackADT.h"
 
