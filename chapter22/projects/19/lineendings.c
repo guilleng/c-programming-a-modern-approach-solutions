@@ -4,7 +4,7 @@
 #include <string.h>
 #include "lineendings.h"
 
-enum Type { NotSet = -2, Error, NotASCII, Windows, Unix, Neither};
+enum { NotSet = -2, Error, NotASCII, Windows, Unix, Neither} Type;
 char buffer[BUF_SIZE];
 
 /*
@@ -18,8 +18,8 @@ char buffer[BUF_SIZE];
  */
 int is_unixorwin(FILE *fp)
 {
-    int type = NotSet;
-    while (fgets(buffer, BUF_SIZE, fp) != NULL && type == NotSet)
+    Type = NotSet;
+    while (fgets(buffer, BUF_SIZE, fp) != NULL && Type == NotSet)
     {
         char *p = buffer;
         if (ferror(fp))
@@ -28,11 +28,11 @@ int is_unixorwin(FILE *fp)
             return Error;
         }
 
-        while (*p && type == NotSet)
+        while (*p && Type == NotSet)
         {
             if (!isascii(*p))
             {
-                type = NotASCII;
+                Type = NotASCII;
                 break;
             }
 
@@ -40,12 +40,12 @@ int is_unixorwin(FILE *fp)
             {
                 if (strlen(buffer) > 1 && *(p-1) == '\r')
                 {
-                    type = Windows;
+                    Type = Windows;
                     break;
                 }
                 else
                 {
-                    type = Unix;
+                    Type = Unix;
                     break;
                 }
             }
@@ -55,13 +55,13 @@ int is_unixorwin(FILE *fp)
 
     rewind(fp);
 
-    if (type == NotSet)
+    if (Type == NotSet)
     {
         return Neither;
     }
     else
     {
-        return type;
+        return Type;
     }
 }
 
