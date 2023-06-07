@@ -17,6 +17,7 @@ unsigned int reverse_bits(unsigned int n)
 {
     unsigned int r = 0;
     size_t bits = sizeof(n) * CHAR_BIT;
+
     while (bits)
     {
         r <<= 1;
@@ -24,6 +25,7 @@ unsigned int reverse_bits(unsigned int n)
         n >>= 1;
         bits--;
     }
+
     return r;
 }
 ```

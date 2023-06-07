@@ -16,7 +16,7 @@ unsigned int f(unsigned int i, int m, int n)
 ---
 
 (a)
-Suppose `n = 3`, and operations yield 2 byte values:  
+Suppose `n = 3`, and operations yield 2 byte values, outlining the operations in a step by step fashion:  
 
 ```
 ~(~0 << 3)          
@@ -29,11 +29,11 @@ Suppose `n = 3`, and operations yield 2 byte values:
 ~(~0 << 8)          /* Yields 0x00FF */
 ```
 
-Generates a bitmask whose `n` least significant bits are set to 1.  
+Thus ~(~0 << n) generates a bitmask whose `n` least significant bits are set to 1.  
 
 (b)
 
-Suppose, `i = 0x9999`, `n = 1`, `m = 3` and all operations yield 2 byte values:  
+Suppose `i = 0x9999`, `n = 1`, `m = 3`:   
 
 ```
 (0x9999 >> (4 + 1 - 1)) & ~(~0 << 4)  /* i is 1001 1001 1001 1001 */
@@ -49,4 +49,4 @@ Suppose, `i = 0x9999`, `n = 1`, `m = 3` and all operations yield 2 byte values:
                 0x003
 ```
 
-The function `f` 'bit-slices' from `n` to `m` the number `i`.
+The function `f` 'bit-slices' from `n` to `m` the number `i`. It extracts a range of bits from position `n` to position `m` (inclusive) and returns the result.

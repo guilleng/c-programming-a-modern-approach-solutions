@@ -8,6 +8,7 @@ unsigned int rotate_right(unsigned int i, int n);
 ```
 
 `rotate_left` should return the result of shifting the bits in `i` to the left by `n` places, with the bits that were “shifted off” moved to the right end of `i`. (For example, the call `rotate_left(0x12345678, 4)` should return `0x23456781` if integers are 32 bits long.) `rotate_right` is similar, but it should “rotate” bits to the right instead of the left.
+
 ---
 
 ```

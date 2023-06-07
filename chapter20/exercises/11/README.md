@@ -16,7 +16,7 @@ if (key_code & (SHIFT_BIT | CTRL_BIT | ALT_BIT) == 0)
 ```
 ---
 
-The problem is that the `==` comparison operator has higher precedence than the bitwise `&`. Making the condition false by default.  
+The problem is that the comparison operator `==` has higher precedence than the bitwise `&`. This makes the condition false by default.  
 
 ```
 if ((key_code & (SHIFT_BIT | CTRL_BIT | ALT_BIT)) == 0)

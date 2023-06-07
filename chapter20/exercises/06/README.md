@@ -19,4 +19,20 @@ _Hint_: Use the `%hx` conversion to read and write the hex numbers.
 
 ---
 
-See `swap.c`.  
+(a)  
+```
+unsigned short swap_bytes(unsigned short i) 
+{
+    unsigned short j = i << 8;
+    i >>= 8;
+    return j | i;
+}
+```
+
+(b)  
+```
+unsigned short swap_bytes_one_line(unsigned short i)
+{
+    return (i << 8) | (i >> 8);
+}
+```
