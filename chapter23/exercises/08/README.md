@@ -1,4 +1,4 @@
-# Chapter 22 - Exercise 08 
+# Chapter 23 - Exercise 08 
 
 Use `strchr` to write the following function: 
 

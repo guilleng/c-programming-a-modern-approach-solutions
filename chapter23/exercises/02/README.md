@@ -1,4 +1,4 @@
-# Chapter 22 - Exercise 02
+# Chapter 23 - Exercise 02
 
 (C99) Write the following function:  
 

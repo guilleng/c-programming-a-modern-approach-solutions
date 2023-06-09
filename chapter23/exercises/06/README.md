@@ -1,4 +1,4 @@
-# Chapter 22 - Exercise 06
+# Chapter 23 - Exercise 06
 
 In each of the following cases, indicate which function would be the best to use: `memcpy`, `memmove`, `strcpy`, or `strncpy`. Assume that the indicated action is to be performed by a single function call.
 

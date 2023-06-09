@@ -1,4 +1,4 @@
-# Chapter 22 - Exercise 03
+# Chapter 23 - Exercise 03
 
 (C99) Check the documentation for your compiler to see if it performs contraction on arithmetic expressions and, if so, under what circumstances.  
 
