@@ -1,0 +1,9 @@
+# Chapter 26 - Exercise 08
+
+Write a statement that randomly assigns one of the numbers 7, 11, 15, or 19 to the variable `n`.
+
+---
+
+```
+n = (rand() % 4) * 4 + 7;
+```
