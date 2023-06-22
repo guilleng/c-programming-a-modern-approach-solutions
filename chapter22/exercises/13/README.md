@@ -13,33 +13,32 @@ The function should return the length of line `n` in the text file whose name is
 ```
 int line_length(const char *filename, int n)
 {
+    int ch, linelength = 0; 
     FILE *fp = fopen(filename, "r");
 
-    if (fp != NULL)
+    if (fp == NULL)
     {
-        int ch, linelength = 0; 
-
-        while (n)
-        {
-            if ((ch = getc(fp)) == EOF)
-            {
-                break;
-            }
-            if (ch == '\n')
-            {                           /* not our line yet */
-                n--;
-            }
-            if (n == 1 && ch != '\n')
-            {                           /* this is the line we're looking for */
-                linelength++;
-            }
-        }
-
-        fclose(fp);
-        return linelength;
+        fprintf(stderr, "failed to open file %s\n", filename);
+        exit(EXIT_FAILURE);
     }
 
-    fprintf(stderr, "failed to open file %s\n", filename);
-    exit(EXIT_FAILURE);
+    while (n)
+    {
+        if ((ch = getc(fp)) == EOF)
+        {
+            break;
+        }
+        if (ch == '\n')
+        {                           /* not our line yet */
+            n--;
+        }
+        if (n == 1 && ch != '\n')
+        {                           /* this is the line we're looking for */
+            linelength++;
+        }
+    }
+
+    fclose(fp);
+    return linelength;
 }
 ```

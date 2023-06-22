@@ -10,8 +10,8 @@ int count_periods(const char *filename)
     if ((fp = fopen(filename, "r")) != NULL) 
     {
         while (fgetc(fp) != EOF)
-        if (fgetc(fp) == '.')
-        n++;
+            if (fgetc(fp) == '.')
+                n++;
         fclose(fp);
     }
     return n;

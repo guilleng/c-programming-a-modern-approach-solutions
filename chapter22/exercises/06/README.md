@@ -16,16 +16,13 @@ otherwise, where `n` is the value of `widget`. You are not allowed to use the if
 
 ---
 
-To produce the desired effect, we will rely on two facts:  
-
-+ The `*` character can be used as a placeholder to dynamically 'pass' the value of `widget`.  
-+ Using a null-terminated string as an argument is legal.  
+To produce the desired effect, we will rely on the fact that the `*` character can be used as a placeholder to dynamically 'pass' the value of `widget`.  
 
 ```
 printf("%d widget%.*s", widget, widget - 1, "s"); 
 ```
 
-Let's examine the format specifier `"%.*s", widget - 1, "t"` and understand its behavior at runtime:  
+Let's examine the format specifier `"%.*s", widget - 1, "s"` and understand its behavior at runtime:  
 
 If the value of widget is `0` or negative, the format specifier becomes `%.-1s`, `%.-2s`, `%.-3s`, and so on. In this case, at least one character from the string "s" will be printed.  
 If widget equal to 1, the format specifier becomes `%.0s`, which means no characters from the string will be printed.  
