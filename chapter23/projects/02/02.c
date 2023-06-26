@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
         if (prev_ch == '\n')
         {
             skip = 1;
-
         }
 
         if (skip && isspace(ch))

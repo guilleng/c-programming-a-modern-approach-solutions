@@ -17,5 +17,5 @@ if (strstr("foo\x01""bar\x01""baz", str)
 }
 ```
 
-This solution assumes that the SOC character is not present in the domain of the string being searched.   
+This solution assumes that the `SOC` (start of heading) character is not present in the domain of the string being searched.   
 Using a non-printable character as a delimiter (`SOH` in this case) can help ensure that the character does not naturally occur in the string being searched. Note that strings like `"o\x01ba"` or `"ar\x01"` will still result in a true value for the conditional.  

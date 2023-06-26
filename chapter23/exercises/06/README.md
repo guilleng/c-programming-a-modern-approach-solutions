@@ -13,7 +13,7 @@ In each of the following cases, indicate which function would be the best to use
 ---
 
 
-(a)  
+(a) 
 The appropriate function for this task is `memmove`. It is suitable because it copies the elements to a temporary buffer array as an intermediate step, ensuring that overlaps are handled correctly. Assuming arr is not yet full, a call that achieves the described effect is:
 
 ```

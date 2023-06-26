@@ -12,7 +12,7 @@ long hex_to_long(const char *s)
     while (*s)
     {
         if (!isxdigit(*s))
-                {
+        {
             return -1;
         }
         s++;
