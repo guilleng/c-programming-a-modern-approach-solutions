@@ -12,3 +12,6 @@ double random_double_range(double min, double max)
     return min + (scaled * range); 
 }
 ```
+
+The call `random_double_range(0.0, 1.0);` evaluates to a random value in the
+range of `d`. 

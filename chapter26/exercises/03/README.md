@@ -54,10 +54,10 @@ int x_printf_extended(const char *format, ...)
             format += 2;
             continue;
         }
-
         chars_printed += (putchar(*format) > 0);
         format++;
     }
+
     va_end(ap);
     return chars_printed;
 }

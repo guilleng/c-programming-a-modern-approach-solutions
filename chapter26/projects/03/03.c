@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
     errno = 0;
     nelems = strtol(argv[1], &p, 10);
-    if (nelems == ERANGE || nelems <= 0 || *p != '\0')
+    if (errno == ERANGE || nelems <= 0 || *p != '\0')
     {
         fprintf(stderr, "\"%s\" is not a valid number of elements\n", argv[1]);
         exit(EXIT_FAILURE);

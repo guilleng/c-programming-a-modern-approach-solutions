@@ -11,11 +11,11 @@ Assertions are used to check for conditions that should never occur if the progr
 Because a failed `assert` halts program execution immediately it is best suited as a valid way to abort a program that has a problem beyond its control.  
 
 (b) 
-Failure to allocate memory:  
++ Failure to allocate memory:  
 Sometimes, when requesting memory dynamically using functions like `malloc` or `calloc`, the system may fail to provide the requested memory block. This is beyond the control of the program because it depends on the system's resources and current state.  
 
-System signals:  
++ System signals:  
 A program can receive signals from the operating systems or the user. These signals can be beyond the control of the program as they are external events triggered by the operating system or user actions. The program needs to handle these signals appropriately to ensure graceful termination or perform necessary cleanup actions.  
 
-Hardware failure:   
++ Hardware failure:   
 Malfunctions or errors such as faulty components, overheating, or power outages.   
