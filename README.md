@@ -1,17 +1,22 @@
 # c-programming-a-modern-approach-solutions
 
-Solutions to exercises and programming projects in K. N. King's "C Programming a Modern Approach" Second Edition.  
+Solutions to exercises and programming projects in K. N. King's "C Programming a
+Modern Approach" Second Edition.
 
 ---
 
-## Purpose
 
-The purpose of this repository is mainly to track and document personal progress while working through the book "C Programming a Modern Approach" by K. N. King. It is also used as an opportunity to get familiar with version control basic usage and may serve as a reference for other learners who are using the same study material. 
-The author welcomes feedback and suggestions for improvements, including best practices using GitHub, corrections for code, solutions, spelling, and grammar errors.  
+## Rationale
 
-## Setup
+Track and document personal progress while working through the book "C
+Programming a Modern Approach" by K. N. King.  Also as an opportunity to get
+familiar with version control basic usage and may serve as a reference for other
+learners who are using the same study material. 
+
+
+## Environment
  
-Source code is compiled and tested with:   
+Source code is compiled and tested with:
 ```
 gcc --version
 gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
@@ -20,20 +25,24 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-The compiler is set to run, accordingly, the C89 or C99 standard:  
-```
-gcc file_name.c -o file_name.o -Wextra -Wall -Wpedantic -std=c89
-gcc file_name.c -o file_name.o -Wextra -Wall -Wpedantic -std=c99
-```
 
 ## Layout
 
-The repository is organized into chapters, each with a separate folder.  
-Within each chapter folder, there are two subdirectories: one for the `/exercises` and one for the programming `/projects`.   
-Each book exercise has its own numbered folder within the `/exercises` subdirectory, containing a README file with a full transcription and its solution, as well as any source code needed to complete it.  
-Each project has its own numbered folder within the projects subdirectory, containing a README file with a full transcription of the project prompt and all the necessary source code files for completing the project.  
+The repository is organized into chapters, each with a separate folder.
+Within each chapter folder, there are two subdirectories: one for the
+`/exercises` and one for the programming `/projects`.
+
+Each book exercise has its own numbered folder within the `/exercises`
+subdirectory, containing a README file with a full transcription and its
+solution, as well as any source code needed to complete it.
+
+Each project has its own numbered folder within the projects subdirectory,
+containing a README file with a full transcription of the project prompt and all
+the necessary source code files for completing the project.
+
 
 ## License
+
 
 ## Book copyright:  
 ```

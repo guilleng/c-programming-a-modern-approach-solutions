@@ -2,7 +2,7 @@
 
 Consider the following program:  
 
-```
+```C
 #include <stdio.h>
 
 int main(void)
