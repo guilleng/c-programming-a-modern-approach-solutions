@@ -1,10 +1,12 @@
 # Chapter 03 - Exercise 06
 
-Show how to modify the `addfrac.c` program of Section 3.2 so that the user is allowed to enter fractions that contain spaces before and after each `/` character.  
+Show how to modify the `addfrac.c` program of Section 3.2 so that the user is
+allowed to enter fractions that contain spaces before and after each `/`
+character.
 
-Here below is a transcription of the `addfrac.c` source code as in page 46.  
+Here below is a transcription of the `addfrac.c` source code as in page 46.
 
-```
+```C
 /* Adds two fractions */
 
 int main(void)
@@ -24,6 +26,7 @@ int main(void)
     return 0;
 }
 ```
+
 
 ---
 

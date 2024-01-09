@@ -2,27 +2,31 @@
 
 Suppose that we call `scanf` as follows:
 
-```
+```C
 scanf("%d%f%d", &i, &x, &j);
 ```
 
-If the user enters:  
+If the user enters:
 
-```
+```C
 10.3 5 6
 ```
 
-What will be the values of `i`, `x` and `j` after the call? (Assume that `i` and `j` are `int` variables and `x` is a `float` variable) 
+What will be the values of `i`, `x` and `j` after the call? (Assume that `i` and
+`j` are `int` variables and `x` is a `float` variable)
+
 
 ---
 
-`scanf` will process the directive `%d`. The value `10` matches the directive. `10` is assigned to `i`.   
+`scanf` will process the directive `%d`. The value `10` matches and `10` is
+assigned to `i`.
 
-The next directive is `%f`. The value `.3` matches it, and is assigned to `x`.  
+The value `.3` matches the next directive, and is assigned to `x`.
 
-The final directive is `%d`. The white space following the `3` is discarded. `5` matches the directive and is assigned to `j`  
+The white space after the `3` is consumed. `5` matches the directive and is
+assigned to `j`
 
-The call then returns, and the variables have the values:  
+The call returns, and the variables hold the values:
 
 ```
 i = 10
