@@ -1,34 +1,40 @@
 # Chapter 04 - Exercise 02
 
-If `i` and `j` are positive integers, does `(-i)/j` always have the same value as `-(i/j)`? Justify your answer.  
+If `i` and `j` are positive integers, does `(-i)/j` always have the same value
+as `-(i/j)`? Justify your answer.
 
 ---
 
-Exploring evaluation under the C99 standard, we observe:
+Under the __C99__ standard:
 
-1. For the expression `(-i)/j`: 
+1. `(-i)/j`: 
 
-`(-i)` will be evaluated first in accordance to operator precedence.  
-The result of applying the unary operator `-` to `i` will yield a negative integer `v`.  
-The integer division `v/j`, will be __rounded towards zero__.
+`(-i)` is evaluated first in accordance to operator precedence.  It yields a
+negative integer `v`.  The integer division `v/j`, is __rounded towards zero__.
 
-2. For the expression `-(i/j)`:  
+2. `-(i/j)`:
 
-The integer division `(i/j)` will be __rounded towards zero__ to an integer `v`.   
-Applying the unary `-` operator to `v` will yield the same value as the evaluation of `(-i)/j`.  
+Integer division `(i/j)` is __rounded towards zero__ to some integer `v`.
+When applying the unary `-` operator to `v` it yields the same value as the
+expression `(-i)/j`.
 
-> In conclusion, under the __C99__ standard, the expression `(-i)/j` __is equivalent__ to `-(i/j)` whenever `i` and `j` are positive integers.
+> Under the __C99__ standard, the expression `(-i)/j` __is equivalent__ to
+> `-(i/j)` whenever `i` and `j` are positive integers.
 
 Under the __C89__ standard:
 
-1. For the expression `(-i)/j`:  
+1. `(-i)/j`:
 
-The result of applying the unary operator `-` to `i` will yield a negative integer `v`.   
-Evaluation proceeds with the division `v/j`. Being `v` negative and `j` non-negative, this quotient may be __rounded up or down__ depending upon __implementation-defined__ details.  
+Applying the unary operator `-` to `i` yields some negative integer `v`.
+Evaluation proceeds with the division `v/j`.  Because `v` is negative and `j`
+non-negative, this quotient may be __rounded up or down__ depending upon
+implementation-defined details.
 
-2. For the expression `-(i/j)`:  
+2. `-(i/j)`:
 
-The quotient `(i/j)` will be __down rounded__ to a value `v`.  
-Then, after applying the unary `-` operator to `v` we may observe a value that is different of the one obtained in the evaluation of `(-i)/j`.  
+The quotient `(i/j)` is __rounded down__ to a value `v`.  Thus applying the
+unary operator `-` to `v` may yield a value different of the one obtained for 
+`(-i)/j`.
 
-> Under the __C89__ standard, the result of `(-i)/j` does __not always__ have the same value as `-(i/j)`. 
+> Under the __C89__ standard, the result of `(-i)/j` does __not always__ have
+> the same value as `-(i/j)`.
