@@ -1,8 +1,10 @@
 # Chapter 05 - Exercise 08
 
-The following `if` statement is unnecessarily complicated. Simplify it as much as possible. (__Hint__: The entire statement can be replaced by a single assignment.)
+The following `if` statement is unnecessarily complicated. Simplify it as much
+as possible.  (__Hint__: The entire statement can be replaced by a single
+assignment.)
 
-```
+```C
 if (age >= 13)
     if (age <= 19)
         teenager = true;

@@ -1,33 +1,44 @@
 # Chapter 05 - Exercise 02
 
-The following program fragments illustrate the logical operators. Show the output produced by each, assuming that `i`, `j`, and k are `int` variables.
+The following program fragments illustrate the logical operators. Show the
+output produced by each, assuming that `i`, `j`, and k are `int` variables.
 
 (a)
-```
+
+```C
 i = 10; j = 5;
 printf("%d", !i < j);
 ```
+
 (b)
-```
+
+```C
 i = 2; j = 1;
 printf("%d", !!i + !j);
 ```
+
 (c)
-```
+
+```C
 i = 5; j = 0; k = -5;
 printf("%d", i && j || k);
 ```
+
 (d)
-```
+
+```C
 i = 1; j = 2; k = 3;
 printf("%d", i < j || k);
 ```
 
+
 ---
 
-Focusing on the second argument of the `printf` call, the evaluation procedure can be outlined as follows:  
+The second argument of the `printf` call is key for the evaluation procedure.
+Let's outline it step by step:
 
 (a)
+
 ```
 !i  < j
 !10 < 5

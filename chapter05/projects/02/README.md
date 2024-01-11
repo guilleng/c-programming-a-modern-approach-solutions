@@ -1,6 +1,7 @@
 # Chapter 05 - Project 02
 
-Write a program that asks the user for a 24-hour time, then displays the time in 12-hour form:  
+Write a program that asks the user for a 24-hour time, then displays the time in
+12-hour form:
 
 ```
 Enter a 24-hour time: 21:11

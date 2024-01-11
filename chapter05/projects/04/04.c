@@ -12,7 +12,7 @@ int main(void)
     int wind_speed;
 
     printf("Enter a wind speed (in knots): ");
-    scanf("%f", &wind_speed);
+    scanf("%d", &wind_speed);
 
     if (wind_speed < 1)
     {

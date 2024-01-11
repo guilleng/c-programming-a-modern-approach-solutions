@@ -1,6 +1,7 @@
 # Chapter 05 - Project 09
 
-Write a program that prompts the user to enter two dates and then indicates which date comes earlier on the calandar:  
+Write a program that prompts the user to enter two dates and then indicates
+which date comes earlier on the calendar:
 
 ```
 Enter first date (mm/dd/yyyy): 3/6/08

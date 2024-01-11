@@ -1,6 +1,7 @@
 # Chapter 05 - Project 04
 
-Here's a simplified version of the Beaufort scale, which is used to estimate wind force:
+Here's a simplified version of the Beaufort scale, which is used to estimate
+wind force:
 
 | Speed (knots) | Description|
 |---------------|------------|
@@ -11,4 +12,5 @@ Here's a simplified version of the Beaufort scale, which is used to estimate win
 | 48-63         | Storm      |
 | Above 63      | Hurricane  |
 
-Write a program that asks the user to enter a wind speed (in knots), then displays the corresponding description.  
+Write a program that asks the user to enter a wind speed (in knots), then
+displays the corresponding description. 

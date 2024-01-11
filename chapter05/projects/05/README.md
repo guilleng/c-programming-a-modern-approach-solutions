@@ -11,4 +11,5 @@ In one state, single residents are subject to the following income tax:
 | $5,250-$7,000 | $142.50       | plus 5% of amount over $5,250 |
 | Over $7,000   | $230.00       | plus 6% of amount over $7,000 |
 
-Write a program that asks the user to enter the amount of taxable income, then displays the tax due.
+Write a program that asks the user to enter the amount of taxable income, then
+displays the tax due.
