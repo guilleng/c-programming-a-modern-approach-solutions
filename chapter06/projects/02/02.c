@@ -14,7 +14,7 @@ int main(void)
     printf("Enter two integers: ");
     scanf("%d %d", &m, &n);
 
-    while(1)
+    while (1)
     {
         if (n == 0)
         {

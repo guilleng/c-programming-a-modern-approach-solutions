@@ -1,6 +1,7 @@
 # Chapter 06 - Project 11
 
-The value of the mathematical constant _e_ can be expressed as an infinite series:
+The value of the mathematical constant _e_ can be expressed as an infinite
+series:
 
 ```
 e = 1 + 1/1! + 1/2! + 1/3! + ...

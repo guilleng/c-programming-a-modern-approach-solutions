@@ -4,13 +4,17 @@ Show how to replace a `continue` statement by an equivalent `goto` statement.
 
 ---
 
-The semantics of a `continue` statement is that when executed, program control is transferred to the update expression of a `for` statement or out and before of the innermost enclosing `while` or `do` statement.
+The semantics of a `continue` dictate that when executed, program control
+is transferred to the update expression of a `for` statement or out and before
+of the innermost enclosing `while` or `do` statement.
 
-In order to declare a `goto` statement, an `identifier` followed by a statement should be introduced first. The semantics for a `goto` is that when executed, program control is transferred to the statement following the label identifier.  
+To declare a `goto` statement, a label followed by some statement should be
+introduced first.  The semantics for a `goto` dictate that when executed,
+program control is transferred to the statement following the label identifier.
 
-`while` loop using a `continue` statement:  
+`while` loop using a `continue` statement:
 
-```
+```C
 int i = 0;
 while (1)
 {
@@ -22,9 +26,9 @@ while (1)
 }
 ```
 
-Equivalent loop using an `identifier` followed by a `Null` statement:  
+Equivalent loop using an `identifier` followed by a `null` statement:
 
-```
+```C
 int i = 0;
 label : ;
 while (1)

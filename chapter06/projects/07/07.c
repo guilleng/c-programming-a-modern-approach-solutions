@@ -14,7 +14,7 @@ int main(void)
     printf("Enter number of entries in table: ");
     scanf("%d", &n);
 
-    for(int i = 1, square = 1, odd = 3; i <= n; i++, square+= odd, odd +=2)
+    for (int i = 1, square = 1, odd = 3; i <= n; i++, square+= odd, odd +=2)
     {
         printf("%10d%10d\n", i, square);
     }

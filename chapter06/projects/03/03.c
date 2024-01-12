@@ -16,7 +16,7 @@ int main(void)
     n = numerator;
     m = denominator;
 
-    while(1)
+    while (1)
     {
         if (n == 0)
         {

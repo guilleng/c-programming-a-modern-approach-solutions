@@ -23,7 +23,7 @@ int main(void)
 
     rate = (rate / 12.0f) / 100.0f;
 
-    for(int i = 1; i <= payment_number; i++)
+    for (int i = 1; i <= payment_number; i++)
     {
         total = total - payment + (total * rate);
         printf("Balance remaining after payment number %d: $%.2f\n", i, total); 

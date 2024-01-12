@@ -13,12 +13,12 @@ int main(void)
     printf("Enter a date (mm/dd/yy): ");
     scanf("%d /%d /%d", &m1, &d1, &y1);
 
-    while(1)
+    while (1)
     {
         printf("Enter a date (mm/dd/yy): ");
         scanf("%d /%d /%d", &m2, &d2, &y2);
 
-        if(m2 == 0 && d2 == 0 && y2 == 0)
+        if (m2 == 0 && d2 == 0 && y2 == 0)
         {
             break;
         }

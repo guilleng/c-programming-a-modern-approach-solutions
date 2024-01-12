@@ -10,7 +10,7 @@ int main(void)
 {
     float commission, value;
 
-    while(1)
+    while (1)
     {
         printf("Enter value of trade: ");
         scanf("%f", &value);

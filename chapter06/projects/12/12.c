@@ -19,7 +19,7 @@ int main(void)
     printf("Enter epsilon: ");
     scanf("%f", &epsilon);
 
-    while(1)
+    while (1)
     {
         factorial *= n;
         current_term = 1.0f / factorial;

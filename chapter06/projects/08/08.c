@@ -18,7 +18,7 @@ int main(void)
 
     printf(" Su Mo Tu We Th Fr Sa\n");
 
-    for(int i = 1, j = 1; i <= days_in_month; j++)
+    for (int i = 1, j = 1; i <= days_in_month; j++)
     {
         if (j < starting_day)
         {
@@ -34,6 +34,7 @@ int main(void)
             }
         }
     }
+    printf("\n");
 
     return 0;
 }

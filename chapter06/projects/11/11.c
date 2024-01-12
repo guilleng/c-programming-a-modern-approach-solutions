@@ -15,7 +15,7 @@ int main(void)
     printf("Enter n: ");
     scanf("%d", &n);
 
-    for(int i = 1, factorial = 1; i <= n ; i++)
+    for (int i = 1, factorial = 1; i <= n ; i++)
     {
         factorial *= i;
         e         += 1.0f / factorial;
