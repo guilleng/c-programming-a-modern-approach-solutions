@@ -7,7 +7,10 @@ Enter phone number: CALLATT
 2255288
 ```
 
-(In case you don't have a telephone nearby, here are the letters on the keys: 2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PRS, 8=TUV, 9=WXY.) If the original phone number contains non alphabetic characters (digits or punctuation, for example), leave them unchanged:
+(In case you don't have a telephone nearby, here are the letters on the keys:
+2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PRS, 8=TUV, 9=WXY.)  If the original phone
+number contains non alphabetic characters (digits or punctuation, for example),
+leave them unchanged:
 
 ```
 Enter phone number: 1-800-COL-LECT

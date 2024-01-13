@@ -6,10 +6,12 @@ Give the decimal value of each of the following integer constants.
 (b) `0x77`
 (c) `0XABC`
 
+
 ---
 
 (a)
-__Octal__ constants begin with a `0` and contain only digits between `0` and `7`.
+__Octal__ constants begin with a `0` and contain only digits between `0` and
+`7`.
 
 ```
 7 * 8^1 + 7 * 8^0 
@@ -18,7 +20,8 @@ __Octal__ constants begin with a `0` and contain only digits between `0` and `7`
 ```
 
 (b) 
-__Hexadecimal__ constants begin with `0x`. They contain only digits between `0` and `9` and letters between `a` and `f`.  
+__Hexadecimal__ constants begin with `0x`. They contain only digits between `0`
+and `9` and letters between `a` and `f`.
 
 ```
 7 * 16^1 + 7 * 16^0

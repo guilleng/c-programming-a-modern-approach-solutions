@@ -14,7 +14,7 @@ int main(void)
     printf("Enter an expression: ");
     scanf("%f", &accumulator);
 
-    while ( (operand = getchar()) != '\n' )
+    while ((operand = getchar()) != '\n')
     {
         scanf("%f", &number);
         switch (operand)

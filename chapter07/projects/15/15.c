@@ -14,12 +14,8 @@ int main(void)
     printf("Enter a positive integer: ");
     scanf("%hu", &n);
 
-    while(1)
+    while (n != 0)
     {
-        if (n == 0) 
-        {
-            break;
-        }
         factorial *= n;
         n--;
     }

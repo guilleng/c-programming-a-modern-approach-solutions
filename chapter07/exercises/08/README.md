@@ -2,12 +2,13 @@
 
 Repeat Exercise 7, but give the equivalent hexadecimal escape.
 
+
 ---
 
-(a) `\x08`  
+(a) `\x08`
 
-(b) `\x0A`  
+(b) `\x0A`
 
-(c) `\x0D`  
+(c) `\x0D`
 
 (d) `\x09`

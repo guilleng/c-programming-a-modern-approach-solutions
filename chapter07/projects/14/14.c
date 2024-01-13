@@ -9,13 +9,14 @@
 
 int main(void)
 {
-    double x,
-           y = 1.0;
+    double x, y;
+
+    y = 1.0;
 
     printf("Enter a positive number: ");
     scanf("%lf", &x);
 
-    while( fabs(y - (x / y)) > (.00001 * y) )
+    while (fabs(y - (x / y)) > (.00001 * y))
     {
         y = (y + (x / y)) / 2.0;
     }

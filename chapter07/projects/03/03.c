@@ -14,7 +14,7 @@ int main(void)
     printf("Enter a number (0 to terminate):\n");
 
     scanf("%lf", &n);
-    while(n != 0.0)
+    while (n != 0.0)
     {
         sum += n;
         scanf("%lf", &n);

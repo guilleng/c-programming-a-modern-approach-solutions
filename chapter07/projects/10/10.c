@@ -15,7 +15,7 @@ int main(void)
     printf("Enter a sentence: ");
     
     do {
-        switch ( ch = toupper(getchar()) )
+        switch (ch = toupper(getchar()))
         {
             case 'A': case 'E': case 'I': case 'O': case 'U':
                 count++;

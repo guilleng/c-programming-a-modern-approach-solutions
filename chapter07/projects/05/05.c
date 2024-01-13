@@ -14,7 +14,7 @@ int main(void)
 
     printf("Enter a word: ");
 
-    while( (ch = toupper(getchar())) != '\n' )
+    while ((ch = toupper(getchar())) != '\n')
     {
         switch (ch)
         {
