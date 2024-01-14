@@ -11,10 +11,10 @@ int main(void)
     char phone[15] = { 0 };
 
     printf("Enter phone number: ");
-    for(int i = 0; (phone[i] = getchar()) != '\n' && i < 15; i++);
+    for (int i = 0; (phone[i] = getchar()) != '\n' && i < 15; i++);
 
     printf("In numeric form: ");
-    for(int i = 0; (phone[i] != '\n') && i < 15; i++)
+    for (int i = 0; (phone[i] != '\n') && i < 15; i++)
     {
         switch (phone[i])
         {

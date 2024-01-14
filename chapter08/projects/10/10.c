@@ -9,13 +9,14 @@
 
 int main(void)
 {
-    int hh, mm, user_input, 
-        closest_index = 0, min_diff = 24 * 60,
+    int hh, mm, user_input;
+    int closest_index = 0;
+    int min_diff = 24 * 60;
 
-        departures[] = {480, 583, 679, 767, 840,  945, 1140, 1305},
-        arrivals[]   = {616, 712, 811, 900, 968, 1075, 1280, 1438},
+    int departures[] = {480, 583, 679, 767, 840,  945, 1140, 1305};
+    int arrivals[]   = {616, 712, 811, 900, 968, 1075, 1280, 1438};
 
-        departure_hour, departure_minute, arrival_hour, arrival_minute;
+    int departure_hour, departure_minute, arrival_hour, arrival_minute;
     
     char departure_prefix, arrival_prefix;
 

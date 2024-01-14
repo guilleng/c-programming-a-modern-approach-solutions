@@ -8,22 +8,22 @@
 
 int main(void)
 {
-    int matrix[5][5] = { 0 },
-        accum = 0;
+    int matrix[5][5] = { 0 };
+    int accum = 0;
 
-    for(int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf("Enter row %d: ", i + 1);
-        for(int j = 0; j < 5; j++)
+        for (int j = 0; j < 5; j++)
         {
             scanf("%d", &matrix[i][j]);
         }
     }
 
     printf("Row totals: ");
-    for(int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
-        for(int j = 0; j < 5; j++)
+        for (int j = 0; j < 5; j++)
         {
             accum += matrix[i][j];
         }
@@ -32,9 +32,9 @@ int main(void)
     }
 
     printf("\nColumn totals: ");
-    for(int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
-        for(int j = 0; j < 5; j++)
+        for (int j = 0; j < 5; j++)
         {
             accum += matrix[j][i];
         }

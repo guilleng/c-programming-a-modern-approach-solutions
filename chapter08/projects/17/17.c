@@ -15,7 +15,7 @@ int main(void)
     printf("Enter size of magic square: ");
     scanf("%d", &n);
 
-    if ( (n % 2) == 0 || (n > 100) )
+    if ((n % 2) == 0 || (n > 100))
     {
         printf("Not a valid size.\n");
         return 0;
@@ -23,36 +23,36 @@ int main(void)
 
     int square[n][n];
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for(int j = 0; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
             square[i][j] = 0;
         }
     }
 
-    int j = (n - 1) / 2,    // starting position
-        i = 0;
+    int j = (n - 1) / 2;    // starting position
+    int i = 0;
 
     square[i][j] = 1;
-    for(int curent_number = 2; curent_number <= (n * n); curent_number++)
+    for (int curent_number = 2; curent_number <= (n * n); curent_number++)
     {
-        int x = (i + 1),    // temporarily store position below
-            y = j;
+        int x = (i + 1);    // temporarily store position below
+        int y = j;
 
         i--;
-        if(i < 0)           // move 'up', if out of bound then 'wrap around'
+        if (i < 0)           // move 'up', if out of bound then 'wrap around'
         {
             i = (n - 1);
         }
 
         j++;
-        if(j > (n - 1))     // move 'right', if out of bound then 'wrap around'
+        if (j > (n - 1))     // move 'right', if out of bound then 'wrap around'
         {
             j = 0;
         }
 
-        if(square[i][j] == 0)           
+        if (square[i][j] == 0)           
         {                                   // fill if available spot,  
             square[i][j] = curent_number;       
         }
@@ -64,9 +64,9 @@ int main(void)
         }
     }
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for(int j = 0; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
             printf("%4d ",square[i][j]);
         }

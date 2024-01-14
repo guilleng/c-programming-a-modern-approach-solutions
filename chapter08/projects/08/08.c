@@ -8,22 +8,22 @@
 
 int main(void)
 {
-    int matrix[5][5] = { 0 },
-        accum = 0;
+    int matrix[5][5] = { 0 };
+    int accum = 0;
 
-    for(int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf("Enter quiz grades for student %d: ", i + 1);
-        for(int j = 0; j < 5; j++)
+        for (int j = 0; j < 5; j++)
         {
             scanf("%d", &matrix[i][j]);
         }
     }
 
-    for(int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf("\nStudent %d ", i + 1);
-        for(int j = 0; j < 5; j++)
+        for (int j = 0; j < 5; j++)
         {
             accum += matrix[i][j];
         }
@@ -32,11 +32,11 @@ int main(void)
     }
     printf("\n");
 
-    for(int i = 0, high, low; i < 5; i++)
+    for (int i = 0, high, low; i < 5; i++)
     {
         high = low = matrix[i][0];
         printf("\nQuiz %d ", i + 1);
-        for(int j = 0; j < 5; j++)
+        for (int j = 0; j < 5; j++)
         {
             accum += matrix[j][i];
             if (matrix[j][i] > high)

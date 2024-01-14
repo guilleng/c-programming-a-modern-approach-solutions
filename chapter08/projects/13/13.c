@@ -8,30 +8,31 @@
 
 int main(void)
 {
-    char ch, initial, last_name[20] = { 0 };
+    char ch, initial;
+    char last_name[20] = { 0 };
     int i = 0;
 
     printf("Enter a first and last name: ");
 
-    while ( (ch = getchar()) == ' ')
+    while ((ch = getchar()) == ' ')
     {
         /* discard all leading spaces in input */;
     }
 
     initial = ch;
 
-    while ( (ch = getchar()) != ' ')
+    while ((ch = getchar()) != ' ')
     {
         /* discard rest of name */;
     }
 
-    while ( (ch = getchar()) == ' ')
+    while ((ch = getchar()) == ' ')
     {
         /* discard withe spaces after first name*/;
     }
 
     last_name[i] = ch;
-    while ( (ch = getchar()) != '\n' && i < 20)
+    while ((ch = getchar()) != '\n' && i < 20)
     {
         i++;
         last_name[i] = ch;

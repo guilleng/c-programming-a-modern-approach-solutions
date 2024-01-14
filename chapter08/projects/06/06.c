@@ -11,12 +11,12 @@
 
 int main(void)
 {
-    char message[SIZE] = { 0 },
-         ch;
     int i = 0;
+    char message[SIZE] = { 0 };
+    char ch;
 
     printf("Enter message: ");
-    while( (ch = toupper(getchar())) != '\n' && i < SIZE )
+    while ((ch = toupper(getchar())) != '\n' && i < SIZE)
     {
         message[i] = ch;
         i++;

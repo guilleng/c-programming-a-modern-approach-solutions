@@ -9,8 +9,8 @@
 
 int main(void)
 {
-    int digit_counts[10] = { 0 },
-        digit;
+    int digit_counts[10] = { 0 };
+    int digit;
     long n;
 
     printf("Enter a number: ");
@@ -24,7 +24,7 @@ int main(void)
     }
 
     printf("Digit:\t\t0 1 2 3 4 5 6 7 8 9\nOccurrences:\t");
-    for(int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++)
     {
         printf("%d ", digit_counts[i]);
     }

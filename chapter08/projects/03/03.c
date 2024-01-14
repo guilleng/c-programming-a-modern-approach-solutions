@@ -18,7 +18,7 @@ int main(void)
         scanf("%ld", &n);
         if(n <= 0)
         {
-            return n;                               //program termination
+            return 0;                               //program termination
         }
 
         while(n > 0)

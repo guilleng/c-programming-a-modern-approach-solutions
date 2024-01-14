@@ -1,6 +1,7 @@
 # Chapter 08 - Project 07
 
-Write a program that reads a 5 x 5 array of integers and then prints the row sums and the column sums:
+Write a program that reads a 5 x 5 array of integers and then prints the row
+sums and the column sums:
 
 ```
 Enter row 1: 8 3 9 0 10

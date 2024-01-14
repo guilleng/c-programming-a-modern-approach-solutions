@@ -16,7 +16,7 @@ int main(void)
     printf("Enter a sentence: ");
 
     int i = 0;
-    while(i < SIZE)
+    while (i < SIZE)
     {
         end_ch = getchar();
         if (end_ch == '.' || end_ch == '?' || end_ch == '!')
@@ -28,26 +28,27 @@ int main(void)
     }
 
     printf("Reversal of sentence: ");
-    while(i >= 0)
+    while (i >= 0)
     {
         int word_final = --i;
-        while(sentence[i] != ' ' && (i >= 0))
+        while (sentence[i] != ' ' && (i >= 0))
         {                   // tracking backwards the word beginning character
             i--;
         }
 
         int j = ( i == 0 ? 0 : i + 1 );
-        while(j <= word_final)
+        while (j <= word_final)
         {                   // print word
             putchar(sentence[j]);
             j++;
         }
-        if(i > 0)
+        if (i > 0)
         {
             putchar(' ');
         }
     }
     putchar(end_ch);
+    putchar('\n');
 
     return 0;
 }

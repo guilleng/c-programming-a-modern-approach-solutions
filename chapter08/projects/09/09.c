@@ -26,15 +26,15 @@ int main(void)
 {
     char grid[SIZE][SIZE];
     bool move[4];                   // valid movements { right, up, left, down }
-    int i = STARTING_ROW,
-        j = STARTING_COL;           // position tracking
+    int i = STARTING_ROW;
+    int j = STARTING_COL;           // position tracking
     char ch = STARTING_CHAR;        // character tracking
 
     srand((unsigned) time(NULL));
 
-    for(int i = 0; i < SIZE; i++)   // fill the grid with dots
+    for (int i = 0; i < SIZE; i++)   // fill the grid with dots
     {
-        for(int j = 0; j < SIZE; j++)
+        for (int j = 0; j < SIZE; j++)
         {
             grid[i][j] = EMPTY;
         }
@@ -53,49 +53,49 @@ int main(void)
             break;
         }
 
-        while(true)
+        while (true)
         {
-            switch(rand() % 4)
-                {
-                    case RIGHT:
-                        if(move[RIGHT])
-                        {
-                            grid[i][j++] = ch++;
-                            break;
-                        }
-                        continue;
-                        
-                    case UP:
-                        if(move[UP])
-                        {
-                            grid[i--][j] = ch++;
-                            break;
-                        }
-                        continue;
-                        
-                    case LEFT:
-                        if(move[LEFT])
-                        {
-                            grid[i][j--] = ch++;
-                            break;
-                        }
-                        continue;
+            switch (rand() % 4)
+            {
+                case RIGHT:
+                    if(move[RIGHT])
+                    {
+                        grid[i][j++] = ch++;
+                        break;
+                    }
+                    continue;
+                    
+                case UP:
+                    if(move[UP])
+                    {
+                        grid[i--][j] = ch++;
+                        break;
+                    }
+                    continue;
+                    
+                case LEFT:
+                    if(move[LEFT])
+                    {
+                        grid[i][j--] = ch++;
+                        break;
+                    }
+                    continue;
 
-                    case DOWN:
-                        if(move[DOWN])
-                        {
-                            grid[i++][j] = ch++;
-                            break;
-                        }
-                        continue;
-                }
+                case DOWN:
+                    if(move[DOWN])
+                    {
+                        grid[i++][j] = ch++;
+                        break;
+                    }
+                    continue;
+            }
             break;
         }
     }
 
-    for(int i = 0; i < SIZE; i++)   // print grid
+    for (int i = 0; i < SIZE; i++)   // print grid
     {                               
-        for(int j = 0; j < SIZE; j++)
+        for (int j = 0; j < SIZE; j++)
         {
             printf(" %c ", grid[i][j]);
         }

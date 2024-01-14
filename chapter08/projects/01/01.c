@@ -9,8 +9,8 @@
 
 int main(void)
 {
-    bool digit_seen[10] = { false },
-         digit_seen_twice[10] = { false };
+    bool digit_seen[10] = { false };
+    bool digit_seen_twice[10] = { false };
     int digit;
     long n;
 
@@ -26,7 +26,7 @@ int main(void)
     }
 
     printf("Repeated digit(s): ");
-    for(int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++)
     {
         if (digit_seen_twice[i])
         {
