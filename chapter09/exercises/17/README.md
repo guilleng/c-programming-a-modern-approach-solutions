@@ -2,11 +2,12 @@
 
 Rewrite the `fact` function so that it's no longer recursive.
 
+
 ---
 
 The `fact` function from Section 9.6:
 
-```
+```C
 int fact(int n)
 {
     if (n <= 1)
@@ -18,7 +19,7 @@ int fact(int n)
 
 Non-recursive version:  
 
-```
+```C
 int fact(int n)
 {
     int factorial = 1;

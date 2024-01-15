@@ -2,7 +2,7 @@
 
 What will be the output of the following program?
 
-```
+```C
 #include <stdio.h>
 
 void swap(int a, int b);
@@ -24,12 +24,16 @@ void swap(int a, int b)
 }
 ```
 
+
 ---
 
-The code is deceiving. At first sight it seems to be swapping the values of two integer variables, but its output will be:  
+The code is deceiving.  At first sight it seems to be swapping the values of two
+integer variables, but its output will be: 
 
 ```
 i = 1, j = 2
 ```
 
-The reason is that in C arguments are passed by value and the function `swap` does not have any statement modifying the execution environment in scope of the main function.  
+The reason is that in C arguments are passed by value.  The function `swap`
+doesn't have statements that modify the execution environment in scope of the
+main function.

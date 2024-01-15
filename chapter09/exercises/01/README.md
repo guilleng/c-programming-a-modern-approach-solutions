@@ -1,8 +1,10 @@
 # Chapter 09 - Exercise 01
 
-The following function, which computes the area of a triangle, contains two errors. Locate the errors and show how to fix them. (_Hint_: There are no errors in the formula.)
+The following function, which computes the area of a triangle, contains two
+errors. Locate the errors and show how to fix them. (_Hint_: There are no errors
+in the formula.)
 
-```
+```C
 double triangle_area(double base, height)
 double product;
 {
@@ -11,14 +13,18 @@ double product;
 }
 ```
 
+
 ---
 
-The parameter `height` lacks a type definition. A type should be specified for each function parameter.  
-The local variable declaration `product` is outside the function body. All variable declarations belonging to a function should be within its body, which is delimited by the curly braces.  
+The parameter `height` lacks a type definition.  A type should be specified for
+each function parameter.
+The local variable declaration `product` is outside the function body.  All
+variable declarations belonging to a function should be within its body, which
+is delimited by the curly braces.
 
-Corrected code:  
+Corrected code: 
 
-```
+```C
 double triangle_area(double base, double height)
 {
     double product;
