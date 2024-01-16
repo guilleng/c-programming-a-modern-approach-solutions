@@ -40,7 +40,7 @@ int main(void)
             continue;
         }
 
-        switch(input)
+        switch (input)
         {
             case '+':
                 push(pop() + pop());

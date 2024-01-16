@@ -77,18 +77,19 @@ void clear_digits_array(void)
  * Stores the seven-segment representation of `digit` into a specified position
  * in the `digits` array by testing whether the segment is 'on' or 'off' for a
  * given `digit`(row) of the constant `Segments` array.  
- */                                                     /* segments:        */
-void process_digit(int digit, int position)             /*          _0_     */
-{                                                       /*       5 |   | 1  */
-    int rows,                                           /*         |_6_|    */
-        cols = position * LENGHT;                       /*       4 |   | 2  */
-                                                        /*         |_3_|    */
+ */                                                       /* segments:        */
+void process_digit(int digit, int position)               /*          _0_     */
+{                                                         /*       5 |   | 1  */
+    int rows;                                             /*         |_6_|    */
+    int cols;                                             /*       4 |   | 2  */
+                                                          /*         |_3_|    */
     digit   -= '0';                               
-                                                        /* digits[r][c]:    */ 
-    for (rows = 0; rows < HEIGHT; rows++)               /*         0123     */
-    {                                                   /*       0  _       */
-        switch (rows)                                   /*       1 |_|      */
-        {                                               /*       2 |_|      */
+    cols = position * LENGHT;                             /* digits[r][c]:    */ 
+                                                          /*         0123     */
+    for (rows = 0; rows < HEIGHT; rows++)                 /*       0  _       */
+    {                                                     /*       1 |_|      */
+        switch (rows)                                     /*       2 |_|      */
+        {                                               
             case 0:
                 digits[rows][cols + 1] = segments[digit][0] ? '_' : ' ';
                 break;
