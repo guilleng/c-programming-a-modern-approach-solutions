@@ -1,10 +1,11 @@
 # Chapter 12 - Exercise 04
 
-Rewrite the `make_empty`, `is_empty` and `is_full` functions of section 10.2 to use the pointer variable `top_ptr` instead of the integer variable `top`.
+Rewrite the `make_empty`, `is_empty` and `is_full` functions of section 10.2 to
+use the pointer variable `top_ptr` instead of the integer variable `top`.
 
 ---
 
-```
+```C
 void make_empty(void)
 {
     *top = &contents[0];

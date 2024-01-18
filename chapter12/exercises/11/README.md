@@ -1,10 +1,12 @@
 # Chapter 12 - Exercise 11
 
-Modify the `find_largest` function so that it uses pointer arithmetic -- not subscripting -- to visit array elements.
+Modify the `find_largest` function so that it uses pointer arithmetic -- not
+subscripting -- to visit array elements.
+
 
 ---
 
-```
+```C
 int *find_largest(int *a, int n)
 {
     int *p, *largest;

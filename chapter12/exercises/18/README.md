@@ -1,10 +1,13 @@
 # Chapter 12 - Exercise 18
 
-Write the `evaluate_position` function described in Exercise 13 of Chapter 9. Use pointer arithmetic -- not subscripting -- to visit array elements. Use a single loop instead of nested loops.
+Write the `evaluate_position` function described in Exercise 13 of Chapter 9.
+Use pointer arithmetic -- not subscripting -- to visit array elements.  Use a
+single loop instead of nested loops.
+
 
 ---
 
-```
+```C
 int evaluate_position(char *board, int n)
 {
     int withe_pieces = 0,
