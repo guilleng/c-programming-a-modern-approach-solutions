@@ -22,7 +22,7 @@ Which of the following statements are legal? Assume that `i` has type `int` and
 
 ---
 
-All the statements are perfectly legal. Some ovservations:
+All the statements are perfectly legal. Some observations:
 
 All assignment statements require evaluation of the function call at the right
 hand side upfront.
