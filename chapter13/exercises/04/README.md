@@ -1,17 +1,24 @@
 # Chapter 13 - Exercise 04
 
-Modify the `read_line` function in each of the following ways:  
+Modify the `read_line` function in each of the following ways:
 
-(a) Have it skip white space before beginning to store input characters.  
-(b) Have it stop reading at the first white space character. _Hint_: To determine whether or not a character is white space, call the `isspace` function.  
-(c) Have it stop reading at the first newline character, then store the newline character in the string.  
-(d) Have it leave behind characters that it doesn't have room to store.  
+(a) Have it skip white space before beginning to store input characters.
+
+(b) Have it stop reading at the first white space character.  _Hint_: To
+determine whether or not a character is white space, call the `isspace`
+function.
+
+(c) Have it stop reading at the first newline character, then store the newline
+character in the string.
+
+(d) Have it leave behind characters that it doesn't have room to store. 
+
 
 ---
 
-Original definition of the function:  
+Original definition of the function:
 
-```
+```C
 int read_line(char str[], int n)
 {
     int ch, i = 0;
@@ -25,7 +32,7 @@ int read_line(char str[], int n)
 ```
 
 (a)
-```
+```C
 int read_line(char *str, int n)
 {
     int ch, i = 0;
@@ -48,7 +55,7 @@ int read_line(char *str, int n)
 ```
 
 (b)
-```
+```C
 int read_line(char str[], int n)
 {
     int ch, i = 0;
@@ -67,7 +74,7 @@ int read_line(char str[], int n)
 ```
 
 (c)
-```
+```C
 int read_line(char str[], int n)
 {
     int ch, i = 1;
@@ -86,7 +93,7 @@ int read_line(char str[], int n)
 ```
 
 (d)
-```
+```C
 int read_line(char str[], int n)
 {
     int ch, i = 0;

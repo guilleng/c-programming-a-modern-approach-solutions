@@ -44,6 +44,7 @@ int main(void)
 int evaluate_RPN_expression(const char *expression)
 {
     int operand;
+
     while (*expression) 
 	{
         if (isdigit(*expression)) 

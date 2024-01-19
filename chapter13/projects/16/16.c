@@ -6,7 +6,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 #define MAX_SIZE 1024
 

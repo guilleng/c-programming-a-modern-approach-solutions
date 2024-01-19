@@ -6,7 +6,6 @@
  */
 
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 
 #define SENT_LENGTH 30

@@ -2,7 +2,7 @@
 
 Let `f` be the following function:
 
-```
+```C
 int f(char *s, char *t)
 {
     char *p1, *p2;
@@ -16,22 +16,17 @@ int f(char *s, char *t)
 }
 ```
 
-(a)
-What is the value of `f("abcd", "babc")`?  
+(a) What is the value of `f("abcd", "babc")`?
 
-(b)
-What is the value of `f("abcd", "bcd")`?  
+(b) What is the value of `f("abcd", "bcd")`?
 
-(c)
-In general, what value does `f` return when passed two strings `s` and `t`?  
+(c) In general, what value does `f` return when passed two strings `s` and `t`? 
+
 
 ---
 
-(a)
-`3`.  
+(a) `3`.
 
-(b)
-`0`.  
+(b) `0`.
 
-(c)
-`f` returns the index of the first character in `s` that is not in `t`.  
+(c) `f` returns the index of the first character in `s` that is not in `t`.

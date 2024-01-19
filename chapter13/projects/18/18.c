@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <ctype.h>
-#include <string.h>
 
 int read_line(char str[], int n);
 bool valid_date(char *date, int *month, int *day, int *year);
@@ -126,7 +125,7 @@ bool valid_string(const char *date)
             case 2: case 5:
                 if (date[i] != '/')    return false;
                 break;
-            case 10:
+            case 9:
                 if (date[i] != '\0')   return false;
                 break;
             default:

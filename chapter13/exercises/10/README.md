@@ -1,8 +1,9 @@
 # Chapter 13 - Exercise 10
 
-The following function supposedly creates an identical copy of a string. What's wrong with the function?
+The following function supposedly creates an identical copy of a string.  What's
+wrong with the function?
 
-```
+```C
 char *duplicate(const char *p)
 {
     char *q;
@@ -12,6 +13,9 @@ char *duplicate(const char *p)
 }
 ```
 
+
 ---
 
-The fact that `q` is a pointer to `char` that is not properly initialized, meaning it may not be pointing to a memory location with enough space to store the string `p` points to, could cause undefined behavior when `strcpy` is called.  
+The fact that `q` is a non-initialized pointer to `char`.  For the code to be
+correct, `q` has to point to a memory location with enough space to store the
+string `p` points to.

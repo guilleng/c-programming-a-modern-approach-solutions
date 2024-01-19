@@ -1,16 +1,19 @@
 # Chapter 13 - Exercise 08
 
-What will be the value of the string `str` after the following statements have been executed?
+What will be the value of the string `str` after the following statements have
+been executed?
 
-```
+```C
 strcpy(str, "tire-bouchon");
 strcpy(&str[4], "d-or-wi");
 strcat(str, "red?");
 ```
 
+
 ---
 
-The first statement copies into the string `str`, the buffer `"tire-bouchon"`.  
+Assume that `str` is an array of 16 `char`s.
+The first statement copies into it  the buffer `"tire-bouchon"`.
 
 ```
 str[16] = { 't', 'i', 'r', 'e', '-', 'b', 'o', 'u', 'c', 'h', 'o', 'n', '\0', '\0', '\0', '\0' }
@@ -18,7 +21,8 @@ str[16] = { 't', 'i', 'r', 'e', '-', 'b', 'o', 'u', 'c', 'h', 'o', 'n', '\0', '\
 str == "tire-bouchon"
 ```
 
-The following statement has the effect of changing the contents of the items greater than or equal than the fourth address in the array `str` by those in the buffer `"d-or-wi"`.  
+The next `strcpy` call changes the array's contents that follow up its fourth by
+those in the buffer `"d-or-wi"`.
 
 ```
 str[16] = { 't', 'i', 'r', 'e', 'd', '-', 'o', 'r', '-', 'w', 'i', '\0', '\0', '\0', '\0', '\0' }`
@@ -26,7 +30,7 @@ str[16] = { 't', 'i', 'r', 'e', 'd', '-', 'o', 'r', '-', 'w', 'i', '\0', '\0', '
 str == "tired-orwi"
 ```
 
-`strcat` appends after the first null character of `str` (`&str[11]`) the contents of the buffer `"red?"`.
+`strcat` appends after the first null character of `str` the contents of the buffer `"red?"`.
 
 ```
 str[16] = { 't', 'i', 'r', 'e', 'd', '-', 'o', 'r', '-', 'w', 'i', 'r', 'e', 'd', '?', '\0' }

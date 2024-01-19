@@ -17,8 +17,8 @@ bool is_word(char *str);
 
 int main(void)
 {
-    char word1[SIZE+1],
-         word2[SIZE+1];
+    char word1[SIZE+1];
+    char word2[SIZE+1];
 
     printf("Enter first word: ");
     read_line(word1, SIZE);

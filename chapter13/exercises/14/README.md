@@ -2,7 +2,7 @@
 
 What does the following program print?
 
-```
+```C
 #include <stdio.h>
 
 int main(void)
@@ -16,9 +16,12 @@ int main(void)
 }
 ```
 
+
 ---
 
-As the for loop goes through the array `s`, it executes its statement sequentially for each of its elements, as long as `*p` is not the null byte.  
-The statement `--*p` is a shorthand for `--(*p)`, where `p` is dereferenced and the value it points to is decremented, yielding the previous character based on the ASCII table.  
+The `for` loop iterates over each element of th array `s`.  Its body statement
+`--*p` can be read as `--(*p)`, thus `p` is dereferenced and the value it
+points to is decremented.  This yields the previous character on the ASCII
+table.
 
 Output: `"Grinch\n"`

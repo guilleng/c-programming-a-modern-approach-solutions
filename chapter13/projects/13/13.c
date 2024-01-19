@@ -5,7 +5,6 @@
  */
 
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 
 #define SIZE 1024
@@ -16,8 +15,8 @@ int read_line(char str[], int n);
 
 int main(void)
 {
-   char message[SIZE+1] = { 0 },
-        shift_amount[4] = { 0 };
+   char message[SIZE+1] = { 0 };
+   char shift_amount[4] = { 0 };
    int shift;
    
    printf("Enter message to be encrypted: ");

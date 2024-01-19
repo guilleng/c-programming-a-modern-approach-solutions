@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <ctype.h>
-#include <string.h>
 
 #define SIZE 1024
 

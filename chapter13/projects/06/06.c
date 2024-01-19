@@ -1,7 +1,6 @@
 /* Checks planet names */
 
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
 
 #define NUM_PLANETS 9
