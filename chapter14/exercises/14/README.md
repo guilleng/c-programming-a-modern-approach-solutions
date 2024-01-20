@@ -1,8 +1,9 @@
 # Chapter 14 - Exercise 14
 
-Show what the following program will look like after preprocessing. Some lines of the program may cause compilation errors; find all such errors.  
+Show what the following program will look like after preprocessing.  Some lines
+of the program may cause compilation errors; find all such errors.
 
-```
+```C
 #define N = 10
 #define INC(x) x+1
 #define SUB (x,y) x-y
@@ -37,9 +38,10 @@ int main(void)
 }
 ```
 
+
 ---
 
-The preprocessed source code:  
+The preprocessed source code:
 
 ```
 int main(void)
@@ -68,10 +70,21 @@ int main(void)
 }
 ```
 
-The first line of the main function contains a syntax error in the array declaration `a[= 10]`.  
-All assignments in this source code may produce undefined behavior. Neither `j`, `k` nor `m` are initialized.  
-The line `i = 10 * j+1;` seems intended to be `i = 10 * ((j)+1)`. If this is the case, the macro is missing parentheses.  
-`i = (x,y) x-y(j, k);` should be `i = (j) - (k), the macro definition is missing parentheses around the x and y arguments.  
-`i = jk;` The name `jk` is not in scope.  
-`i = SQR(j);` After being undefined in the previous line, `SQR` is called.  
-`i = (j);` After being defined `SQR` is called but because it has no tokens it evaluates to nothing.  
+1. The first line of the main function contains a syntax error in the array
+   declaration `a[= 10]`.
+
+2. All assignments in this source code may produce undefined behavior. Neither
+   `j`, `k` nor `m` are initialized.
+
+3. The line `i = 10 * j+1;` seems intended to be `i = 10 * ((j)+1)`.  If this is
+   the case, the macro is missing parentheses.
+
+4. `i = (x,y) x-y(j, k);` should be `i = (j) - (k)`, the macro definition is
+   missing parentheses around the x and y arguments.
+
+5. `i = jk;` The name `jk` is not in scope.
+
+6. `i = SQR(j);` After being undefined in the previous line, `SQR` is called.
+
+7. `i = (j);` After being defined `SQR` is called but because it has no tokens
+   it evaluates to nothing.
