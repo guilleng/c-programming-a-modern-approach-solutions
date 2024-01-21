@@ -2,7 +2,7 @@
 
 Assume that `debug.h` is a header file with the following contents:
 
-```
+```C
 #ifdef DEBUG
 #define PRINT_DEBUG(n) printf("Value of " #n ": %d\n", n)
 #else
@@ -12,7 +12,7 @@ Assume that `debug.h` is a header file with the following contents:
 
 Let `testdebug.c` be the following source file:
 
-```
+```C
 #include <stdio.h>
 
 #define DEBUG
@@ -38,24 +38,24 @@ int main(void)
 }
 ```
 
-(a)
-What is the output when the program is executed?  
+(a) What is the output when the program is executed?
 
-(b)
-What is the output if the `#define` directive is removed from `testdebug.c`?  
+(b) What is the output if the `#define` directive is removed from
+    `testdebug.c`?
 
-(c)
-Explain why the output is different in parts (a) and (b).  
+(c) Explain why the output is different in parts (a) and (b).
 
-(d)
-Is it necessary for the DEBUG macro to be defined _before_ `debug.h` is included in order for `PRINT_DEBUG` to have the desired effect? Justify your answer.  
+(d) Is it necessary for the DEBUG macro to be defined _before_ `debug.h` is
+    included in order for `PRINT_DEBUG` to have the desired effect? Justify your
+    answer.
+
 
 ---
 
-(a)
-To determine the output of the program, let's first observe an outline of the preprocessed file:  
+(a) To determine the output of the program, let's first observe an outline of
+the preprocessed file:
 
-```
+```C
 /* stdio.h lines are placed here */
 
 /* the #define DEBUG line triggers the following conditional definition /*
@@ -96,11 +96,11 @@ Value of 2 * i + j - k: 1
 ```
 
 (b)
-```
-/* stdio.h lines are placed here */
+```C
+/* stdio.h lines */
 
 
-/* the absence of the #define DEBUG line triggers the following conditional definition /*
+/* the absence #define DEBUG triggers the following conditional definition */
 
 
 #define PRINT_DEBUG(n)
@@ -110,7 +110,7 @@ int main(void)
 {
     int i = 1, j = 2, k = 3;
 
-/* the absence of the #define DEBUG line triggers the following conditional definition /*
+/* the absence #define DEBUG triggers the following conditional definition */
 
 
     printf("Output if DEBUG is not defined:\n");
@@ -126,13 +126,15 @@ int main(void)
 }
 ```
 
-Output:  
+Output: 
 ```
 Output if DEBUG is not defined:
 ```
 
-(c) 
-Defining the macro `DEBUG` causes the code to expand differently through conditional compilation. The specific details can be found in answers (a) and (b).  
+(c) Defining the macro `DEBUG` causes the code to expand differently through
+conditional compilation.  The specific details can be found in answers (a) and
+(b).  
 
-(d) 
-Yes, because the preprocessor processes directives in a top-to-bottom manner. To trigger the expansion of `PRINT_DEBUG` into a `printf` call, `DEBUG` needs to be defined before the `#ifdef` check present in `"debug.h"`.  
+(d) Yes, because the preprocessor processes directives in a top-to-bottom
+manner.  To trigger the expansion of `PRINT_DEBUG` into a `printf` call, `DEBUG`
+needs to be defined before the `#ifdef` check present in `"debug.h"`.

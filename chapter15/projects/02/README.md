@@ -1,6 +1,8 @@
 # Chapter 15 - Project 02
 
-Modify the `justify` program of Section 15.3 by having the `read_word` function (instead of `main`) store the * character at the end of a word that's been truncated.
+Modify the `justify` program of Section 15.3 by having the `read_word` function
+(instead of `main`) store the * character at the end of a word that's been
+truncated.
 
 ---
 
