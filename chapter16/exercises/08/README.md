@@ -2,7 +2,7 @@
 
 Let color be the following structure:
 
-```
+```C
 struct color {
     int red;
     int green;
@@ -10,21 +10,22 @@ struct color {
 };
 ```
 
-(a) 
-Write a declaration for a `const` variable named `MAGENTA` of type `struct color` whose members have the values 255, 0 and 255, respectively.  
+(a) Write a declaration for a `const` variable named `MAGENTA` of type `struct
+color` whose members have the values 255, 0 and 255, respectively.
 
-(b) 
-(C99) Repeat part (a), but use a designated initializer that doesn't specify the value of `green`, allowing it to default to 0.
+(b) (C99) Repeat part (a), but use a designated initializer that doesn't specify
+the value of `green`, allowing it to default to 0.
+
 
 ---
 
 
 (a)
-```
+```C
 struct color const MAGENTA = { 255, 0, 255};
 ```
 
 (b)
-```
+```C
 struct color const MAGENTA = { .red = 255, .blue = 255 };
 ```

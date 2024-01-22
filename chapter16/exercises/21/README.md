@@ -1,23 +1,21 @@
 # Chapter 16 - Exercise 21
 
-What are the integer values of the enumeration constants in each of the following declarations?
+What are the integer values of the enumeration constants in each of the
+following declarations?
 
-(a) 
-`enum {NUL, SOH, STX, ETX};`  
+(a) `enum {NUL, SOH, STX, ETX};`
 
-(b) 
-`enum {VT = 11, FF, CR};`  
+(b) `enum {VT = 11, FF, CR};`
 
-(c)
-`enum {SO = 14, ST, DLE, CAN = 24, EM};`  
+(c) `enum {SO = 14, ST, DLE, CAN = 24, EM};`
 
-(d)
-`enum {ENQ = 45, ACK, BEL, LF = 37, ETB, ESC};`  
+(d) `enum {ENQ = 45, ACK, BEL, LF = 37, ETB, ESC};` 
+
 
 ---
 
 (a)
-```
+```C
 NUL == 0
 SOH == 1
 STX == 2

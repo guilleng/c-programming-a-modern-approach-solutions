@@ -2,10 +2,11 @@
 
 Repeat Exercise 3, but this time using a _type_ named `Complex`.
 
+
 ---
 
 (a)
-```
+```C
 typedef struct {
     double real;
     double imaginary;
@@ -13,12 +14,12 @@ typedef struct {
 ```
 
 (b)
-```
+```C
 Complex c1, c2, c3;
 ```
 
 (c)
-```
+```C
 Complex make_complex(double r, double i)
 {
     Complex new;
@@ -30,7 +31,7 @@ Complex make_complex(double r, double i)
 ```
 
 (d)
-```
+```C
 Complex add_complex(Complex a, Complex b)
 {
     Complex new;

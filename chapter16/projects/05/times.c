@@ -20,11 +20,11 @@ int main(void)
     if (read_stdin(buffer, BUF_LENGHT) && 
             (closest_flight(buffer, departure, arrival)))
     {
-        printf("Closest departure: %s, arrival %s", departure, arrival);
+        printf("Closest departure: %s, arrival %s\n", departure, arrival);
     }
     else
     {
-        fprintf(stderr, "%s not a valid HH:MM (24-hour clock) time", buffer);
+        fprintf(stderr, "%s not a valid HH:MM (24-hour clock) time\n", buffer);
         exit(EXIT_FAILURE);
     }
 

@@ -4,7 +4,6 @@
 #include <string.h>
 
 #include "flight_times.h"
-#include "user_input.h"
 
 /***
  * Private declarations
@@ -66,7 +65,7 @@ int closest_flight(const char *user_time, char *departure, char *arrival)
 
     if ((time = valid_time(user_time)) == -1)
     {
-        fprintf(stderr, "%s not a valid HH:MM (24-hour clock) time", user_time);
+        fprintf(stderr, "%s invalid HH:MM (24-hour clock) time\n", user_time);
         exit(EXIT_FAILURE);
     }
 

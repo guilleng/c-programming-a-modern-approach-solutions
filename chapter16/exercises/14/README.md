@@ -1,34 +1,36 @@
 # Chapter 16 - Exercise 14
 
-Let `shape` be the structure tag declared in Exercise 13. Write functions that perform the following operations on a `shape` structure `s` passed as an argument:
+Let `shape` be the structure tag declared in Exercise 13.  Write functions that
+perform the following operations on a `shape` structure `s` passed as an
+argument:
 
-(a) 
-Compute the area of `s`.  
+(a) Compute the area of `s`.
 
-(b) 
-Move `s` by `x` units in the _x_ direction and `y` units in the _y_ direction, returning the modified version of `s` (`x` and `y` are additional arguments to the function).  
+(b) Move `s` by `x` units in the _x_ direction and `y` units in the _y_
+direction, returning the modified version of `s` (`x` and `y` are additional
+arguments to the function). 
 
-(c) 
-Scale `s` by a factor of `c` (a `double` value), returning the modified version of `s` (`c` is an additional argument to the function).
+(c) Scale `s` by a factor of `c` (a `double` value), returning the modified
+version of `s` (`c` is an additional argument to the function).
 
 
 ---
 
-Assuming the following declarations are in place:  
+Assume the following declarations are in place:
 
-```
-#define PI        (355.0 / 113.0)
+```C
+#define PI        ((double) 355.0 / 113.0)
 #define RECTANGLE               1
 #define CIRCLE                  2
 
 struct point { 
-    int x, 
-        y; 
+    int x;
+    int y; 
 };
 
 struct rectangle { 
     struct point upper_left, 
-                 lower_right; 
+    struct point lower_right; 
 };
 
 struct shape {
@@ -47,7 +49,7 @@ struct shape {
 ```
 
 (a)
-```
+```C
 double area(struct shape s)
 {
     switch (s.shape_kind)
@@ -63,17 +65,18 @@ double area(struct shape s)
 ```
 
 (b)
-```
+```C
 struct shape move(struct shape s, int x, int y)
 {
     s.center.x += x;
     s.center.y += y;
+
     return s;
 }
 ```
 
 (c)
-```
+```C
 struct shape scale(struct shape s, double c)
 {
     switch (s.shape_kind)

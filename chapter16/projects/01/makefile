@@ -1,4 +1,4 @@
-C=gcc
+CC=gcc
 CFLAGS= -Wextra -Wall -Wpedantic -std=c89
 
 main: main.o dialing_codes.o user_input.o
