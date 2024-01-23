@@ -85,45 +85,45 @@ int main(void)
 
 void new_cmd(void)
 {
-	printf("new_cmd\n");
+    printf("new_cmd\n");
 }
 
 void open_cmd(void)
 {
-	printf("open_cmd\n");
+    printf("open_cmd\n");
 }
 
 void close_cmd(void)
 {
-   	printf("close_cmd\n");
+    printf("close_cmd\n");
 }
 
 void close_all_cmd(void)
 {
-   	printf("close_all_cmd\n");
+    printf("close_all_cmd\n");
 }
 
 void save_cmd(void)
 {
-   	printf("save_cmd\n");
+    printf("save_cmd\n");
 }
 
 void save_as_cmd(void)
 {
-   	printf("save_as_cmd\n");
+    printf("save_as_cmd\n");
 }
 
 void save_all_cmd(void)
 {
-   	printf("save_all_cmd\n");
+    printf("save_all_cmd\n");
 }
 
 void print_cmd(void)
 {
-	printf("print_cmd\n");
+    printf("print_cmd\n");
 }
 
 void exit_cmd(void)
 {
-	printf("exit_cmd\n");
+    printf("exit_cmd\n");
 }
