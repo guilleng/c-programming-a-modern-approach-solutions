@@ -1,12 +1,14 @@
 # Chapter 17 - Exercise 10
 
-Modify the `print_part` function of Section 16.2 so that its parameter is a _pointer_ to a `part` structure. Use the `->` operator in your answer.  
+Modify the `print_part` function of Section 16.2 so that its parameter is a
+_pointer_ to a `part` structure.  Use the `->` operator in your answer.
+
 
 ---
 
-The original function as defined in section 16.2:  
+The original function as defined in section 16.2:
 
-```
+```C
 void print_part(struct part p)
 {
     printf("Part number: %d\n", p.number);
@@ -15,9 +17,9 @@ void print_part(struct part p)
 }
 ```
 
-Modified version:  
+Modified version:
 
-```
+```C
 void print_part(struct part *p)
 {
     printf("Part number: %d\n", p->number);

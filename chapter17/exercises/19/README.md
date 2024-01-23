@@ -1,8 +1,10 @@
 # Chapter 17 - Exercise 19
 
-Write a function that, when given a string as its argument, searches the following array of structures for a matching command name, then calls the function associated with that name.  
+Write a function that, when given a string as its argument, searches the
+following array of structures for a matching command name, then calls the
+function associated with that name.
 
-```
+```C
 struct {
     char *cmd_name;
     void (*cmd_pointer)(void);
@@ -19,6 +21,7 @@ struct {
 };
 ```
 
+
 ---
 
-See `ex19.c`  
+See `ex19.c`

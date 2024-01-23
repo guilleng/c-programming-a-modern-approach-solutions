@@ -1,12 +1,14 @@
 # Chapter 17 - Exercise 06
 
-Modify the `delete_from_list` function so that is uses only one pointer variable instead of two (`cur` and `prev`).  
+Modify the `delete_from_list` function so that is uses only one pointer variable
+instead of two (`cur` and `prev`).
+
 
 ---
 
-The function as defined in Section 17.5  
+The function as defined in Section 17.5 
 
-```
+```C
 struct node *delete_from_list(struct node *list, int n)
 {
     struct node *cur, *prev;
@@ -25,9 +27,9 @@ struct node *delete_from_list(struct node *list, int n)
 }
 ```
 
-To avoid a memory leak, a temporary variable needs to be defined within a small scope.  
+Solution:
 
-```
+```C
 struct node *delete_from_list(struct node *list, int n)
 {
     struct node **p = &list;

@@ -9,8 +9,6 @@
 
 #include "readline.h"
 #include <stdio.h>
-#include <ctype.h>
-
 
 int read_line(char *str, int n)
 {

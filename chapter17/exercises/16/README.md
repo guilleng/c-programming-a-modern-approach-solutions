@@ -1,14 +1,16 @@
 # Chapter 17 - Exercise 16
 
-Write the following function. The call `sum(g, i, j)` should return `g(i) + ... + g(j)`.  
+Write the following function. The call `sum(g, i, j)` should return `g(i) + ...
++ g(j)`.
 
-```
+```C
 int sum(int (*f)(int), int start, int end);
 ```
 
+
 ---
 
-```
+```C
 int sum(int (*f)(int), int start, int end)
 {
     int acc = 0;
