@@ -1,17 +1,18 @@
 # Chapter 18 - Exercise 14
 
-Which kind of variables cannot be initialized?  
+Which kind of variables cannot be initialized?
 
-(a) `Array variables`  
+(a) `Array variables`
 
-(b) `Enumeration variables`  
+(b) `Enumeration variables` 
 
-(c) `Structure variables`  
+(c) `Structure variables`
 
-(d) `Union variables`  
+(d) `Union variables`
 
-(e) `None of the above`  
+(e) `None of the above` 
+
 
 ---
 
-(e) All the mentioned variables can be initialized.  
+(e) All the mentioned variables can be initialized. 

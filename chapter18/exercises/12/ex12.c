@@ -7,18 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*** (a) Description of `f`'s type: 
- *
- * * `f` is a function that takes two arguments, 
- * (1) a pointer to a function that takes a `long` and returns a `float` and 
- * (2) a pointer to `char`, 
- * `f` returns a pointer to a function that takes a `double` argument and 
- * returns an `int`.
- */
-
-/*** (b) Calling `f`:
- */
-
 /* 
  * Function that takes a long and returns a float 
  */

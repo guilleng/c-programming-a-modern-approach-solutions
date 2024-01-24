@@ -1,14 +1,16 @@
 # Chapter 18 - Exercise 01
 
-For each of the following declarations, identify the storage class, type qualifiers, type specifiers, declarators, and initializers.  
+For each of the following declarations, identify the storage class, type
+qualifiers, type specifiers, declarators, and initializers.
 
-(a) `static char **lookup(int level);`  
+(a) `static char **lookup(int level);`
 
-(b) `volatile unsigned long io_flags;`  
+(b) `volatile unsigned long io_flags;`
 
-(c) `extern char *file_name[MAX_FILES], path[];`  
+(c) `extern char *file_name[MAX_FILES], path[];`
 
-(d) `static const char token_buf[] = "";`  
+(d) `static const char token_buf[] = "";`
+
 
 ---
 
@@ -30,11 +32,12 @@ Initializers: None.
 Storage class: `extern`.  
 Type qualifiers: None.  
 Type specifiers: `char`.  
-Declarators:  `*`, `file_name` and `[MAX_FILES]` conform the first declarator while `path` and `[]` form part of the second.  
+Declarators:  `*`, `file_name` and `[MAX_FILES]` conform the first declarator
+while `path` and `[]` form part of the second.  
 Initializers: None.  
 
 (d)  
-Storage class: `static`.    
+Storage class: `static`.  
 Type qualifiers: `const`.  
 Type specifiers: `char`.  
 Declarators:  `token_buf` and `[]`.  
