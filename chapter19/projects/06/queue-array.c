@@ -64,12 +64,14 @@ Queue allocate_queue(size_t len)
 
 void deallocate_queue(Queue q)
 {
+
     free(q->queue);
     free(q);
 }
 
 void enqueue(void *i, Queue q)
 {
+
     if (q->nelems == q->maxlen)
     {
         fprintf(stderr, "enqueue() on full queue\n");
@@ -92,6 +94,7 @@ void enqueue(void *i, Queue q)
 
 void dequeue(Queue q)
 {
+
     if (q->nelems)
     {
         q->head = (q->head == q->maxlen-1) ? 0 : (q->head + 1);
@@ -104,25 +107,30 @@ void dequeue(Queue q)
 
 void *peek_first(Queue q)
 {
+
     if (q->nelems)
     {
         return q->queue[(q->head)];
     }
     fprintf(stderr, "peek_first() on empty queue\n");
+
     return NULL;
 }
 
 void *peek_rear(Queue q)
 {
+
     if (q->nelems)
     {
         return q->queue[q->tail];
     }
     fprintf(stderr, "peek_rear() on empty queue\n");
+
     return NULL;
 }
 
 int isempty_queue(Queue q)
 {
+
     return q->nelems;
 }

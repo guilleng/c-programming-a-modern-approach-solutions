@@ -16,17 +16,17 @@
  * Completing the declaration for a `Queue` type:
  *
  * A `Queue` is a structure whose members are:
- *   An array of `Items` of fixed size defined in the interface using a 
- *   preprocessor directive.   
  *   The index of the last item that arrived in the queue.
  *   The index of the first item that arrived in the queue.
  *   The number of elements currently in the queue.
+ *   An array of `Items` of fixed size defined in the interface using a 
+ *   preprocessor directive.   
  */
 struct queue_struct {
-    Item queue[QUEUE_SIZE];
     size_t tail;
     size_t head;
     size_t nelems;
+    Item queue[QUEUE_SIZE];
 };
 
 
@@ -36,6 +36,7 @@ struct queue_struct {
 Queue allocate_queue(void)
 {
     struct queue_struct* new;
+
     new = malloc(sizeof(struct queue_struct));
     if (new == NULL)
     {
@@ -51,11 +52,13 @@ Queue allocate_queue(void)
 
 void deallocate_queue(Queue q)
 {
+
     free(q);
 }
 
 void enqueue(Item i, Queue q)
 {
+
     if (q->nelems == QUEUE_SIZE)
     {
         fprintf(stderr, "Full queue in enqueue call\n");
@@ -78,6 +81,7 @@ void enqueue(Item i, Queue q)
 
 void dequeue(Queue q)
 {
+
     if (q->nelems)
     {
         q->head = (q->head == QUEUE_SIZE-1) ? 0 : (q->head + 1);
@@ -85,16 +89,19 @@ void dequeue(Queue q)
         return;
     }
     fprintf(stderr, "Dequeueing on an empty queue\n");
+
     return;
 }
 
 Item peek_first(Queue q)
 {
+
     if (q->nelems)
     {
         return q->queue[(q->head)];
     }
     fprintf(stderr, "peek() on empty queue\n");
+
     return -1;
 }
 
@@ -106,6 +113,7 @@ Item peek_rear(Queue q)
         return q->queue[q->tail];
     }
     fprintf(stderr, "rear() on empty queue\n");
+
     return -1;
 }
 

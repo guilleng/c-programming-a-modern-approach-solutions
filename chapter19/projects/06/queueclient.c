@@ -13,6 +13,7 @@ int main()
     char *i;
     Queue q = allocate_queue(3);
     Queue w = allocate_queue(3);
+
     if(q == NULL)
     {
         puts("failed to allocate queue p");

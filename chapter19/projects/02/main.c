@@ -78,6 +78,7 @@ int main(void)
 void terminate(void)
 {
     int result = pop(s);
+
     if (is_empty(s))
     {
         printf("%d\n", result);
@@ -88,12 +89,15 @@ void terminate(void)
         fprintf(stderr, "Bad input, item(s) remain in stack\n");
         exit(EXIT_FAILURE);
     }
+
     return;
 }
 
 void cleanup(void)
 {
+
     make_empty(s);
     destroy(s);
+
     return;
 }

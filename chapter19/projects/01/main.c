@@ -68,6 +68,7 @@ int main(void)
 
 int match(char left, char right)
 {
+
     switch (right - left)
     {
         case 1: case 2: case 3:
@@ -79,7 +80,9 @@ int match(char left, char right)
         
 void deallocate_stack(Stack s)
 {
+
     make_empty(s);
     destroy(s);
+
     return;
 }

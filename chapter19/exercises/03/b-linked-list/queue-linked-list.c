@@ -16,14 +16,14 @@
  * Completing the declaration for a `Queue` type:
  *
  * A `Queue` is a structure whose members are:
+ *   The number of elements currently in the linked list. 
  *   Pointers to the tail (last arrived) and head (first arrived) elements in a
  *   linked list of `Items`.
- *   The number of elements currently in the linked list. 
  */
 struct queue_struct {
+    size_t nelems;
     struct node *tail;
     struct node *head;
-    size_t nelems;
 };
 
 /* linked list implementation */
@@ -42,6 +42,7 @@ static void *x_malloc(size_t size, const char* str);
 Queue allocate_queue(void)
 {
     struct queue_struct* new;
+
     new = x_malloc(sizeof(struct queue_struct), "queue_struct");
 
     new->tail = new->head = NULL;
@@ -52,6 +53,7 @@ Queue allocate_queue(void)
 
 void deallocate_queue(Queue q)
 {
+
     while (q->nelems)
     {
         dequeue(q);
@@ -67,24 +69,24 @@ void enqueue(Item i, Queue q)
     new->data = i;
     new->next = NULL;
 
-    switch (q->nelems)
+    if (q->nelems == 0)
     {
-        case 0:
-            q->head = q->tail = new;
-            break;
-        default:
-            (q->tail)->next = new;
-            q->tail = new;
-            break;
+        q->head = q->tail = new;
     }
-
+    else
+    {
+        (q->tail)->next = new;
+        q->tail = new;
+    }
     q->nelems++;
+
     return;
 }
 
 void dequeue(Queue q)
 {
-    if (q->nelems)
+
+    if (q->nelems != 0)
     {
         struct node *temp = q->head;
 
@@ -99,35 +101,41 @@ void dequeue(Queue q)
 
         free(temp);
         q->nelems--;
+
         return;
     }
+
     fprintf(stderr, "dequeue() on empty queue\n");
     return;
 }
 
 Item peek_first(Queue q)
 {
-    if (q->nelems)
+
+    if (q->nelems == 0)
     {
-        return (q->head)->data;
+        fprintf(stderr, "peek() on empty queue\n");
+        return -1;
     }
-    fprintf(stderr, "peek() on empty queue\n");
-    return -1;
+
+    return (q->head)->data;
 }
 
 
 Item peek_rear(Queue q)
 {
-    if (q->nelems)
+    if (q->nelems == 0)
     {
-        return (q->tail)->data;
+        fprintf(stderr, "rear() on empty queue\n");
+        return -1;
     }
-    fprintf(stderr, "rear() on empty queue\n");
-    return -1;
+
+    return (q->tail)->data;
 }
 
 int isempty_queue(Queue q)
 {
+
     return q->nelems;
 }
 
@@ -139,6 +147,7 @@ int isempty_queue(Queue q)
 static void *x_malloc(size_t size, const char* str)
 {
     void *new = malloc(size);
+
     if (new == NULL)
     {
         fprintf(stderr, "%s allocation failed.\n", str);
