@@ -2,7 +2,7 @@
 
 (a) Write the following function:
 
-```
+```C
 int count_ones(unsigned char ch);
 ```
 
@@ -10,10 +10,12 @@ int count_ones(unsigned char ch);
 
 (b) Write the function in part (a) without using a loop.
 
+
 ---
 
 (a)
-```
+
+```C
 int count_ones(unsigned char ch)                                                
 {                                                                               
     int i, count = 0;                                                           
@@ -26,7 +28,7 @@ int count_ones(unsigned char ch)
 }
 ```
 
-```
+```C
 int count_ones(unsigned char ch)                                                
 {                                                                               
     int count = 0;                                                           
@@ -40,25 +42,8 @@ int count_ones(unsigned char ch)
 ```
 
 (b)
-```
-int count_ones_helper(unsigned char ch, int acc)
-{
-    if (ch == 0)                                                                    
-    {                                                                           
-        return acc;                                                           
-    }                                                                           
-    else                                                                        
-    {                                                                           
-        return count_ones_helper(ch >> 1, acc += (0x01 & ch ));
-    }                                                                           
-}
-int count_ones(unsigned char ch)                                                
-{                                                                               
-    return count_ones_helper(ch, 0);
-}
-```
 
-```
+```C
 int count_ones(unsigned char ch)                                         
 {                                                                               
     return (ch      & 0x01) +                                                   
