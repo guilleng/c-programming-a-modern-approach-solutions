@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <errno.h>
 
 #define FORMAT_SPECIFIER " %d"
 typedef int NUMBER;

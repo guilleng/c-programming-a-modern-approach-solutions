@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <errno.h>
 #include "run-length-encoding.h"
 
 /* 
@@ -44,7 +43,7 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    if (is_encoded(argv[1]))
+    if (is_decoded(argv[1]))
     {                                   /* Process accordingly */
         rle_encode(fp_in, fp_out);
     }
@@ -72,7 +71,7 @@ char *output_fname(const char *fname)
 
     /* Compute space allocation */
     newnamelen += strlen(fname) + 1 + 
-                    (is_encoded(fname) ? strlen(EXTENSION) : 0);
+                    (is_decoded(fname) ? strlen(EXTENSION) : 0);
 
     newfname = malloc(sizeof(char) * newnamelen);
     if (newfname == NULL)
@@ -82,7 +81,7 @@ char *output_fname(const char *fname)
     }
 	
     strcpy(newfname, fname);
-    if (is_encoded(fname))
+    if (is_decoded(fname))
     {
         strcat(newfname, EXTENSION);
     }

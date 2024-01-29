@@ -1,9 +1,10 @@
 # Chapter 22 - Project 04
 
-(a) Write a program that counts the number of characters in a text file.  
+(a) Write a program that counts the number of characters in a text file.
 
-(b) Write a program that counts the number of words in a text file. (A “word” is any sequence of non-white-space characters.)  
+(b) Write a program that counts the number of words in a text file. (A “word” is
+any sequence of non-white-space characters.)
 
-(c) Write a program that counts the number of lines in a text file.  
+(c) Write a program that counts the number of lines in a text file. 
 
-Have each program obtain the file name from the command line.  
+Have each program obtain the file name from the command line.

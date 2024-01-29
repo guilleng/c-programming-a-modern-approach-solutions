@@ -1,15 +1,17 @@
 # Chapter 22 - Exercise 09
 
-Which one of the following calls is not a valid way of reading one character from the standard input stream?  
+Which one of the following calls is not a valid way of reading one character
+from the standard input stream? 
 
-(a) `getch()`  
+(a) `getch()`
 
-(b) `getchar()`  
+(b) `getchar()` 
 
-(c) `getc(stdin)`  
+(c) `getc(stdin)`
 
-(d) `fgetc(stdin)`  
+(d) `fgetc(stdin)`
+
 
 ---
 
-(a) `getch()` is not a standard library function.  
+(a) `getch()` is not a standard library function.

@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <errno.h>
 
 #define BUF_SIZE 512
 
@@ -64,10 +63,10 @@ int main(int argc, char *argv[])
         }
         else
         {
-            printf("(%c%c%c) %c%c%c-%c%c%c%c\n", 
-                                        digit[0], digit[1], digit[2], digit[3], 
-                                        digit[4], digit[5], digit[6], digit[7], 
-                                        digit[8], digit[9]);
+            printf("(%c%c%c) %c%c%c-%c%c%c%c\n", digit[0], digit[1], digit[2], 
+                                                 digit[3], digit[4], digit[5], 
+                                                 digit[6], digit[7], digit[8], 
+                                                 digit[9]);
         }
 
         linenumber++;
@@ -84,5 +83,6 @@ int main(int argc, char *argv[])
         perror("Error");
         exit(EXIT_FAILURE);
     }
+
     exit(EXIT_SUCCESS);
 }

@@ -1,6 +1,8 @@
 # Chapter 22 - Project 12
 
-Modify Programming Project 2 from Chapter 3 so that the program reads a series of items from a file and displays the data in columns. Each line of the file will have the following form:
+Modify Programming Project 2 from Chapter 3 so that the program reads a series
+of items from a file and displays the data in columns. Each line of the file
+will have the following form:
 
 ```
 item,price,mm/dd/yyyy

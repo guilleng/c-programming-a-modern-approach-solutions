@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <errno.h>
 
 #define NAME_LEN   25
 
@@ -157,6 +156,3 @@ void cleanup(void)
     }
     exit(EXIT_SUCCESS);
 }
-
-
-

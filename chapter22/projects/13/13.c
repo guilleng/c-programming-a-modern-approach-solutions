@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#include <errno.h>
 
 #define BUF_SIZE 512
 #define DATAFILE "flights.dat"
@@ -26,11 +25,13 @@ size_t flights_size = 0;
  * Returns the number of lines in DATAFILE
  */
 size_t count_entries(FILE *fp);
+
 /*
  * Loads the departures and arrival times into the dynamically allocated 
  * `flights` array
  */
 void load_database(FILE *fp);
+
 /*
  * Closes DATAFILE file and frees the `flights` array
  */
@@ -112,7 +113,9 @@ int main(void)
 
 size_t count_entries(FILE *fp)
 {
-    int i, file_entries = 0;
+    int i, file_entries;
+   
+    file_entries = 0;
 
     while ((i = fgetc(fp)) != EOF)
     {
@@ -121,6 +124,7 @@ size_t count_entries(FILE *fp)
             file_entries++;
         }
     }
+
     if (ferror (fp))
     {
         perror("Error");
@@ -133,8 +137,10 @@ size_t count_entries(FILE *fp)
 
 void load_database(FILE *fp)
 {
-    size_t i = 0;
     char buffer[BUF_SIZE];
+    size_t i;
+
+    i = 0;
 
     while (fgets(buffer, BUF_SIZE, fp) != NULL)
     {
@@ -159,11 +165,13 @@ void load_database(FILE *fp)
         }
         flights[i++] = f;
     }
+
     if (ferror (fp))
     {
         perror("Error");
         cleanup();
     }
+
     return;
 }
 
@@ -174,5 +182,6 @@ void cleanup(void)
         perror("Error");
     }
     free(flights);
+
     exit(EXIT_FAILURE);
 }

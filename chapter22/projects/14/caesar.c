@@ -4,8 +4,6 @@
  * Description: Caesar cypher implementation.
  */
 
-#include <errno.h>
-#include <limits.h>
 #include "x_readline.h"
 
 #define BUF_LEN 255

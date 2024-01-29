@@ -1,10 +1,16 @@
 #include <stdio.h>
-#include <errno.h>
 #include <ctype.h>
 #include <string.h>
 #include "lineendings.h"
 
-enum { NotSet = -2, Error, NotASCII, Windows, Unix, Neither} Type;
+enum { 
+    NotSet = -2, 
+    Error, 
+    NotASCII, 
+    Windows, Unix, 
+    Neither
+} Type;
+
 char buffer[BUF_SIZE];
 
 /*

@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#include <errno.h>
 
 typedef unsigned char BYTE;
 

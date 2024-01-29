@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <string.h>
-#include <errno.h>
 #include "run-length-encoding.h"
 
 #define COUNT 0
@@ -71,7 +68,7 @@ void rle_decode(FILE *fp_in, FILE *fp_out)
     return;
 }
 
-int is_encoded(const char *name)
+int is_decoded(const char *name)
 {
     while (*name) name++;
     if (*(name-1) && *(name-2)  && *(name-3) && *(name-4) && *(name-5))

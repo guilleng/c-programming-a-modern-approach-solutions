@@ -1,6 +1,10 @@
 # Chapter 22 - Project 17
 
-Write a program that reads a series of phone numbers from a file and displays them in a standard format. Each line of the file will contain a single phone number, but the numbers may be in a variety of formats. You may assume that each line contains 10 digits, possibly mixed with other characters (which should be ignored). For example, suppose that the file contains the following lines:
+Write a program that reads a series of phone numbers from a file and displays
+them in a standard format.  Each line of the file will contain a single phone
+number, but the numbers may be in a variety of formats.  You may assume that
+each line contains 10 digits, possibly mixed with other characters (which should
+be ignored).  For example, suppose that the file contains the following lines:
 
 ```
 404.817.6900
