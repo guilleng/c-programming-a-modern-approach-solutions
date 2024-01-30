@@ -2,15 +2,17 @@
 
 Use `strchr` to write the following function: 
 
-```
+```C
 int numchar(const char *s, char ch); 
 ```
 
-`numchar` returns the number of times the character `ch` occurs in the string `s`.  
+`numchar` returns the number of times the character `ch` occurs in the string
+`s`.
+
 
 ---
 
-```
+```C
 int numchar(const char *s, char ch)
 {
     int count = 0;

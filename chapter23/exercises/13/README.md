@@ -2,15 +2,18 @@
 
 Use `strtok` to write the following function:
 
-```
+```C
 int count_words(char *sentence);
 ```
 
-`count_words` returns the number of words in the string sentence, where a "word" is any sequence of non-white-space characters. `count_words` is allowed to modify the string.
+`count_words` returns the number of words in the string sentence, where a "word"
+is any sequence of non-white-space characters. `count_words` is allowed to
+modify the string.
+
 
 ---
 
-```
+```C
 int count_words(char *s)
 {
     int count;
