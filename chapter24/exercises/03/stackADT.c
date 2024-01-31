@@ -7,6 +7,7 @@
  * provided that this copyright notice is retained.      *
  *********************************************************/
 
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "stackADT.h"
