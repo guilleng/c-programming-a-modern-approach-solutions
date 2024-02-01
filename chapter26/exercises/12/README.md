@@ -1,10 +1,12 @@
 # Chapter 26 - Exercise 12
 
-Write a function that, when passed a year, returns a `time_t` value representing 12:00 a.m. on the first day of that year.
+Write a function that, when passed a year, returns a `time_t` value representing
+12:00 a.m. on the first day of that year.
+
 
 ---
 
-```
+```C
 time_t set_midnight(int year)
 {
     if (year < 1970)

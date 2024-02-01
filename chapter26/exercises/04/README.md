@@ -1,20 +1,25 @@
 # Chapter 26 - Exercise 04
 
-Write a function named `display` that takes any number of arguments. The first argument must be an integer. The remaining arguments will be strings. The first argument specifies how many strings the call contains. The function will print the strings on a single line, with adjacent strings separated by one space.  For example, the call  
+Write a function named `display` that takes any number of arguments.  The first
+argument must be an integer.  The remaining arguments will be strings. The first
+argument specifies how many strings the call contains.  The function will print
+the strings on a single line, with adjacent strings separated by one space.  For
+example, the call
 
-```
+```C
 display(4, "Special", "Agent", "Dale", "Cooper"); 
 ```
 
 will produce the following output: 
 
-```
+```C
 Special Agent Dale Cooper
 ```
 
+
 ---
 
-```
+```C
 void display(int nelems, ...)
 {
     va_list ap;

@@ -1,10 +1,13 @@
 # Chapter 26 - Exercise 03
 
-Extend the function of Exercise 2 so that it allows two conversion specifications: `%d` and `%s`. Each `%d` in the format string indicates an int argument, and each `%s` indicates a `char *` (string) argument.  
+Extend the function of Exercise 2 so that it allows two conversion
+specifications: `%d` and `%s`.  Each `%d` in the format string indicates an int
+argument, and each `%s` indicates a `char *` (string) argument. 
+
 
 ---
 
-```
+```C
 /* 
  * Helper function that prints a string and updates the count of the 
  * `chars_printed` counter.
@@ -34,7 +37,7 @@ int x_printf_extended(const char *format, ...)
         if (*format == '%' && *(format + 1) == 'd')
         {
             int num = va_arg(ap, int);
-            printnumber(num, &chars_printed);       /* Defined in exercise 01 */ 
+            printnumber(num, &chars_printed);    /* Definition in exercise 01 */ 
             format += 2;
             continue;
         }

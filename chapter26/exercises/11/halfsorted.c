@@ -1,7 +1,7 @@
 /*
  * C programming: A Modern Approach. Chapter 26, Exercise 11
  * Date: June 2023
- * Description: Shows bsarch behavior for partially sorted arrays.  
+ * Description: Shows bsearch behavior for partially sorted arrays.  
  */
 #include <stdio.h>
 #include <stdlib.h>
